@@ -37,17 +37,6 @@ Section Overview --> Summary (read & mark complete)
 
 Each section must be completed in order. When you finish one part, a "Next" button appears to guide you to the next.
 
-## Sections Covered
-
-| # | Title | Category |
-|---|-------|----------|
-| 01 | Intro to Node.js | Fundamentals |
-| 02 | NPM & Packages | Core JS |
-| 03 | Async Programming | Core JS |
-| 04 | Data Persistence | Database |
-| 05 | RESTful API Design | Architecture |
-| 06 | Deployment & Scaling | DevOps |
-
 ## Tech Stack
 
 - **React 19** -- UI library
