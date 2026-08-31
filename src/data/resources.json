@@ -1,0 +1,74 @@
+[
+  {
+    "id": "r1",
+    "title": "Official Node.js Docs",
+    "category": "Documentation",
+    "description": "Comprehensive API reference, guides, and release notes directly from the source.",
+    "url": "https://nodejs.org/en/docs",
+    "meta": null,
+    "icon": "library_books"
+  },
+  {
+    "id": "r2",
+    "title": "MDN Web Docs",
+    "category": "Documentation",
+    "description": "Essential reference for JavaScript syntax, standard built-in objects, and Web APIs.",
+    "url": "https://developer.mozilla.org/en-US/",
+    "meta": null,
+    "icon": "library_books"
+  },
+  {
+    "id": "r3",
+    "title": "Understanding the Event Loop",
+    "category": "Articles",
+    "description": "A deep dive into how Node.js handles asynchronous operations non-blockingly.",
+    "url": "#",
+    "meta": "12 min read",
+    "icon": "article"
+  },
+  {
+    "id": "r4",
+    "title": "Node.js Best Practices",
+    "category": "Articles",
+    "description": "A comprehensive collection of guidelines for building robust and scalable applications.",
+    "url": "#",
+    "meta": null,
+    "icon": "article"
+  },
+  {
+    "id": "r5",
+    "title": "Backend Engineering Roadmap",
+    "category": "Videos",
+    "description": "Visual guide mapping out the path and technologies to master backend development.",
+    "url": "#",
+    "meta": "45 min",
+    "icon": "play_circle"
+  },
+  {
+    "id": "r6",
+    "title": "Postman API Platform",
+    "category": "Tools",
+    "description": "Essential tool for building, testing, and designing APIs efficiently.",
+    "url": "https://www.postman.com/",
+    "meta": null,
+    "icon": "build"
+  },
+  {
+    "id": "r7",
+    "title": "VS Code Extensions",
+    "category": "Tools",
+    "description": "Recommended extensions pack for a highly productive Node.js development environment.",
+    "url": "#",
+    "meta": null,
+    "icon": "build"
+  },
+  {
+    "id": "r8",
+    "title": "Node.js Cheat Sheet",
+    "category": "Cheat Sheets",
+    "description": "Quick reference for common Node.js modules, methods, and patterns.",
+    "url": "#",
+    "meta": null,
+    "icon": "description"
+  }
+]

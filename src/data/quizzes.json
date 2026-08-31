@@ -1,0 +1,140 @@
+[
+  {
+    "sectionId": "01",
+    "sectionTitle": "Intro to Node.js",
+    "questions": [
+      {
+        "id": "01-q1",
+        "question": "Which JavaScript engine powers Node.js?",
+        "options": ["SpiderMonkey", "V8", "JavaScriptCore", "Chakra"],
+        "correctIndex": 1
+      },
+      {
+        "id": "01-q2",
+        "question": "What does `npm` stand for?",
+        "options": ["Node Package Manager", "New Project Manager", "Network Protocol Manager", "Node Process Manager"],
+        "correctIndex": 0
+      },
+      {
+        "id": "01-q3",
+        "question": "Which module is used to create an HTTP server?",
+        "options": ["express", "http", "server", "net"],
+        "correctIndex": 1
+      },
+      {
+        "id": "01-q4",
+        "question": "Which Node.js module is used for handling file paths?",
+        "options": ["http", "path", "fs", "url"],
+        "correctIndex": 2
+      },
+      {
+        "id": "01-q5",
+        "question": "What is the Event Loop in Node.js?",
+        "options": [
+          "A thread pool for parallel execution",
+          "A mechanism for handling non-blocking I/O",
+          "A loop that continuously checks for user input",
+          "A function that runs on startup"
+        ],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "sectionId": "02",
+    "sectionTitle": "NPM & Packages",
+    "questions": [
+      {
+        "id": "02-q1",
+        "question": "Which command initializes a new npm project?",
+        "options": ["npm new", "npm init", "npm create", "npm start"],
+        "correctIndex": 1
+      },
+      {
+        "id": "02-q2",
+        "question": "Where are devDependencies installed?",
+        "options": ["Only in production", "Only in development", "Both environments", "In test environment only"],
+        "correctIndex": 1
+      },
+      {
+        "id": "02-q3",
+        "question": "What file defines project scripts in npm?",
+        "options": [".npmrc", "package.json", "package-lock.json", ".npmignore"],
+        "correctIndex": 1
+      },
+      {
+        "id": "02-q4",
+        "question": "What does `npm install` do by default?",
+        "options": [
+          "Installs all dependencies",
+          "Installs only production dependencies",
+          "Installs only dev dependencies",
+          "Removes node_modules"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "02-q5",
+        "question": "Which command updates all packages to their latest versions?",
+        "options": ["npm upgrade", "npm update", "npm latest", "npm refresh"],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "sectionId": "03",
+    "sectionTitle": "Async Programming",
+    "questions": [
+      {
+        "id": "03-q1",
+        "question": "What does `await` do in an async function?",
+        "options": [
+          "Pauses execution until the Promise resolves",
+          "Stops the entire program",
+          "Creates a new thread",
+          "Ignores the result"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "03-q2",
+        "question": "What is the correct way to handle errors with async/await?",
+        "options": [
+          "Using .catch()",
+          "Using try/catch",
+          "Using if/else",
+          "Using switch/case"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "03-q3",
+        "question": "What is a Promise?",
+        "options": [
+          "A guaranteed result",
+          "An object representing eventual completion or failure",
+          "A synchronous function",
+          "A type of loop"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "03-q4",
+        "question": "Which method is used to emit events in Node.js?",
+        "options": ["trigger()", "fire()", "emit()", "dispatch()"],
+        "correctIndex": 2
+      },
+      {
+        "id": "03-q5",
+        "question": "What is callback hell?",
+        "options": [
+          "A debugging tool",
+          "Deeply nested callbacks that reduce readability",
+          "A testing framework",
+          "A type of Promise"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  }
+]

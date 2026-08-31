@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Progress Analytics - Node.js Developers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Geist:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#dfe2eb",
+                      "on-tertiary-container": "#002e39",
+                      "secondary-container": "#e7d000",
+                      "surface": "#10141a",
+                      "surface-variant": "#31353c",
+                      "on-tertiary-fixed-variant": "#004e5e",
+                      "on-secondary-container": "#635800",
+                      "surface-dim": "#10141a",
+                      "outline-variant": "#3f4a3b",
+                      "on-secondary-fixed": "#201c00",
+                      "on-secondary": "#373100",
+                      "tertiary-container": "#009ebc",
+                      "background": "#10141a",
+                      "tertiary": "#5cd5f6",
+                      "secondary": "#ffed76",
+                      "outline": "#899483",
+                      "surface-container-high": "#262a31",
+                      "on-surface-variant": "#becab7",
+                      "surface-bright": "#353940",
+                      "tertiary-fixed": "#b1ecff",
+                      "on-tertiary": "#003641",
+                      "surface-container-highest": "#31353c",
+                      "on-error-container": "#ffdad6",
+                      "surface-container-low": "#181c22",
+                      "on-secondary-fixed-variant": "#504700",
+                      "inverse-surface": "#dfe2eb",
+                      "secondary-fixed-dim": "#dec800",
+                      "surface-tint": "#77dd6d",
+                      "surface-container": "#1c2026",
+                      "primary-fixed-dim": "#77dd6d",
+                      "primary": "#77dd6d",
+                      "error": "#ffb4ab",
+                      "on-primary-fixed": "#002202",
+                      "inverse-on-surface": "#2d3137",
+                      "on-tertiary-fixed": "#001f27",
+                      "error-container": "#93000a",
+                      "on-background": "#dfe2eb",
+                      "primary-container": "#3fa43d",
+                      "inverse-primary": "#006e12",
+                      "on-primary-container": "#003204",
+                      "on-primary": "#003a05",
+                      "secondary-fixed": "#fce425",
+                      "surface-container-lowest": "#0a0e14",
+                      "primary-fixed": "#92fa86",
+                      "on-error": "#690005",
+                      "on-primary-fixed-variant": "#00530b",
+                      "tertiary-fixed-dim": "#5cd5f6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "lg": "40px",
+                      "gutter": "24px",
+                      "sm": "16px",
+                      "md": "24px",
+                      "xs": "8px",
+                      "xl": "64px",
+                      "container-max": "1280px",
+                      "base": "4px"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "code-block": [
+                              "JetBrains Mono"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Geist"
+                      ],
+                      "headline-md": [
+                              "Geist"
+                      ],
+                      "label-sm": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-lg": [
+                              "Geist"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "code-block": [
+                              "14px",
+                              {
+                                      "lineHeight": "22px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .glass-card {
+            background-color: theme('colors.surface');
+            border: 1px solid theme('colors.surface-variant');
+        }
+        .glass-card:hover {
+            border-color: theme('colors.primary');
+            box-shadow: 0 0 16px rgba(119, 221, 109, 0.1);
+            transition: all 0.3s ease;
+        }
+        .progress-bar-fill-green {
+            background: theme('colors.primary');
+            box-shadow: 0 0 8px rgba(119, 221, 109, 0.4);
+        }
+        .progress-bar-fill-yellow {
+            background: theme('colors.secondary');
+            box-shadow: 0 0 8px rgba(255, 237, 118, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-colors duration-200">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-md h-16">
+<div class="font-headline-md text-headline-md font-bold text-primary active:scale-95 transition-transform cursor-pointer">
+                Node.js Developers
+            </div>
+<div class="hidden md:flex space-x-gutter items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/50 transition-colors duration-200 px-xs py-base rounded-md" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/50 transition-colors duration-200 px-xs py-base rounded-md" href="#">Sections</a>
+<a class="font-body-md text-body-md text-primary border-b-2 border-primary pb-1 px-xs py-base" href="#">Progress</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/50 transition-colors duration-200 px-xs py-base rounded-md" href="#">Resources</a>
+</div>
+<div class="flex items-center space-x-sm">
+<button aria-label="notifications" class="text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/50 p-xs rounded-full transition-colors duration-200 active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">notifications</span>
+</button>
+<button aria-label="search" class="text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/50 p-xs rounded-full transition-colors duration-200 active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant/30 cursor-pointer hover:bg-surface-variant/50 transition-colors duration-200 active:scale-95">
+<img alt="User avatar" class="w-full h-full object-cover" data-alt="A small, circular avatar portrait of a modern software developer. They are wearing dark, casual techwear against a dark, minimalist grey background. The lighting is soft and studio-quality, emphasizing a professional yet approachable look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC144mj0zL0vGagO9fc3hy1XThSAEl7MDqazTwvv9jKFHlZpNl4qs-S_uJzm3wzO8VWfXiYEVbl_9kkpueyP_Wg-kEwGwIKvFRwjfel2obgnAmkDeUZyBafP3h1sgH2k2MpwK_725y4pgJc_B6X-e36YF-fdaPuWtVgUgj1lcW5JKMxEV4IyzUltNnAEz8X6QlqtBVpw6dVGT8JhDkGAEfChqgmHCWm0gXS2nz7Iw9BRnrInn8wnV8i"/>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-[104px] pb-xl px-md max-w-container-max mx-auto w-full">
+<!-- Header -->
+<header class="mb-lg">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-xs">Progress Analytics</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Track your mastery of Node.js concepts and monitor your learning streak.</p>
+</header>
+<!-- Analytics Overview (Bento Grid) -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-xl">
+<!-- Overall Completion -->
+<div class="glass-card rounded-xl p-md flex flex-col justify-between col-span-1 lg:col-span-2">
+<div>
+<h3 class="font-body-md text-body-md text-on-surface-variant mb-base flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">donut_large</span>
+                        Overall Completion
+                    </h3>
+<div class="font-headline-xl text-headline-xl text-on-surface mt-sm">65%</div>
+</div>
+<div class="mt-lg">
+<div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full progress-bar-fill-green rounded-full" style="width: 65%;"></div>
+</div>
+</div>
+</div>
+<!-- Tasks Completed -->
+<div class="glass-card rounded-xl p-md flex flex-col justify-between">
+<h3 class="font-body-md text-body-md text-on-surface-variant mb-base flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+                    Tasks Completed
+                </h3>
+<div class="font-headline-xl text-headline-xl text-on-surface mt-sm">12<span class="text-on-surface-variant font-headline-md text-headline-md">/20</span></div>
+</div>
+<!-- Average Quiz Score -->
+<div class="glass-card rounded-xl p-md flex flex-col justify-between">
+<h3 class="font-body-md text-body-md text-on-surface-variant mb-base flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">grading</span>
+                    Avg Quiz Score
+                </h3>
+<div class="font-headline-xl text-headline-xl text-on-surface mt-sm">88%</div>
+</div>
+</section>
+<!-- Secondary Section: Breakdown & Insights -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Section-by-Section Breakdown -->
+<section class="lg:col-span-2">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-md">Section Breakdown</h2>
+<div class="space-y-sm">
+<!-- Section 01 -->
+<div class="glass-card rounded-lg p-sm">
+<div class="flex justify-between items-end mb-xs">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Section 01</span>
+<h4 class="font-body-lg text-body-lg text-on-surface font-medium">Node.js Fundamentals</h4>
+</div>
+<span class="font-body-md text-body-md text-primary font-semibold">100%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full progress-bar-fill-green rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<!-- Section 02 -->
+<div class="glass-card rounded-lg p-sm">
+<div class="flex justify-between items-end mb-xs">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Section 02</span>
+<h4 class="font-body-lg text-body-lg text-on-surface font-medium">Asynchronous Programming</h4>
+</div>
+<span class="font-body-md text-body-md text-primary font-semibold">80%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full progress-bar-fill-green rounded-full" style="width: 80%;"></div>
+</div>
+</div>
+<!-- Section 03 -->
+<div class="glass-card rounded-lg p-sm">
+<div class="flex justify-between items-end mb-xs">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-1">Section 03</span>
+<h4 class="font-body-lg text-body-lg text-on-surface font-medium">Streams &amp; Buffers</h4>
+</div>
+<span class="font-body-md text-body-md text-secondary font-semibold">50%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full progress-bar-fill-yellow rounded-full" style="width: 50%;"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Insights Sidebar -->
+<aside class="space-y-gutter">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-md">Insights</h2>
+<!-- Streak -->
+<div class="bg-surface-container-low border border-outline-variant/50 rounded-xl p-md flex items-center gap-sm">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[28px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Current Streak</div>
+<div class="font-headline-md text-headline-md text-on-surface">5 Days</div>
+</div>
+</div>
+<!-- Strongest Section -->
+<div class="glass-card rounded-xl p-md">
+<h3 class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-xs flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+                        Strongest Section
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface font-medium">Asynchronous Programming</p>
+</div>
+<!-- Needs Practice -->
+<div class="glass-card rounded-xl p-md border-l-2 border-l-secondary">
+<h3 class="font-label-sm text-label-sm text-secondary uppercase tracking-wider mb-xs flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">priority_high</span>
+                        Needs More Practice
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface font-medium">Streams &amp; Buffers</p>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-xl mt-auto bg-surface-container-lowest border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center px-lg max-w-container-max mx-auto gap-md">
+<div class="font-headline-md text-headline-md font-bold text-primary opacity-80 hover:opacity-100 transition-opacity cursor-pointer">
+                Node.js Developers
+            </div>
+<div class="flex flex-wrap justify-center gap-sm md:gap-md">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Documentation</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Community Discord</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant opacity-80">
+                © 2024 Node.js Developers Community
+            </div>
+</div>
+</footer>
+</body></html>

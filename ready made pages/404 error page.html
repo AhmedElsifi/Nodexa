@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>404 - Module Not Found | Node.js Developers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-lowest": "#0a0e14",
+                      "error-container": "#93000a",
+                      "primary": "#77dd6d",
+                      "on-surface-variant": "#becab7",
+                      "on-error": "#690005",
+                      "secondary-fixed-dim": "#dec800",
+                      "tertiary-fixed-dim": "#5cd5f6",
+                      "surface-container-high": "#262a31",
+                      "primary-container": "#3fa43d",
+                      "on-tertiary-container": "#002e39",
+                      "on-secondary": "#373100",
+                      "on-tertiary-fixed": "#001f27",
+                      "surface-container-low": "#181c22",
+                      "surface-bright": "#353940",
+                      "outline-variant": "#3f4a3b",
+                      "on-error-container": "#ffdad6",
+                      "inverse-surface": "#dfe2eb",
+                      "secondary-fixed": "#fce425",
+                      "on-surface": "#dfe2eb",
+                      "surface-tint": "#77dd6d",
+                      "tertiary-fixed": "#b1ecff",
+                      "outline": "#899483",
+                      "on-tertiary-fixed-variant": "#004e5e",
+                      "on-secondary-fixed": "#201c00",
+                      "on-primary": "#003a05",
+                      "on-secondary-container": "#635800",
+                      "primary-fixed": "#92fa86",
+                      "on-primary-fixed": "#002202",
+                      "tertiary-container": "#009ebc",
+                      "on-primary-container": "#003204",
+                      "surface-variant": "#31353c",
+                      "surface-dim": "#10141a",
+                      "surface": "#10141a",
+                      "on-tertiary": "#003641",
+                      "on-background": "#dfe2eb",
+                      "primary-fixed-dim": "#77dd6d",
+                      "inverse-on-surface": "#2d3137",
+                      "surface-container": "#1c2026",
+                      "background": "#10141a",
+                      "surface-container-highest": "#31353c",
+                      "error": "#ffb4ab",
+                      "tertiary": "#5cd5f6",
+                      "secondary": "#ffed76",
+                      "on-secondary-fixed-variant": "#504700",
+                      "inverse-primary": "#006e12",
+                      "secondary-container": "#e7d000",
+                      "on-primary-fixed-variant": "#00530b"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "lg": "40px",
+                      "sm": "16px",
+                      "xl": "64px",
+                      "xs": "8px",
+                      "md": "24px",
+                      "base": "4px",
+                      "container-max": "1280px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-xl": [
+                              "Geist"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Geist"
+                      ],
+                      "code-block": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-md": [
+                              "Geist"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "code-block": [
+                              "14px",
+                              {
+                                      "lineHeight": "22px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .terminal-cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2em;
+            background-color: theme('colors.primary');
+            vertical-align: middle;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 15px rgba(119, 221, 109, 0.2);
+            border-color: theme('colors.primary');
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Suppression Logic Applied: TopNav and SideNav are hidden on Error/Transactional pages -->
+<!-- Main Content Canvas (404 Page) -->
+<main class="flex-grow flex items-center justify-center p-md md:p-xl relative overflow-hidden">
+<!-- Subtle background decorative element -->
+<div class="absolute inset-0 z-0 pointer-events-none opacity-10 flex items-center justify-center">
+<span class="material-symbols-outlined text-[40vw] text-primary" style="font-variation-settings: 'FILL' 0;">
+                data_object
+            </span>
+</div>
+<div class="z-10 w-full max-w-3xl flex flex-col items-center text-center">
+<!-- Terminal Graphic -->
+<div class="w-full max-w-lg mb-xl bg-surface-container-low border border-outline-variant rounded-lg overflow-hidden shadow-sm hover:border-primary/50 transition-colors duration-300">
+<div class="bg-surface-container border-b border-outline-variant px-sm py-xs flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<div class="w-3 h-3 rounded-full bg-secondary"></div>
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+<span class="ml-auto font-label-sm text-label-sm text-on-surface-variant">server.js</span>
+</div>
+<div class="p-md text-left font-code-block text-code-block text-on-surface-variant bg-[#0D1117] space-y-2">
+<p><span class="text-secondary">$</span> node server.js</p>
+<p class="text-error">Error: Cannot find module './routes/current-page'</p>
+<p class="text-on-surface-variant opacity-70">    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:880:15)</p>
+<p class="text-on-surface-variant opacity-70">    at Function.Module._load (internal/modules/cjs/loader.js:725:27)</p>
+<p class="text-primary mt-4">&gt; <span class="text-on-surface">Initiating fallback routing...</span><span class="terminal-cursor"></span></p>
+</div>
+</div>
+<!-- Typography & Messaging -->
+<h1 class="font-headline-xl text-headline-xl text-primary mb-sm tracking-tighter">
+                404
+            </h1>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-md">
+                Module Not Found
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mx-auto mb-xl leading-relaxed">
+                The page you're looking for has moved, been renamed, or doesn't exist in our current directory. Check the URL or head back home.
+            </p>
+<!-- Actions -->
+<div class="flex flex-col sm:flex-row items-center gap-md">
+<a class="px-md py-sm bg-primary text-on-primary font-body-md font-semibold rounded hover:bg-primary-fixed-dim active:scale-95 transition-all duration-200 w-full sm:w-auto text-center flex items-center justify-center gap-2 glow-hover shadow-lg shadow-primary/10" href="#">
+<span class="material-symbols-outlined" style="font-size: 20px;">home</span>
+                    Back to Dashboard
+                </a>
+<a class="px-md py-sm bg-surface-container-low border border-outline-variant text-on-surface font-body-md rounded hover:bg-surface-variant/50 hover:text-primary hover:border-primary/50 active:scale-95 transition-all duration-200 w-full sm:w-auto text-center flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-size: 20px;">search</span>
+                    Search Sections
+                </a>
+</div>
+</div>
+</main>
+<!-- Footer Component from JSON -->
+<footer class="bg-surface-container-lowest w-full py-xl mt-auto border-t border-outline-variant flat no shadows font-label-sm text-label-sm">
+<div class="flex flex-col md:flex-row justify-between items-center px-lg max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary mb-sm md:mb-0">
+<!-- Brand logo from Shared Components -->
+</div>
+<div class="text-on-surface-variant mb-md md:mb-0">
+                © 2024 Node.js Developers Community
+            </div>
+<nav class="flex flex-wrap justify-center gap-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Documentation</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Community Discord</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+</nav>
+</div>
+</footer>
+</body></html>

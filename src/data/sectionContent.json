@@ -1,0 +1,80 @@
+[
+  {
+    "sectionId": "01",
+    "title": "Intro to Node.js",
+    "readTime": "15 min read",
+    "file": "../content/sections/01-intro-to-nodejs.md",
+    "tableOfContents": [
+      { "id": "introduction", "label": "Introduction" },
+      { "id": "event-loop", "label": "The Event Loop" },
+      { "id": "modules-and-commonjs", "label": "Modules and CommonJS" },
+      { "id": "npm-ecosystem", "label": "NPM Ecosystem" },
+      { "id": "building-an-http-server", "label": "Building an HTTP Server" }
+    ]
+  },
+  {
+    "sectionId": "02",
+    "title": "NPM and Packages",
+    "readTime": "20 min read",
+    "file": "../content/sections/02-npm-and-packages.md",
+    "tableOfContents": [
+      { "id": "what-is-npm", "label": "What is NPM" },
+      { "id": "packagejson", "label": "package.json" },
+      { "id": "dependencies", "label": "Dependencies" },
+      { "id": "scripts", "label": "Scripts" },
+      { "id": "publishing-packages", "label": "Publishing Packages" }
+    ]
+  },
+  {
+    "sectionId": "03",
+    "title": "Async Programming",
+    "readTime": "25 min read",
+    "file": "../content/sections/03-async-programming.md",
+    "tableOfContents": [
+      { "id": "callbacks", "label": "Callbacks" },
+      { "id": "promises", "label": "Promises" },
+      { "id": "asyncawait", "label": "Async/Await" },
+      { "id": "event-emitter", "label": "Event Emitter" },
+      { "id": "error-handling", "label": "Error Handling" }
+    ]
+  },
+  {
+    "sectionId": "04",
+    "title": "Data Persistence",
+    "readTime": "30 min read",
+    "file": "../content/sections/04-data-persistence.md",
+    "tableOfContents": [
+      { "id": "introduction-to-mongodb", "label": "Introduction to MongoDB" },
+      { "id": "setting-up-mongoose", "label": "Setting Up Mongoose" },
+      { "id": "schema-design", "label": "Schema Design" },
+      { "id": "crud-operations", "label": "CRUD Operations" },
+      { "id": "validation", "label": "Validation" }
+    ]
+  },
+  {
+    "sectionId": "05",
+    "title": "RESTful API Design",
+    "readTime": "35 min read",
+    "file": "../content/sections/05-restful-api-design.md",
+    "tableOfContents": [
+      { "id": "restful-principles", "label": "RESTful Principles" },
+      { "id": "designing-endpoints", "label": "Designing Endpoints" },
+      { "id": "authentication-with-jwt", "label": "Authentication with JWT" },
+      { "id": "authorization-middleware", "label": "Authorization Middleware" },
+      { "id": "rate-limiting", "label": "Rate Limiting" }
+    ]
+  },
+  {
+    "sectionId": "06",
+    "title": "Deployment and Scaling",
+    "readTime": "25 min read",
+    "file": "../content/sections/06-deployment-and-scaling.md",
+    "tableOfContents": [
+      { "id": "introduction-to-docker", "label": "Introduction to Docker" },
+      { "id": "creating-a-dockerfile", "label": "Creating a Dockerfile" },
+      { "id": "docker-compose", "label": "Docker Compose" },
+      { "id": "pm2-process-management", "label": "PM2 Process Management" },
+      { "id": "deployment-checklist", "label": "Deployment Checklist" }
+    ]
+  }
+]
