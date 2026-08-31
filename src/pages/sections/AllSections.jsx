@@ -21,19 +21,20 @@ export default function AllSections() {
     categoryMap[activeCategory] === null
       ? sections
       : sections.filter((s) =>
-          categoryMap[activeCategory]?.includes(s.category)
+          categoryMap[activeCategory]?.includes(s.category),
         );
 
   return (
     <main className="max-w-[1280px] mx-auto w-full px-md pb-xl flex flex-col gap-lg">
       <header className="flex flex-col md:flex-row justify-between items-start md:items-end gap-md">
         <div>
-          <h1 className="font-headline-xl text-[48px] leading-[56px] tracking-tight font-bold text-on-surface">
+          <h1 className="font-headline-xl text-headline-xl leading-14 tracking-tight font-bold text-on-surface">
             Course Sections
           </h1>
-          <p className="font-sans text-[18px] leading-[28px] text-on-surface-variant mt-xs max-w-fit">
+          <p className="font-sans text-body-lg leading-7 text-on-surface-variant mt-xs max-w-fit">
             Master backend development from fundamentals to advanced
-            microservices. Track your progress and dive into specialized modules.
+            microservices. Track your progress and dive into specialized
+            modules.
           </p>
         </div>
         <FilterPills

@@ -20,7 +20,8 @@ export default function MCQuiz() {
 
   const question = quiz?.questions[currentQuestion];
   const totalQuestions = quiz?.questions.length ?? 0;
-  const progressPercent = totalQuestions > 0 ? ((currentQuestion + 1) / totalQuestions) * 100 : 0;
+  const progressPercent =
+    totalQuestions > 0 ? ((currentQuestion + 1) / totalQuestions) * 100 : 0;
 
   const handleNext = () => {
     const updatedAnswers = { ...answers, [currentQuestion]: selectedAnswer };
@@ -36,7 +37,13 @@ export default function MCQuiz() {
         else incorrectIds.push(q.id);
       });
       const score = Math.round((correctIds.length / totalQuestions) * 100);
-      const data = { correctIds, incorrectIds, correctCount: correctIds.length, score, allAnswers: updatedAnswers };
+      const data = {
+        correctIds,
+        incorrectIds,
+        correctCount: correctIds.length,
+        score,
+        allAnswers: updatedAnswers,
+      };
       setResultData(data);
       recordQuizAttempt(id, score, totalQuestions, correctIds, incorrectIds);
     }
@@ -60,15 +67,30 @@ export default function MCQuiz() {
     return (
       <main className="max-w-[1280px] mx-auto w-full px-md pb-xl">
         <div className="text-center py-xl">
-          <h1 className="font-headline-xl text-[48px] leading-[56px] font-bold text-on-surface mb-md">Quiz Not Found</h1>
-          <Link to="/sections" className="text-primary hover:text-primary-fixed">Back to Sections</Link>
+          <h1 className="font-headline-xl text-headline-xl leading-14 font-bold text-on-surface mb-md">
+            Quiz Not Found
+          </h1>
+          <Link
+            to="/sections"
+            className="text-primary hover:text-primary-fixed"
+          >
+            Back to Sections
+          </Link>
         </div>
       </main>
     );
   }
 
   if (resultData) {
-    return <QuizResult resultData={resultData} totalQuestions={totalQuestions} quiz={quiz} sectionId={id} onRetake={handleRetake} />;
+    return (
+      <QuizResult
+        resultData={resultData}
+        totalQuestions={totalQuestions}
+        quiz={quiz}
+        sectionId={id}
+        onRetake={handleRetake}
+      />
+    );
   }
 
   return (
@@ -76,24 +98,44 @@ export default function MCQuiz() {
       <div className="w-full max-w-fit flex flex-col gap-lg">
         <div className="flex flex-col gap-sm">
           <div className="flex justify-between items-center">
-            <span className="font-code text-[12px] leading-[16px] tracking-wider text-on-surface-variant uppercase">{quiz.sectionTitle}</span>
-            <span className="font-code text-[12px] leading-[16px] tracking-wider text-primary font-bold">Question {currentQuestion + 1} of {totalQuestions}</span>
+            <span className="font-code text-label-sm leading-[16px] tracking-wider text-on-surface-variant uppercase">
+              {quiz.sectionTitle}
+            </span>
+            <span className="font-code text-label-sm leading-[16px] tracking-wider text-primary font-bold">
+              Question {currentQuestion + 1} of {totalQuestions}
+            </span>
           </div>
           <div className="w-full h-2 bg-surface-container-high rounded-full overflow-hidden">
-            <div className="h-full bg-primary transition-all duration-500 ease-out shadow-[0_0_8px_rgba(119,221,109,0.5)]" style={{ width: `${progressPercent}%` }} />
+            <div
+              className="h-full bg-primary transition-all duration-500 ease-out shadow-[0_0_8px_rgba(119,221,109,0.5)]"
+              style={{ width: `${progressPercent}%` }}
+            />
           </div>
         </div>
 
-        <QuizQuestion question={question} selectedAnswer={selectedAnswer} onSelect={setSelectedAnswer} />
+        <QuizQuestion
+          question={question}
+          selectedAnswer={selectedAnswer}
+          onSelect={setSelectedAnswer}
+        />
 
         <div className="flex flex-col-reverse sm:flex-row justify-center sm:justify-between items-center gap-sm pt-md">
-          <button onClick={handlePrevious} disabled={currentQuestion === 0}
-            className={`font-sans text-[16px] leading-[24px] font-semibold py-sm px-xl rounded-lg flex items-center gap-xs transition-all active:scale-95 ${currentQuestion === 0 ? "text-on-surface-variant opacity-50 cursor-not-allowed" : "text-on-surface hover:text-primary"}`}>
-            <span className="material-symbols-outlined">arrow_back</span>Previous
+          <button
+            onClick={handlePrevious}
+            disabled={currentQuestion === 0}
+            className={`font-sans text-body-md leading-[24px] font-semibold py-sm px-xl rounded-lg flex items-center gap-xs transition-all active:scale-95 ${currentQuestion === 0 ? "text-on-surface-variant opacity-50 cursor-not-allowed" : "text-on-surface hover:text-primary"}`}
+          >
+            <span className="material-symbols-outlined">arrow_back</span>
+            Previous
           </button>
-          <button onClick={handleNext} disabled={selectedAnswer === null}
-            className={`font-sans text-[16px] leading-[24px] font-semibold py-sm px-xl rounded-lg flex items-center gap-xs transition-all active:scale-95 ${selectedAnswer === null ? "bg-surface-container-high text-on-surface-variant cursor-not-allowed" : "bg-secondary text-[#000000] hover:bg-secondary-fixed"}`}>
-            {currentQuestion === totalQuestions - 1 ? "Finish" : "Next Question"}
+          <button
+            onClick={handleNext}
+            disabled={selectedAnswer === null}
+            className={`font-sans text-body-md leading-[24px] font-semibold py-sm px-xl rounded-lg flex items-center gap-xs transition-all active:scale-95 ${selectedAnswer === null ? "bg-surface-container-high text-on-surface-variant cursor-not-allowed" : "bg-secondary text-[#000000] hover:bg-secondary-fixed"}`}
+          >
+            {currentQuestion === totalQuestions - 1
+              ? "Finish"
+              : "Next Question"}
             <span className="material-symbols-outlined">arrow_forward</span>
           </button>
         </div>

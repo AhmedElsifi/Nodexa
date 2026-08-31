@@ -14,7 +14,7 @@ export default function RootLayout() {
   return (
     <div className="bg-background text-on-background min-h-screen flex flex-col font-sans antialiased">
       <NavBar />
-      <div className="flex-grow pt-20">
+      <div className="grow pt-20">
         <Outlet />
       </div>
       <Footer />

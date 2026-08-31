@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
 @import "tailwindcss";
 
-@variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -122,16 +122,20 @@ body {
   font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
-button, a[role="button"], [type="submit"] {
+button,
+a[role="button"],
+[type="submit"] {
   transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
 }
 
-button:hover:not(:disabled), a[role="button"]:hover {
+button:hover:not(:disabled),
+a[role="button"]:hover {
   transform: scale(1.01) !important;
   box-shadow: 0 0 20px rgba(119, 221, 109, 0.15);
 }
 
-button:active:not(:disabled), a[role="button"]:active {
+button:active:not(:disabled),
+a[role="button"]:active {
   transform: scale(0.98) !important;
 }
 
@@ -151,8 +155,12 @@ button:active:not(:disabled), a[role="button"]:active {
 }
 
 @keyframes slideInRight {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .animate-slide-in {
@@ -169,8 +177,13 @@ button:active:not(:disabled), a[role="button"]:active {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /* Code Block Customization */
@@ -203,10 +216,18 @@ button:active:not(:disabled), a[role="button"]:active {
   color: #c9d1d9;
 }
 
-.code-keyword { color: #ff7b72; }
-.code-string { color: #a5d6ff; }
-.code-function { color: #d2a8ff; }
-.code-comment { color: #8b949e; }
+.code-keyword {
+  color: #ff7b72;
+}
+.code-string {
+  color: #a5d6ff;
+}
+.code-function {
+  color: #d2a8ff;
+}
+.code-comment {
+  color: #8b949e;
+}
 
 .glow-hover:hover {
   box-shadow: 0 0 15px rgba(119, 221, 109, 0.2);
