@@ -13,9 +13,11 @@ export default function DifficultyBadge({ difficulty }) {
 
   return (
     <span
-      className={`bg-[#1F2937] px-sm py-xs rounded-full font-code text-[12px] leading-[16px] tracking-wider border flex items-center gap-xs ${colorMap[difficulty] || colorMap.Easy}`}
+      className={`bg-[#1F2937] px-sm py-xs rounded-full font-code text-label-sm leading-[16px] tracking-wider border flex items-center gap-xs ${colorMap[difficulty] || colorMap.Easy}`}
     >
-      <span className={`w-2 h-2 rounded-full ${dotColor[difficulty] || dotColor.Easy}`} />{" "}
+      <span
+        className={`w-2 h-2 rounded-full ${dotColor[difficulty] || dotColor.Easy}`}
+      />{" "}
       {difficulty}
     </span>
   );

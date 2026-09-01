@@ -125,6 +125,27 @@ MarkdownComponents.components = {
       {children}
     </blockquote>
   ),
+  hr: () => <hr className="my-lg border-outline-variant" />,
+  table: ({ children }) => (
+    <div className="overflow-x-auto mb-md">
+      <table className="w-full border-collapse border border-outline-variant text-on-surface-variant">
+        {children}
+      </table>
+    </div>
+  ),
+  thead: ({ children }) => <thead className="bg-surface-container">{children}</thead>,
+  tbody: ({ children }) => <tbody>{children}</tbody>,
+  tr: ({ children }) => <tr className="border-b border-outline-variant">{children}</tr>,
+  th: ({ children }) => (
+    <th className="px-md py-sm text-left font-sans text-body-md font-semibold text-on-surface border border-outline-variant">
+      {children}
+    </th>
+  ),
+  td: ({ children }) => (
+    <td className="px-md py-sm font-sans text-body-md border border-outline-variant">
+      {children}
+    </td>
+  ),
 };
 
 export default MarkdownComponents;

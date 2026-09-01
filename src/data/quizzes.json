@@ -1,139 +1,306 @@
 [
   {
-    "sectionId": "01",
-    "sectionTitle": "Intro to Node.js",
+    "sectionId": 1,
+    "sectionTitle": "HTML Basics",
     "questions": [
       {
-        "id": "01-q1",
-        "question": "Which JavaScript engine powers Node.js?",
-        "options": ["SpiderMonkey", "V8", "JavaScriptCore", "Chakra"],
-        "correctIndex": 1
-      },
-      {
-        "id": "01-q2",
-        "question": "What does `npm` stand for?",
-        "options": ["Node Package Manager", "New Project Manager", "Network Protocol Manager", "Node Process Manager"],
+        "id": "quiz-01-01",
+        "question": "What is the correct DOCTYPE declaration for HTML5?",
+        "options": [
+          "<!DOCTYPE html>",
+          "<!DOCTYPE HTML5>",
+          "<!DOCTYPE html5>",
+          "<!DOCTYPE>"
+        ],
         "correctIndex": 0
       },
       {
-        "id": "01-q3",
-        "question": "Which module is used to create an HTTP server?",
-        "options": ["express", "http", "server", "net"],
-        "correctIndex": 1
-      },
-      {
-        "id": "01-q4",
-        "question": "Which Node.js module is used for handling file paths?",
-        "options": ["http", "path", "fs", "url"],
+        "id": "quiz-01-02",
+        "question": "Which HTML element is used to define the largest heading?",
+        "options": [
+          "<heading>",
+          "<h6>",
+          "<h1>",
+          "<head>"
+        ],
         "correctIndex": 2
       },
       {
-        "id": "01-q5",
-        "question": "What is the Event Loop in Node.js?",
+        "id": "quiz-01-03",
+        "question": "Which tag is used to create an unordered list?",
         "options": [
-          "A thread pool for parallel execution",
-          "A mechanism for handling non-blocking I/O",
-          "A loop that continuously checks for user input",
-          "A function that runs on startup"
+          "<ol>",
+          "<li>",
+          "<list>",
+          "<ul>"
+        ],
+        "correctIndex": 3
+      },
+      {
+        "id": "quiz-01-04",
+        "question": "What is the purpose of the <thead> element?",
+        "options": [
+          "To define the main content of a table",
+          "To group header content in a table",
+          "To define the footer of a table",
+          "To create a table caption"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-05",
+        "question": "Which attribute is required in the <html> tag for accessibility and SEO?",
+        "options": [
+          "class",
+          "id",
+          "lang",
+          "title"
         ],
         "correctIndex": 2
       }
     ]
   },
   {
-    "sectionId": "02",
-    "sectionTitle": "NPM & Packages",
+    "sectionId": 2,
+    "sectionTitle": "HTML Forms & CSS Basics",
     "questions": [
       {
-        "id": "02-q1",
-        "question": "Which command initializes a new npm project?",
-        "options": ["npm new", "npm init", "npm create", "npm start"],
-        "correctIndex": 1
-      },
-      {
-        "id": "02-q2",
-        "question": "Where are devDependencies installed?",
-        "options": ["Only in production", "Only in development", "Both environments", "In test environment only"],
-        "correctIndex": 1
-      },
-      {
-        "id": "02-q3",
-        "question": "What file defines project scripts in npm?",
-        "options": [".npmrc", "package.json", "package-lock.json", ".npmignore"],
-        "correctIndex": 1
-      },
-      {
-        "id": "02-q4",
-        "question": "What does `npm install` do by default?",
+        "id": "quiz-02-01",
+        "question": "Which element is used to create a form in HTML?",
         "options": [
-          "Installs all dependencies",
-          "Installs only production dependencies",
-          "Installs only dev dependencies",
-          "Removes node_modules"
+          "<input>",
+          "<form>",
+          "<fieldset>",
+          "<label>"
         ],
         "correctIndex": 1
       },
       {
-        "id": "02-q5",
-        "question": "Which command updates all packages to their latest versions?",
-        "options": ["npm upgrade", "npm update", "npm latest", "npm refresh"],
+        "id": "quiz-02-02",
+        "question": "How do you link an external CSS file to an HTML document?",
+        "options": [
+          "<style src=\"style.css\">",
+          "<css href=\"style.css\">",
+          "<link rel=\"stylesheet\" href=\"style.css\">",
+          "<script src=\"style.css\">"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-03",
+        "question": "What is the correct way to create a checkbox in HTML?",
+        "options": [
+          "<input type=\"check\">",
+          "<input type=\"checkbox\">",
+          "<checkbox>",
+          "<input type=\"option\">"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-04",
+        "question": "Which input type allows users to select a color?",
+        "options": [
+          "type=\"colour\"",
+          "type=\"color\"",
+          "type=\"rgb\"",
+          "type=\"palette\""
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-05",
+        "question": "What does the <label> element's 'for' attribute do?",
+        "options": [
+          "It styles the input field",
+          "It links the label to a specific form control",
+          "It creates a new form field",
+          "It submits the form"
+        ],
         "correctIndex": 1
       }
     ]
   },
   {
-    "sectionId": "03",
-    "sectionTitle": "Async Programming",
+    "sectionId": 3,
+    "sectionTitle": "CSS Selectors & Box Model",
     "questions": [
       {
-        "id": "03-q1",
-        "question": "What does `await` do in an async function?",
+        "id": "quiz-03-01",
+        "question": "Which CSS selector targets elements with a specific class?",
         "options": [
-          "Pauses execution until the Promise resolves",
-          "Stops the entire program",
-          "Creates a new thread",
-          "Ignores the result"
+          "#classname",
+          ".classname",
+          "classname",
+          "*classname"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-02",
+        "question": "What CSS property is used to add space inside an element's border?",
+        "options": [
+          "margin",
+          "spacing",
+          "padding",
+          "indent"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-03",
+        "question": "What does 'box-sizing: border-box' do?",
+        "options": [
+          "Removes the element's border",
+          "Includes padding and border in the element's total width",
+          "Makes the element invisible",
+          "Removes margin from the element"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-04",
+        "question": "Which positioning method removes an element from the document flow?",
+        "options": [
+          "position: relative",
+          "position: static",
+          "position: absolute",
+          "position: sticky"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-05",
+        "question": "What property controls the stacking order of positioned elements?",
+        "options": [
+          "stack-order",
+          "layer",
+          "z-index",
+          "order"
+        ],
+        "correctIndex": 2
+      }
+    ]
+  },
+  {
+    "sectionId": 4,
+    "sectionTitle": "CSS Flexbox",
+    "questions": [
+      {
+        "id": "quiz-04-01",
+        "question": "Which CSS property enables Flexbox on a container?",
+        "options": [
+          "display: block",
+          "display: flex",
+          "position: flex",
+          "flex: true"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-02",
+        "question": "What does 'justify-content: center' do in a flex container?",
+        "options": [
+          "Aligns items vertically",
+          "Centers items horizontally along the main axis",
+          "Wraps items to the next line",
+          "Distributes items evenly"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-03",
+        "question": "Which property allows flex items to wrap onto multiple lines?",
+        "options": [
+          "flex-wrap",
+          "flex-flow",
+          "flex-lines",
+          "flex-break"
         ],
         "correctIndex": 0
       },
       {
-        "id": "03-q2",
-        "question": "What is the correct way to handle errors with async/await?",
+        "id": "quiz-04-04",
+        "question": "What does the 'flex-grow' property do?",
         "options": [
-          "Using .catch()",
-          "Using try/catch",
-          "Using if/else",
-          "Using switch/case"
+          "Shrinks the flex item",
+          "Defines how much the item should grow relative to others",
+          "Sets the initial size of the item",
+          "Aligns the item vertically"
         ],
         "correctIndex": 1
       },
       {
-        "id": "03-q3",
-        "question": "What is a Promise?",
+        "id": "quiz-04-05",
+        "question": "Which property aligns items along the cross axis in a flex container?",
         "options": [
-          "A guaranteed result",
-          "An object representing eventual completion or failure",
-          "A synchronous function",
-          "A type of loop"
+          "justify-content",
+          "align-items",
+          "flex-align",
+          "cross-align"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "sectionId": 5,
+    "sectionTitle": "CSS Animations & Advanced",
+    "questions": [
+      {
+        "id": "quiz-05-01",
+        "question": "Where should CSS custom properties (variables) typically be defined?",
+        "options": [
+          "In the body element",
+          "In the :root selector",
+          "In a <style> tag anywhere",
+          "In an external file only"
         ],
         "correctIndex": 1
       },
       {
-        "id": "03-q4",
-        "question": "Which method is used to emit events in Node.js?",
-        "options": ["trigger()", "fire()", "emit()", "dispatch()"],
+        "id": "quiz-05-02",
+        "question": "Which pseudo-class is used to define styles when a user hovers over an element?",
+        "options": [
+          ":active",
+          ":focus",
+          ":hover",
+          ":visited"
+        ],
         "correctIndex": 2
       },
       {
-        "id": "03-q5",
-        "question": "What is callback hell?",
+        "id": "quiz-05-03",
+        "question": "What CSS rule is used to define animation keyframes?",
         "options": [
-          "A debugging tool",
-          "Deeply nested callbacks that reduce readability",
-          "A testing framework",
-          "A type of Promise"
+          "@animation",
+          "@keyframes",
+          "@frames",
+          "@animate"
         ],
         "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-04",
+        "question": "How do you create a media query for screens smaller than 768px?",
+        "options": [
+          "@media screen > 768px",
+          "@media (max-width: 768px)",
+          "@media (min-width: 768px)",
+          "@media size < 768px"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-05",
+        "question": "Which CSS property creates a grid layout?",
+        "options": [
+          "display: grid",
+          "layout: grid",
+          "grid: true",
+          "position: grid"
+        ],
+        "correctIndex": 0
       }
     ]
   }

@@ -15,12 +15,19 @@ export default function SearchResults({ results, onClose }) {
         const meta = groupMeta[type];
         return (
           <div key={type}>
-            <h3 className={`font-code text-[12px] leading-[16px] tracking-wider ${meta.color} uppercase mb-sm`}>
+            <h3
+              className={`font-code text-label-sm leading-[16px] tracking-wider ${meta.color} uppercase mb-sm`}
+            >
               {meta.label} ({items.length})
             </h3>
             <div className="flex flex-col gap-xs">
               {items.map((item) => (
-                <SearchResultItem key={item.id} type={type} item={item} onClose={onClose} />
+                <SearchResultItem
+                  key={item.id}
+                  type={type}
+                  item={item}
+                  onClose={onClose}
+                />
               ))}
             </div>
           </div>

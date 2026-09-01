@@ -1,7 +1,7 @@
 export default function QuizQuestion({ question, selectedAnswer, onSelect }) {
   return (
     <div className="bg-surface border border-outline-variant rounded-xl p-lg shadow-sm">
-      <h2 className="font-headline-lg text-[32px] leading-[40px] tracking-tight font-semibold text-on-surface mb-xl">
+      <h2 className="font-headline-lg text-headline-lg leading-[40px] tracking-tight font-semibold text-on-surface mb-xl">
         {question.question}
       </h2>
       <div className="flex flex-col gap-md">
@@ -17,12 +17,16 @@ export default function QuizQuestion({ question, selectedAnswer, onSelect }) {
                   : "bg-surface-container-low border border-outline-variant hover:border-primary hover:bg-surface-container-high group"
               }`}
             >
-              <span className={`font-code text-[14px] leading-[22px] transition-colors ${isSelected ? "text-primary" : "text-on-surface-variant group-hover:text-on-surface"}`}>
+              <span
+                className={`font-code text-code-block leading-5.5 transition-colors ${isSelected ? "text-primary" : "text-on-surface-variant group-hover:text-on-surface"}`}
+              >
                 {option}
               </span>
               <span
                 className={`material-symbols-outlined transition-opacity ${isSelected ? "text-primary opacity-100" : "text-outline-variant opacity-0 group-hover:opacity-100"}`}
-                style={isSelected ? { fontVariationSettings: "'FILL' 1" } : undefined}
+                style={
+                  isSelected ? { fontVariationSettings: "'FILL' 1" } : undefined
+                }
               >
                 {isSelected ? "radio_button_checked" : "radio_button_unchecked"}
               </span>

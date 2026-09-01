@@ -2,7 +2,18 @@ import { Link } from "react-router-dom";
 import ProgressBar from "../ui/ProgressBar";
 
 export default function HomeSectionCard({ section }) {
-  const { id, title, description, difficulty, progress, taskCount, quizCount, tasksCompleted, quizzesCompleted, summaryCompleted } = section;
+  const {
+    id,
+    title,
+    description,
+    difficulty,
+    progress,
+    taskCount,
+    quizCount,
+    tasksCompleted,
+    quizzesCompleted,
+    summaryCompleted,
+  } = section;
 
   const difficultyColor = {
     Easy: "text-primary",
@@ -18,7 +29,7 @@ export default function HomeSectionCard({ section }) {
       to={`/sections/${id}`}
       className="bg-surface border border-outline-variant rounded-xl p-md flex flex-col relative overflow-hidden group hover:border-primary/40 hover:shadow-[0_0_15px_rgba(119,221,109,0.05)] transition-all duration-300 cursor-pointer"
     >
-      <div className="absolute -top-6 -right-2 font-headline-xl text-[140px] font-bold text-surface-variant/20 leading-none select-none pointer-events-none group-hover:text-primary/5 transition-colors duration-500">
+      <div className="absolute top-6 right-2 font-headline-xl text-[140px] font-bold text-surface-variant/20 leading-none select-none pointer-events-none group-hover:text-primary/5 transition-colors duration-500">
         {id}
       </div>
       <div className="flex justify-between items-start mb-sm relative z-10">

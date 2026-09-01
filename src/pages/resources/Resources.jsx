@@ -48,20 +48,8 @@ export default function Resources() {
         </p>
       </header>
 
-      <div className="flex flex-wrap gap-xs mb-lg pb-sm border-b border-outline-variant/30">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setActiveCategory(cat)}
-            className={`font-code text-[12px] leading-[16px] tracking-wider px-sm py-xs rounded-full transition-all ${
-              activeCategory === cat
-                ? "bg-primary-container text-on-primary-container font-semibold"
-                : "bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface border border-outline-variant"
-            }`}
-          >
-            {cat}
-          </button>
-        ))}
+      <div className="mb-lg pb-sm border-b border-outline-variant/30">
+        <FilterPills categories={categories} activeCategory={activeCategory} onSelect={setActiveCategory} />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">

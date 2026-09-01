@@ -31,18 +31,31 @@ export function useOverallStats(userData) {
     }
 
     const totalSections = sectionsData.length;
-    const completion = totalSections > 0 ? Math.round((completedSections / totalSections) * 100) : 0;
-    const avgQuizScore = quizAttemptsCount > 0 ? Math.round(quizScoreSum / quizAttemptsCount) : 0;
-    return { completion, tasksCompleted: completedTasks, totalTasks, avgQuizScore, totalQuizzes };
+    const completion =
+      totalSections > 0
+        ? Math.round((completedSections / totalSections) * 100)
+        : 0;
+    const avgQuizScore =
+      quizAttemptsCount > 0 ? Math.round(quizScoreSum / quizAttemptsCount) : 0;
+    return {
+      completion,
+      tasksCompleted: completedTasks,
+      totalTasks,
+      avgQuizScore,
+      totalQuizzes,
+    };
   }, [userData]);
 }
 
 function computeSectionProgress(sectionEntry, totalTasks, totalQuizzes) {
   const parts = [];
   if (sectionEntry.summaryCompleted) parts.push(1);
-  if (totalTasks > 0) parts.push(sectionEntry.completedTasks.length / totalTasks);
+  if (totalTasks > 0)
+    parts.push(sectionEntry.completedTasks.length / totalTasks);
   if (totalQuizzes > 0) parts.push(sectionEntry.quizBestScore > 0 ? 1 : 0);
-  return parts.length > 0 ? Math.round((parts.reduce((a, b) => a + b, 0) / parts.length) * 100) : 0;
+  return parts.length > 0
+    ? Math.round((parts.reduce((a, b) => a + b, 0) / parts.length) * 100)
+    : 0;
 }
 
 export function computeEnrichedSection(section, userData) {
@@ -59,7 +72,10 @@ export function computeEnrichedSection(section, userData) {
   if (summaryDone) parts.push(1);
   if (totalTasks > 0) parts.push(completedTasks / totalTasks);
   if (totalQuizzes > 0) parts.push(quizCompleted);
-  const progress = parts.length > 0 ? Math.round((parts.reduce((a, b) => a + b, 0) / parts.length) * 100) : 0;
+  const progress =
+    parts.length > 0
+      ? Math.round((parts.reduce((a, b) => a + b, 0) / parts.length) * 100)
+      : 0;
 
   return {
     ...section,

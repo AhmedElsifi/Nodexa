@@ -1,114 +1,211 @@
 [
   {
     "sectionId": "01",
+    "sectionTitle": "HTML Basics",
     "tasks": [
       {
-        "id": "01-01",
-        "number": "Task 01",
-        "title": "Create a Basic HTTP Server",
-        "difficulty": "Medium",
-        "description": "Build a server using the core `http` module that responds to different routes with specific JSON payloads.",
-        "requirements": [
-          "Listen on port 3000.",
-          "Handle GET requests to `/api/status`.",
-          "Return a 404 for unknown routes."
-        ],
-        "hint": "Use `http.createServer()` and check `req.url` to determine which route was requested. Remember to set the `Content-Type` header to `application/json`.",
-        "solution": "```javascript\nconst http = require('http');\n\nconst server = http.createServer((req, res) => {\n  if (req.url === '/api/status' && req.method === 'GET') {\n    res.writeHead(200, { 'Content-Type': 'application/json' });\n    res.end(JSON.stringify({ status: 'ok', uptime: process.uptime() }));\n  } else {\n    res.writeHead(404, { 'Content-Type': 'application/json' });\n    res.end(JSON.stringify({ error: 'Route not found' }));\n  }\n});\n\nserver.listen(3000, () => {\n  console.log('Server running on port 3000');\n});\n```"
-      },
-      {
-        "id": "01-02",
-        "number": "Task 02",
-        "title": "Read and Write Files with 'fs'",
+        "id": "html-01-01",
+        "number": 1,
+        "title": "Create an HTML5 Boilerplate Document",
         "difficulty": "Easy",
-        "description": "Use the File System module to perform basic async read/write operations.",
-        "requirements": [
-          "Read a JSON configuration file.",
-          "Append a timestamp to a log file."
-        ],
-        "hint": "Use `fs.readFile()` for reading and `fs.appendFile()` for appending. Always handle errors in the callback.",
-        "solution": "```javascript\nconst fs = require('fs');\nconst path = require('path');\n\n// Read a JSON file\nfs.readFile(path.join(__dirname, 'config.json'), 'utf8', (err, data) => {\n  if (err) throw err;\n  const config = JSON.parse(data);\n  console.log('Config loaded:', config);\n});\n\n// Append to a log file\nconst logEntry = `[${new Date().toISOString()}] Application started\\n`;\nfs.appendFile(path.join(__dirname, 'app.log'), logEntry, (err) => {\n  if (err) throw err;\n  console.log('Log entry added');\n});\n```"
+        "description": "Create a complete HTML5 boilerplate document with the correct doctype declaration, html, head, and body elements. Include a title in the head section.",
+        "hint": "Remember that HTML5 uses `<!DOCTYPE html>` at the very top of the document. The `<html>` tag should have a `lang` attribute.",
+        "solution": ""
       },
       {
-        "id": "01-03",
-        "number": "Task 03",
-        "title": "Build a Simple Event Emitter",
+        "id": "html-01-02",
+        "number": 2,
+        "title": "Build a Table with Semantic Elements",
+        "difficulty": "Easy",
+        "description": "Build a table with `thead`, `tbody`, and `tfoot` sections using proper semantic HTML elements. Include at least 3 rows of data.",
+        "hint": "Use `<table>`, `<thead>`, `<tbody>`, `<tfoot>`, `<tr>`, `<th>`, and `<td>` elements. Headers go in `<th>` tags.",
+        "solution": ""
+      },
+      {
+        "id": "html-01-03",
+        "number": 3,
+        "title": "Create a Navigation Section Using Semantic HTML",
+        "difficulty": "Medium",
+        "description": "Create a complete page layout using semantic HTML elements including `<nav>`, `<header>`, `<section>`, and `<footer>`. The navigation should contain at least 3 links.",
+        "hint": "Semantic HTML helps with accessibility and SEO. Use `<nav>` for navigation, `<header>` for the top of the page, `<section>` for content areas, and `<footer>` for the bottom.",
+        "solution": ""
+      },
+      {
+        "id": "html-01-04",
+        "number": 4,
+        "title": "Build a Page with Heading Hierarchy and Nested Lists",
         "difficulty": "Hard",
-        "description": "Implement your own version of Node's core EventEmitter class from scratch to understand the observer pattern.",
-        "requirements": [
-          "Implement `on(eventName, listener)` method.",
-          "Implement `emit(eventName, ...args)` method.",
-          "Implement `once(eventName, listener)` method.",
-          "Handle multiple listeners for a single event safely."
-        ],
-        "hint": "Store listeners in an object where keys are event names and values are arrays of functions. For `once`, wrap the listener to remove itself after first call.",
-        "solution": "```javascript\nclass MyEventEmitter {\n  constructor() {\n    this.events = {};\n  }\n\n  on(event, listener) {\n    if (!this.events[event]) {\n      this.events[event] = [];\n    }\n    this.events[event].push(listener);\n    return this;\n  }\n\n  emit(event, ...args) {\n    if (!this.events[event]) return false;\n    this.events[event].forEach(listener => listener(...args));\n    return true;\n  }\n\n  once(event, listener) {\n    const wrapper = (...args) => {\n      listener(...args);\n      this.off(event, wrapper);\n    };\n    return this.on(event, wrapper);\n  }\n\n  off(event, listener) {\n    if (!this.events[event]) return;\n    this.events[event] = this.events[event].filter(l => l !== listener);\n  }\n}\n```"
+        "description": "Build a page that demonstrates proper heading hierarchy from `<h1>` to `<h6>` and includes nested ordered and unordered lists with at least 3 levels of nesting.",
+        "hint": "Headings should be used in order without skipping levels. Lists can be nested by placing a new `<ul>` or `<ol>` inside an `<li>` element.",
+        "solution": ""
       }
     ]
   },
   {
     "sectionId": "02",
+    "sectionTitle": "HTML Forms & CSS Basics",
     "tasks": [
       {
-        "id": "02-01",
-        "number": "Task 01",
-        "title": "Initialize and Configure a Project",
+        "id": "html-02-01",
+        "number": 1,
+        "title": "Create a Registration Form",
         "difficulty": "Easy",
-        "description": "Set up a new Node.js project with proper npm configuration and scripts.",
-        "requirements": [
-          "Initialize a new npm project.",
-          "Add start and dev scripts.",
-          "Install and configure nodemon as a dev dependency."
-        ],
-        "hint": "Run `npm init -y` to create a package.json, then edit the scripts section.",
-        "solution": "```bash\nnpm init -y\nnpm install --save-dev nodemon\n```\n\nThen in `package.json`:\n```json\n\"scripts\": {\n  \"start\": \"node src/index.js\",\n  \"dev\": \"nodemon src/index.js\"\n}\n```"
+        "description": "Create a registration form with username, email, and password fields. Each field should have a corresponding `<label>` element.",
+        "hint": "Use `<form>`, `<input>`, and `<label>` elements. The `for` attribute on labels should match the `id` on inputs.",
+        "solution": ""
       },
       {
-        "id": "02-02",
-        "number": "Task 02",
-        "title": "Create a Utility Package",
+        "id": "html-02-02",
+        "number": 2,
+        "title": "Build a Form with Various Input Types",
+        "difficulty": "Easy",
+        "description": "Build a form that includes radio buttons, checkboxes, and a select dropdown menu. Group related inputs using `<fieldset>` and `<legend>`.",
+        "hint": "Radio buttons share the same `name` attribute. Checkboxes can have individual `name` attributes. Use `<select>` with `<option>` elements for dropdowns.",
+        "solution": ""
+      },
+      {
+        "id": "html-02-03",
+        "number": 3,
+        "title": "Create a Form with Advanced Input Types",
         "difficulty": "Medium",
-        "description": "Build a small reusable utility module and prepare it for publishing.",
-        "requirements": [
-          "Create a module with at least 3 utility functions.",
-          "Export them properly using module.exports.",
-          "Write a README describing the package."
-        ],
-        "hint": "Think about common operations like date formatting, string manipulation, or validation.",
-        "solution": "```javascript\n// utils.js\nconst formatCurrency = (amount, currency = 'USD') => {\n  return new Intl.NumberFormat('en-US', { style: 'currency', currency }).format(amount);\n};\n\nconst capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);\n\nconst slugify = (str) => str.toLowerCase().replace(/\\s+/g, '-').replace(/[^\\w-]/g, '');\n\nmodule.exports = { formatCurrency, capitalize, slugify };\n```"
+        "description": "Create a form with file input, date input, and color input fields. Add appropriate labels and basic validation attributes.",
+        "hint": "Use `type=\"file\"`, `type=\"date\"`, and `type=\"color\"`. You can add `required`, `min`, `max`, and `accept` attributes for validation.",
+        "solution": ""
+      },
+      {
+        "id": "html-02-04",
+        "number": 4,
+        "title": "Style a Page Using All Three CSS Methods",
+        "difficulty": "Medium",
+        "description": "Style a page using all three CSS methods: inline styles, an internal `<style>` block, and an external CSS file linked via `<link>`.",
+        "hint": "Inline styles go in the `style` attribute. Internal CSS goes in a `<style>` tag in the `<head>`. External CSS uses a `<link rel=\"stylesheet\" href=\"style.css\">` tag.",
+        "solution": ""
       }
     ]
   },
   {
-    "sectionId": "03",
+    "sectionId": 3,
+    "sectionTitle": "CSS Selectors & Box Model",
     "tasks": [
       {
-        "id": "03-01",
-        "number": "Task 01",
-        "title": "Convert Callbacks to Promises",
-        "difficulty": "Medium",
-        "description": "Refactor existing callback-based code to use Promises for better readability.",
-        "requirements": [
-          "Wrap a callback-based function in a Promise.",
-          "Chain multiple async operations.",
-          "Handle errors properly."
-        ],
-        "hint": "Create a new function that returns a `new Promise()` and calls the callback-based function inside it.",
-        "solution": "```javascript\nconst fs = require('fs');\n\n// Promise wrapper\nconst readFileAsync = (path) => {\n  return new Promise((resolve, reject) => {\n    fs.readFile(path, 'utf8', (err, data) => {\n      if (err) reject(err);\n      else resolve(data);\n    });\n  });\n};\n\n// Chaining\nreadFileAsync('config.json')\n  .then(JSON.parse)\n  .then(config => console.log('Port:', config.port))\n  .catch(err => console.error('Error:', err.message));\n```"
+        "id": "css-03-01",
+        "number": 1,
+        "title": "Apply Styles Using Different Selectors",
+        "difficulty": "Easy",
+        "description": "Apply styles to elements using element selectors, class selectors, and ID selectors. Create at least one example of each.",
+        "hint": "Element selectors target HTML tags directly (e.g., `p`). Class selectors use a dot prefix (e.g., `.classname`). ID selectors use a hash prefix (e.g., `#idname`).",
+        "solution": ""
       },
       {
-        "id": "03-02",
-        "number": "Task 02",
-        "title": "Build a Custom Event System",
+        "id": "css-03-02",
+        "number": 2,
+        "title": "Create a Box Model Layout",
+        "difficulty": "Medium",
+        "description": "Create a layout that demonstrates proper use of margin, padding, and border using the CSS box model. Include elements with different box-sizing values.",
+        "hint": "Use `box-sizing: border-box` to include padding and border in the element's total width. Use `margin` for space outside the border and `padding` for space inside.",
+        "solution": ""
+      },
+      {
+        "id": "css-03-03",
+        "number": 3,
+        "title": "Position Elements Using Different Positioning Methods",
+        "difficulty": "Medium",
+        "description": "Position elements on a page using relative, absolute, and fixed positioning. Demonstrate how each positioning method affects document flow.",
+        "hint": "Relative positioning keeps the element in the document flow. Absolute positioning removes it from flow and positions relative to the nearest positioned ancestor. Fixed positioning is relative to the viewport.",
+        "solution": ""
+      },
+      {
+        "id": "css-03-04",
+        "number": 4,
+        "title": "Build a Layered Layout Using Z-Index",
         "difficulty": "Hard",
-        "description": "Create a typed event emitter with support for wildcard listeners.",
-        "requirements": [
-          "Support `on`, `emit`, `once`, and `off` methods.",
-          "Support wildcard `*` listeners that fire on any event.",
-          "Prevent memory leaks by tracking listener counts."
-        ],
-        "hint": "Use a Map to store listeners. For wildcards, check if a `*` listener exists when any event is emitted.",
-        "solution": "```javascript\nclass TypedEventEmitter {\n  constructor() {\n    this.listeners = new Map();\n    this.maxListeners = 10;\n  }\n\n  on(event, fn) {\n    if (!this.listeners.has(event)) {\n      this.listeners.set(event, []);\n    }\n    const list = this.listeners.get(event);\n    if (list.length >= this.maxListeners) {\n      console.warn(`Max listeners (${this.maxListeners}) exceeded for event: ${event}`);\n    }\n    list.push(fn);\n    return this;\n  }\n\n  emit(event, ...args) {\n    const list = this.listeners.get(event) || [];\n    const wildcards = this.listeners.get('*') || [];\n    [...list, ...wildcards].forEach(fn => fn(event, ...args));\n    return list.length + wildcards.length > 0;\n  }\n\n  once(event, fn) {\n    const wrapper = (e, ...args) => {\n      fn(e, ...args);\n      this.off(event, wrapper);\n    };\n    return this.on(event, wrapper);\n  }\n\n  off(event, fn) {\n    const list = this.listeners.get(event);\n    if (list) {\n      this.listeners.set(event, list.filter(l => l !== fn));\n    }\n    return this;\n  }\n}\n```"
+        "description": "Build a layered layout using `z-index` and positioning to stack multiple elements on top of each other with proper layering control.",
+        "hint": "`z-index` only works on positioned elements (position relative, absolute, fixed, or sticky). Higher z-index values appear on top of lower values.",
+        "solution": ""
+      }
+    ]
+  },
+  {
+    "sectionId": 4,
+    "sectionTitle": "CSS Flexbox",
+    "tasks": [
+      {
+        "id": "css-04-01",
+        "number": 1,
+        "title": "Center a Div Using Flexbox",
+        "difficulty": "Easy",
+        "description": "Center a div both horizontally and vertically on the page using CSS Flexbox properties.",
+        "hint": "Set `display: flex` on the parent container. Use `justify-content: center` for horizontal centering and `align-items: center` for vertical centering.",
+        "solution": ""
+      },
+      {
+        "id": "css-04-02",
+        "number": 2,
+        "title": "Create a Navigation Bar Using Flexbox",
+        "difficulty": "Medium",
+        "description": "Create a responsive navigation bar using Flexbox with `justify-content` and `align-items` properties to distribute and align navigation items.",
+        "hint": "Use `display: flex` on the nav container. `justify-content: space-between` or `space-around` can spread items evenly. `align-items: center` vertically centers them.",
+        "solution": ""
+      },
+      {
+        "id": "css-04-03",
+        "number": 3,
+        "title": "Build a Card Layout Using Flex-Wrap and Flex-Grow",
+        "difficulty": "Medium",
+        "description": "Build a card layout that uses `flex-wrap` to wrap cards to the next line and `flex-grow` to make cards expand to fill available space.",
+        "hint": "Use `flex-wrap: wrap` on the container. Set `flex-grow: 1` on cards to make them expand. Use `flex-basis` to set the initial size before growing.",
+        "solution": ""
+      },
+      {
+        "id": "css-04-04",
+        "number": 4,
+        "title": "Create a Responsive Grid Layout Using Flexbox",
+        "difficulty": "Hard",
+        "description": "Create a responsive grid layout using Flexbox properties that adapts to different screen sizes without using CSS Grid or media queries.",
+        "hint": "Combine `flex-wrap: wrap` with `flex-basis` and `flex-grow` to create a fluid grid. Use percentage-based widths or calc() for responsiveness.",
+        "solution": ""
+      }
+    ]
+  },
+  {
+    "sectionId": 5,
+    "sectionTitle": "CSS Animations & Advanced",
+    "tasks": [
+      {
+        "id": "css-05-01",
+        "number": 1,
+        "title": "Define and Use CSS Custom Properties",
+        "difficulty": "Easy",
+        "description": "Define CSS custom properties (variables) in the `:root` selector and use them throughout your stylesheet to maintain consistent theming.",
+        "hint": "Define variables with `--variable-name: value;` in `:root`. Access them with `var(--variable-name)`. You can provide fallback values with `var(--variable-name, fallback)`.",
+        "solution": ""
+      },
+      {
+        "id": "css-05-02",
+        "number": 2,
+        "title": "Create a Hover Transition Effect",
+        "difficulty": "Medium",
+        "description": "Create smooth hover transition effects using CSS pseudo-classes and the `transition` property. Include at least two different property transitions.",
+        "hint": "Use `:hover` pseudo-class to define the hover state. Use `transition` property to animate changes (e.g., `transition: all 0.3s ease`).",
+        "solution": ""
+      },
+      {
+        "id": "css-05-03",
+        "number": 3,
+        "title": "Build a Keyframe Animation for a Loading Spinner",
+        "difficulty": "Medium",
+        "description": "Build a loading spinner animation using CSS `@keyframes` and the `animation` property.",
+        "hint": "Define `@keyframes` with `from` and `to` (or percentage-based) steps. Use `animation` shorthand to apply it (e.g., `animation: spin 1s linear infinite`).",
+        "solution": ""
+      },
+      {
+        "id": "css-05-04",
+        "number": 4,
+        "title": "Create a Responsive Layout Using CSS Grid and Media Queries",
+        "difficulty": "Hard",
+        "description": "Create a responsive layout using CSS Grid combined with media queries that adapts the grid structure for mobile, tablet, and desktop screen sizes.",
+        "hint": "Use `display: grid` with `grid-template-columns`. Use `@media` queries to change the grid layout at different breakpoints (e.g., `@media (max-width: 768px)`).",
+        "solution": ""
       }
     ]
   }
