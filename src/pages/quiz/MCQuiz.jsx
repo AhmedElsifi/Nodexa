@@ -95,7 +95,7 @@ export default function MCQuiz() {
 
   return (
     <main className="max-w-[1280px] mx-auto w-full px-md pb-xl flex flex-col items-center justify-center min-h-[60vh]">
-      <div className="w-full max-w-fit flex flex-col gap-lg">
+      <div className="w-full max-w-2xl flex flex-col gap-lg">
         <div className="flex flex-col gap-sm">
           <div className="flex justify-between items-center">
             <span className="font-code text-label-sm leading-[16px] tracking-wider text-on-surface-variant uppercase">

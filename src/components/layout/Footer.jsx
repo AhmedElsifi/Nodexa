@@ -4,26 +4,26 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-center px-lg max-w-[1280px] mx-auto gap-md">
         <div className="font-headline-md text-headline-md leading-8 font-bold text-primary flex items-center gap-xs">
           <span className="material-symbols-outlined">terminal</span>
-          Node.js Developers
+          Edu<span className="text-on-surface">Node</span>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-md">
           <a
             className="font-code text-label-sm leading-[16px] tracking-wider text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100"
-            href="https://github.com/AhmedElsifi/Nodexa/blob/main/README.md"
+            href="https://github.com/AhmedElsifi/EduNode/blob/main/README.md"
             target="_blank"
           >
             Documentation
           </a>
           <a
             className="font-code text-label-sm leading-[16px] tracking-wider text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100"
-            href="https://github.com/AhmedElsifi/Nodexa"
+            href="https://github.com/AhmedElsifi/EduNode"
             target="_blank"
           >
             GitHub
           </a>
         </div>
         <div className="font-code text-label-sm leading-[16px] tracking-wider text-on-surface-variant opacity-80">
-          &copy; 2026 Node.js Developers Community
+          &copy; 2026 EduNode Community
         </div>
       </div>
     </footer>

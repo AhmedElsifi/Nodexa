@@ -3,6 +3,23 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { Copy, Check } from "lucide-react";
 
+function extractText(node) {
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(extractText).join("");
+  if (node?.props?.children) return extractText(node.props.children);
+  return "";
+}
+
+function slugify(text) {
+  return extractText(text)
+    .toLowerCase()
+    .replace(/`/g, "")
+    .replace(/<|>/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+}
+
 function CodeBlock({ language, children }) {
   const [copied, setCopied] = useState(false);
 
@@ -77,7 +94,7 @@ MarkdownComponents.components = {
     </h1>
   ),
   h2: ({ children }) => (
-    <h2 className="font-headline-lg text-headline-lg leading-[40px] tracking-tight font-semibold text-on-surface mb-md flex items-center gap-xs">
+    <h2 id={slugify(children)} className="font-headline-lg text-headline-lg leading-[40px] tracking-tight font-semibold text-on-surface mb-md flex items-center gap-xs scroll-mt-24">
       {children}
     </h2>
   ),

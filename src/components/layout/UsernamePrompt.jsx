@@ -39,7 +39,7 @@ export default function UsernamePrompt() {
             </span>
           </div>
           <span className="font-headline-lg text-headline-lg leading-[40px] font-bold text-on-surface">
-            Node<span className="text-primary">X</span>a
+            Edu<span className="text-primary">Node</span>
           </span>
         </div>
 
@@ -47,7 +47,7 @@ export default function UsernamePrompt() {
         <div className="w-full bg-surface border border-outline-variant rounded-2xl p-xl shadow-2xl">
           <div className="mb-lg text-center">
             <h1 className="font-headline-md text-headline-md leading-8 font-bold text-on-surface mb-xs">
-              Welcome to NodeXa
+              Welcome to EduNode
             </h1>
             <p className="font-sans text-body-md leading-[24px] text-on-surface-variant">
               Enter your name to get started

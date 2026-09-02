@@ -1,4 +1,4 @@
-const STORAGE_KEY = "nodexa_user_data";
+const STORAGE_KEY = "edunode_user_data";
 
 function getDefaultData() {
   return {

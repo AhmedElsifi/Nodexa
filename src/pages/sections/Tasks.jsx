@@ -2,9 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import tasksData from "../../data/tasks.json";
 import { useUserData } from "../../hooks/useUserData";
-import EasyTaskCard from "../../components/tasks/EasyTaskCard";
-import MediumTaskCard from "../../components/tasks/MediumTaskCard";
-import HardTaskCard from "../../components/tasks/HardTaskCard";
+import TaskCard from "../../components/tasks/TaskCard";
+import FilterPills from "../../components/ui/FilterPills";
 
 export default function Tasks() {
   const { id } = useParams();
@@ -12,6 +11,8 @@ export default function Tasks() {
   const { getSectionUserState, toggleTaskCompleted, setLastVisitedSection } = useUserData();
   const [showHint, setShowHint] = useState({});
   const [showSolution, setShowSolution] = useState({});
+  const [activeCategory, setActiveCategory] = useState("All");
+  const categories = ["All", "ITI", "Non-ITI"];
 
   const userState = getSectionUserState(id);
 
@@ -70,30 +71,35 @@ export default function Tasks() {
         </p>
       </header>
 
+      <div className="mb-md">
+        <FilterPills
+          categories={categories}
+          activeCategory={activeCategory}
+          onSelect={setActiveCategory}
+        />
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter">
-        {sectionTasks.tasks.map((task) => {
+        {sectionTasks.tasks
+          .filter((task) => activeCategory === "All" || task.category === activeCategory)
+          .map((task) => {
           const isCompleted = userState.completedTasks.includes(task.id);
           const isHintVisible = showHint[task.id];
           const isSolutionVisible = showSolution[task.id];
 
-          const props = {
-            task,
-            sectionId: id,
-            isCompleted,
-            isHintVisible,
-            isSolutionVisible,
-            onToggleComplete: () => toggleTaskCompleted(id, task.id),
-            onToggleHint: () => toggleHint(task.id),
-            onToggleSolution: () => toggleSolution(task.id),
-          };
-
-          if (task.difficulty === "Medium") {
-            return <MediumTaskCard key={task.id} {...props} />;
-          }
-          if (task.difficulty === "Hard") {
-            return <HardTaskCard key={task.id} {...props} />;
-          }
-          return <EasyTaskCard key={task.id} {...props} />;
+          return (
+            <TaskCard
+              key={task.id}
+              task={task}
+              sectionId={id}
+              isCompleted={isCompleted}
+              isHintVisible={isHintVisible}
+              isSolutionVisible={isSolutionVisible}
+              onToggleComplete={() => toggleTaskCompleted(id, task.id)}
+              onToggleHint={() => toggleHint(task.id)}
+              onToggleSolution={() => toggleSolution(task.id)}
+            />
+          );
         })}
       </div>
 

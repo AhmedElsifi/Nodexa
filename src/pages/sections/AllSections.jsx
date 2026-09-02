@@ -1,28 +1,22 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import sections from "../../data/sections.json";
 import SectionCard from "../../components/ui/SectionCard";
 import FilterPills from "../../components/ui/FilterPills";
 import { useUserData } from "../../hooks/useUserData";
 
-const categories = ["All Sections", "Backend Core", "Databases", "API Design"];
-
-const categoryMap = {
-  "All Sections": null,
-  "Backend Core": ["Fundamentals", "Core JS"],
-  Databases: ["Database"],
-  "API Design": ["Architecture", "DevOps"],
-};
-
 export default function AllSections() {
-  const [activeCategory, setActiveCategory] = useState("All Sections");
+  const [activeCategory, setActiveCategory] = useState("All");
   const { getEnrichedSection } = useUserData();
 
+  const categories = useMemo(() => {
+    const unique = [...new Set(sections.map((s) => s.category))];
+    return ["All", ...unique];
+  }, []);
+
   const filteredSections =
-    categoryMap[activeCategory] === null
+    activeCategory === "All"
       ? sections
-      : sections.filter((s) =>
-          categoryMap[activeCategory]?.includes(s.category),
-        );
+      : sections.filter((s) => s.category === activeCategory);
 
   return (
     <main className="max-w-[1280px] mx-auto w-full px-md pb-xl flex flex-col gap-lg">

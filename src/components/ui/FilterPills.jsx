@@ -1,6 +1,10 @@
 export default function FilterPills({ categories, activeCategory, onSelect }) {
   return (
-    <div className="flex flex-wrap md:flex-nowrap items-center gap-sm md:overflow-x-auto pb-1 scrollbar-hide shrink-0">
+    <div
+      className="scrollbar-hide flex flex-wrap md:flex-nowrap items-center gap-sm md:overflow-x-auto pb-1 shrink-0"
+      style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+    >
+      <style>{`.scrollbar-hide::-webkit-scrollbar { display: none; }`}</style>
       {categories.map((cat) => (
         <button
           key={cat}

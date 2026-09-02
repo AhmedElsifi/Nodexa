@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import sectionsData from "../../data/sections.json";
 import sectionContent from "../../data/sectionContent.json";
 import MarkdownRenderer from "../../components/ui/MarkdownRenderer";
+import TableOfContents from "../../components/ui/TableOfContents";
 import { useUserData } from "../../hooks/useUserData";
 
 export default function SectionSummary() {
@@ -78,7 +79,12 @@ export default function SectionSummary() {
           </p>
         </header>
 
-        <MarkdownRenderer filePath={contentMeta.file} />
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_250px] gap-xl">
+          <div>
+            <MarkdownRenderer filePath={contentMeta.file} />
+          </div>
+          <TableOfContents items={contentMeta.tableOfContents} />
+        </div>
 
         {/* Completion Action */}
         <div className="mt-xl pt-lg border-t border-outline-variant flex flex-col items-center gap-md">

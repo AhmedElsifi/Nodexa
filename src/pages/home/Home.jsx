@@ -45,7 +45,7 @@ export default function Home() {
           group
         </span>
         <p className="font-sans text-code-block leading-5.5 text-on-surface-variant">
-          <span className="text-on-surface font-medium">Nodexa</span> is a
+          <span className="text-on-surface font-medium">EduNode</span> is a
           community-made learning portal created to help ITI students learn,
           practice, revise, and share knowledge throughout their journey. It is
           an independent project and is not officially affiliated with, endorsed

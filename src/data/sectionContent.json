@@ -4,34 +4,435 @@
     "title": "HTML Basics",
     "readTime": "15 min read",
     "file": "../content/sections/01-html-basics.md",
-    "tableOfContents": []
+    "tableOfContents": [
+      {
+        "label": "What is HTML?",
+        "id": "what-is-html"
+      },
+      {
+        "label": "Why Do We Use HTML?",
+        "id": "why-do-we-use-html"
+      },
+      {
+        "label": "HTML Document Structure",
+        "id": "html-document-structure"
+      },
+      {
+        "label": "<body>",
+        "id": "body"
+      },
+      {
+        "label": "Semantic Elements",
+        "id": "semantic-elements"
+      },
+      {
+        "label": "Headings",
+        "id": "headings"
+      },
+      {
+        "label": "<p> - Paragraph",
+        "id": "p---paragraph"
+      },
+      {
+        "label": "<span>",
+        "id": "span"
+      },
+      {
+        "label": "<a> - Anchor",
+        "id": "a---anchor"
+      },
+      {
+        "label": "<hr> - Horizontal Rule",
+        "id": "hr---horizontal-rule"
+      },
+      {
+        "label": "Lists",
+        "id": "lists"
+      },
+      {
+        "label": "<select> - Selection Menu",
+        "id": "select---selection-menu"
+      },
+      {
+        "label": "<option> - Select Option",
+        "id": "option---select-option"
+      },
+      {
+        "label": "<details> and <summary>",
+        "id": "details-and-summary"
+      },
+      {
+        "label": "<label>",
+        "id": "label"
+      },
+      {
+        "label": "<input>",
+        "id": "input"
+      },
+      {
+        "label": "<datalist>",
+        "id": "datalist"
+      },
+      {
+        "label": "Description Lists",
+        "id": "description-lists"
+      },
+      {
+        "label": "<figure> and <figcaption>",
+        "id": "figure-and-figcaption"
+      },
+      {
+        "label": "<img> - Image",
+        "id": "img---image"
+      },
+      {
+        "label": "<embed>",
+        "id": "embed"
+      },
+      {
+        "label": "<iframe>",
+        "id": "iframe"
+      },
+      {
+        "label": "Lorem Ipsum",
+        "id": "lorem-ipsum"
+      },
+      {
+        "label": "Text Formatting Elements",
+        "id": "text-formatting-elements"
+      },
+      {
+        "label": "<em>",
+        "id": "em"
+      },
+      {
+        "label": "<code>",
+        "id": "code"
+      },
+      {
+        "label": "<br> - Line Break",
+        "id": "br---line-break"
+      },
+      {
+        "label": "<progress> - Progress Bar",
+        "id": "progress---progress-bar"
+      },
+      {
+        "label": "Nested Elements",
+        "id": "nested-elements"
+      },
+      {
+        "label": "Empty Elements",
+        "id": "empty-elements"
+      },
+      {
+        "label": "Summary",
+        "id": "summary"
+      }
+    ]
   },
   {
     "sectionId": "02",
-    "title": "HTML Forms & CSS Basics",
+    "title": "HTML Forms, Tables, and CSS Basics",
     "readTime": "20 min read",
     "file": "../content/sections/02-html-forms-css-basics.md",
-    "tableOfContents": []
+    "tableOfContents": [
+      {
+        "label": "Introduction",
+        "id": "introduction"
+      },
+      {
+        "label": "Block and Inline Elements",
+        "id": "block-and-inline-elements"
+      },
+      {
+        "label": "Tables",
+        "id": "tables"
+      },
+      {
+        "label": "Forms",
+        "id": "forms"
+      },
+      {
+        "label": "CSS",
+        "id": "css"
+      },
+      {
+        "label": "CSS Selectors",
+        "id": "css-selectors"
+      },
+      {
+        "label": "CSS Class Example",
+        "id": "css-class-example"
+      },
+      {
+        "label": "The Cascade",
+        "id": "the-cascade"
+      },
+      {
+        "label": "Smooth Scrolling",
+        "id": "smooth-scrolling"
+      },
+      {
+        "label": "Internal Page Navigation",
+        "id": "internal-page-navigation"
+      },
+      {
+        "label": "<audio>",
+        "id": "audio"
+      },
+      {
+        "label": "<video>",
+        "id": "video"
+      },
+      {
+        "label": "Additional HTML Document Structure",
+        "id": "additional-html-document-structure"
+      },
+      {
+        "label": "Summary",
+        "id": "summary"
+      }
+    ]
   },
   {
     "sectionId": "03",
-    "title": "CSS Selectors & Box Model",
-    "readTime": "20 min read",
+    "title": "CSS Fundamentals",
+    "readTime": "25 min read",
     "file": "../content/sections/03-css-selectors-box-model.md",
-    "tableOfContents": []
+    "tableOfContents": [
+      {
+        "label": "Introduction",
+        "id": "introduction"
+      },
+      {
+        "label": "HTML Semantic Layout Elements",
+        "id": "html-semantic-layout-elements"
+      },
+      {
+        "label": "CSS Selectors",
+        "id": "css-selectors"
+      },
+      {
+        "label": "CSS Colors",
+        "id": "css-colors"
+      },
+      {
+        "label": "CSS Default Values",
+        "id": "css-default-values"
+      },
+      {
+        "label": "Fonts and Text Styling",
+        "id": "fonts-and-text-styling"
+      },
+      {
+        "label": "Using External Fonts",
+        "id": "using-external-fonts"
+      },
+      {
+        "label": "Backgrounds",
+        "id": "backgrounds"
+      },
+      {
+        "label": "Borders",
+        "id": "borders"
+      },
+      {
+        "label": "Spacing and the Box Model",
+        "id": "spacing-and-the-box-model"
+      },
+      {
+        "label": "box-sizing",
+        "id": "box-sizing"
+      },
+      {
+        "label": "CSS Positioning",
+        "id": "css-positioning"
+      },
+      {
+        "label": "z-index",
+        "id": "z-index"
+      },
+      {
+        "label": "CSS Reset",
+        "id": "css-reset"
+      },
+      {
+        "label": "Summary",
+        "id": "summary"
+      }
+    ]
   },
   {
     "sectionId": "04",
-    "title": "CSS Flexbox",
-    "readTime": "15 min read",
-    "file": "../content/sections/04-css-flexbox.md",
-    "tableOfContents": []
+    "title": "CSS Display, Transforms, and Flexbox",
+    "readTime": "25 min read",
+    "file": "../content/sections/04-css-display-transforms-flexbox.md",
+    "tableOfContents": [
+      {
+        "label": "Introduction",
+        "id": "introduction"
+      },
+      {
+        "label": "Display",
+        "id": "display"
+      },
+      {
+        "label": "Visibility and Opacity",
+        "id": "visibility-and-opacity"
+      },
+      {
+        "label": "Overflow",
+        "id": "overflow"
+      },
+      {
+        "label": "CSS Transitions",
+        "id": "css-transitions"
+      },
+      {
+        "label": "CSS Transforms",
+        "id": "css-transforms"
+      },
+      {
+        "label": "transform-origin",
+        "id": "transform-origin"
+      },
+      {
+        "label": "Hover Effects",
+        "id": "hover-effects"
+      },
+      {
+        "label": "Flexbox",
+        "id": "flexbox"
+      },
+      {
+        "label": "Flexbox Wrapping",
+        "id": "flexbox-wrapping"
+      },
+      {
+        "label": "Flexbox Main Axis Alignment",
+        "id": "flexbox-main-axis-alignment"
+      },
+      {
+        "label": "Flexbox Cross Axis Alignment",
+        "id": "flexbox-cross-axis-alignment"
+      },
+      {
+        "label": "Flex Item Sizing",
+        "id": "flex-item-sizing"
+      },
+      {
+        "label": "Flex Item Order",
+        "id": "flex-item-order"
+      },
+      {
+        "label": "Centering Content with Flexbox",
+        "id": "centering-content-with-flexbox"
+      },
+      {
+        "label": "Flexbox Container and Item Properties",
+        "id": "flexbox-container-and-item-properties"
+      },
+      {
+        "label": "Summary",
+        "id": "summary"
+      }
+    ]
   },
   {
     "sectionId": "05",
-    "title": "CSS Animations & Advanced",
-    "readTime": "25 min read",
-    "file": "../content/sections/05-css-animations-advanced.md",
-    "tableOfContents": []
+    "title": "Advanced CSS and Bootstrap",
+    "readTime": "30 min read",
+    "file": "../content/sections/05-advanced-css-bootstrap.md",
+    "tableOfContents": [
+      {
+        "label": "Introduction",
+        "id": "introduction"
+      },
+      {
+        "label": "CSS Variables",
+        "id": "css-variables"
+      },
+      {
+        "label": "Pseudo-Classes",
+        "id": "pseudo-classes"
+      },
+      {
+        "label": "Pseudo-Elements",
+        "id": "pseudo-elements"
+      },
+      {
+        "label": "CSS Animations",
+        "id": "css-animations"
+      },
+      {
+        "label": "Creating a Shake Animation",
+        "id": "creating-a-shake-animation"
+      },
+      {
+        "label": "Animation and Positioning",
+        "id": "animation-and-positioning"
+      },
+      {
+        "label": "CSS calc()",
+        "id": "css-calc()"
+      },
+      {
+        "label": "Image Sizing",
+        "id": "image-sizing"
+      },
+      {
+        "label": "Image Overlay Effect",
+        "id": "image-overlay-effect"
+      },
+      {
+        "label": "Advanced CSS Selectors",
+        "id": "advanced-css-selectors"
+      },
+      {
+        "label": "CSS Gradients",
+        "id": "css-gradients"
+      },
+      {
+        "label": "Box Shadow",
+        "id": "box-shadow"
+      },
+      {
+        "label": "Media Queries",
+        "id": "media-queries"
+      },
+      {
+        "label": "Bootstrap",
+        "id": "bootstrap"
+      },
+      {
+        "label": "Bootstrap Carousel",
+        "id": "bootstrap-carousel"
+      },
+      {
+        "label": "Bootstrap Grid System",
+        "id": "bootstrap-grid-system"
+      },
+      {
+        "label": "Bootstrap Gutters",
+        "id": "bootstrap-gutters"
+      },
+      {
+        "label": "Bootstrap Utility Classes",
+        "id": "bootstrap-utility-classes"
+      },
+      {
+        "label": "Bootstrap and Custom CSS",
+        "id": "bootstrap-and-custom-css"
+      },
+      {
+        "label": "CSS Cascade and Overrides",
+        "id": "css-cascade-and-overrides"
+      },
+      {
+        "label": "Summary",
+        "id": "summary"
+      }
+    ]
   }
 ]

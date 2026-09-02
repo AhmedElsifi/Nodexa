@@ -57,7 +57,7 @@ export default function NavBar() {
               </span>
             </div>
             <span className="font-headline-md text-[20px] leading-7 font-bold text-on-surface hidden sm:block">
-              Node<span className="text-primary">X</span>a
+              Edu<span className="text-primary">Node</span>
             </span>
           </Link>
 

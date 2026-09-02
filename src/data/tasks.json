@@ -1,210 +1,68 @@
 [
   {
-    "sectionId": "01",
-    "sectionTitle": "HTML Basics",
-    "tasks": [
-      {
-        "id": "html-01-01",
-        "number": 1,
-        "title": "Create an HTML5 Boilerplate Document",
-        "difficulty": "Easy",
-        "description": "Create a complete HTML5 boilerplate document with the correct doctype declaration, html, head, and body elements. Include a title in the head section.",
-        "hint": "Remember that HTML5 uses `<!DOCTYPE html>` at the very top of the document. The `<html>` tag should have a `lang` attribute.",
-        "solution": ""
-      },
-      {
-        "id": "html-01-02",
-        "number": 2,
-        "title": "Build a Table with Semantic Elements",
-        "difficulty": "Easy",
-        "description": "Build a table with `thead`, `tbody`, and `tfoot` sections using proper semantic HTML elements. Include at least 3 rows of data.",
-        "hint": "Use `<table>`, `<thead>`, `<tbody>`, `<tfoot>`, `<tr>`, `<th>`, and `<td>` elements. Headers go in `<th>` tags.",
-        "solution": ""
-      },
-      {
-        "id": "html-01-03",
-        "number": 3,
-        "title": "Create a Navigation Section Using Semantic HTML",
-        "difficulty": "Medium",
-        "description": "Create a complete page layout using semantic HTML elements including `<nav>`, `<header>`, `<section>`, and `<footer>`. The navigation should contain at least 3 links.",
-        "hint": "Semantic HTML helps with accessibility and SEO. Use `<nav>` for navigation, `<header>` for the top of the page, `<section>` for content areas, and `<footer>` for the bottom.",
-        "solution": ""
-      },
-      {
-        "id": "html-01-04",
-        "number": 4,
-        "title": "Build a Page with Heading Hierarchy and Nested Lists",
-        "difficulty": "Hard",
-        "description": "Build a page that demonstrates proper heading hierarchy from `<h1>` to `<h6>` and includes nested ordered and unordered lists with at least 3 levels of nesting.",
-        "hint": "Headings should be used in order without skipping levels. Lists can be nested by placing a new `<ul>` or `<ol>` inside an `<li>` element.",
-        "solution": ""
-      }
-    ]
-  },
-  {
     "sectionId": "02",
-    "sectionTitle": "HTML Forms & CSS Basics",
+    "sectionTitle": "HTML Fundamentals & Semantic HTML",
     "tasks": [
       {
         "id": "html-02-01",
         "number": 1,
-        "title": "Create a Registration Form",
+        "title": "Build a Complete HTML5 Personal Website",
         "difficulty": "Easy",
-        "description": "Create a registration form with username, email, and password fields. Each field should have a corresponding `<label>` element.",
-        "hint": "Use `<form>`, `<input>`, and `<label>` elements. The `for` attribute on labels should match the `id` on inputs.",
+        "category": "ITI",
+        "description": "## Part 1 – HTML Fundamentals\n\nCreate a complete personal webpage that demonstrates the fundamental HTML elements and concepts covered in this section.\n\n### Document Structure\n- Create a valid HTML5 document using `<!DOCTYPE html>`.\n- Use `<html>`, `<head>`, `<title>`, and `<body>` correctly.\n- Set the page title to your name.\n\n### Headings & Paragraphs\n- Create headings from `<h1>` to `<h6>`.\n- Add at least 3 paragraphs describing yourself, your education, and your hobbies.\n\n### Text Formatting\nUse the following text formatting elements at least once:\n- `<b>`\n- `<strong>`\n- `<i>`\n- `<em>`\n- `<u>`\n- `<mark>`\n- `<small>`\n- `<sub>` and `<sup>`\n\n### Links\n- Create links to Google and YouTube.\n- Create a link to at least one other website.\n- Make at least one link open in a new tab.\n- Create an email link using `mailto:`.\n\n### Images\n- Add at least 3 images to the page.\n- Give every image a meaningful `alt` attribute.\n- Control image dimensions using HTML `width` and `height` attributes.\n\n### Lists\n- Create an unordered list containing your favorite foods.\n- Create an ordered list containing your daily routine.\n- Create a nested list containing categories and sub-items.\n- Create a description list using `<dl>`, `<dt>`, and `<dd>`.\n\n### Tables\nCreate a student grades table that includes:\n- A `<caption>` describing the table.\n- A header row using `<th>` elements.\n- At least 5 students.\n- At least 4 subjects.\n- Proper use of `<table>`, `<tr>`, `<th>`, and `<td>`.\n\n### Forms\nCreate a registration form containing:\n- Text input.\n- Email input.\n- Password input.\n- Number input.\n- Date input.\n- Radio buttons.\n- Checkboxes.\n- Select menu.\n- Textarea.\n- Submit button.\n\nUse a corresponding `<label>` for every form control and use appropriate input types and `required` attributes where suitable.",
+        "hint": "Build the page section by section. Start with the HTML5 document structure, then add headings and text, followed by links, images, lists, the grades table, and finally the registration form. Focus on using the correct HTML element for each type of content rather than relying on `<div>` elements.",
         "solution": ""
       },
       {
         "id": "html-02-02",
         "number": 2,
-        "title": "Build a Form with Various Input Types",
+        "title": "Build a Semantic Academy Website",
         "difficulty": "Easy",
-        "description": "Build a form that includes radio buttons, checkboxes, and a select dropdown menu. Group related inputs using `<fieldset>` and `<legend>`.",
-        "hint": "Radio buttons share the same `name` attribute. Checkboxes can have individual `name` attributes. Use `<select>` with `<option>` elements for dropdowns.",
-        "solution": ""
-      },
-      {
-        "id": "html-02-03",
-        "number": 3,
-        "title": "Create a Form with Advanced Input Types",
-        "difficulty": "Medium",
-        "description": "Create a form with file input, date input, and color input fields. Add appropriate labels and basic validation attributes.",
-        "hint": "Use `type=\"file\"`, `type=\"date\"`, and `type=\"color\"`. You can add `required`, `min`, `max`, and `accept` attributes for validation.",
-        "solution": ""
-      },
-      {
-        "id": "html-02-04",
-        "number": 4,
-        "title": "Style a Page Using All Three CSS Methods",
-        "difficulty": "Medium",
-        "description": "Style a page using all three CSS methods: inline styles, an internal `<style>` block, and an external CSS file linked via `<link>`.",
-        "hint": "Inline styles go in the `style` attribute. Internal CSS goes in a `<style>` tag in the `<head>`. External CSS uses a `<link rel=\"stylesheet\" href=\"style.css\">` tag.",
+        "category": "ITI",
+        "description": "## Part 2 – Semantic HTML Elements\n\nBuild a complete webpage for a fictional academy using semantic HTML elements instead of creating the entire layout with generic `<div>` elements.\n\n### Page Structure\nUse the following semantic elements appropriately:\n- `<header>` – Page or section header.\n- `<nav>` – Navigation links.\n- `<main>` – Main page content.\n- `<section>` – Thematic sections of content.\n- `<article>` – Independent content such as a course article.\n- `<aside>` – Related or secondary information.\n- `<footer>` – Footer information.\n\n### Academy Content\nThe fictional academy website must contain:\n- A header containing the academy name.\n- A navigation menu with relevant links.\n- A main content area containing an introduction to the academy.\n- At least two sections presenting different courses.\n- An article describing one of the courses in more detail.\n- An aside containing contact information or other useful information.\n\n### Media\n- Add a `<figure>` containing an academy-related image.\n- Add a `<figcaption>` describing the image.\n\n### Frequently Asked Questions\n- Create an FAQ area using `<details>` and `<summary>`.\n- Include multiple questions and expandable answers.\n\n### Footer\n- Add a footer containing copyright information and any other relevant footer content.\n\nThe final webpage should have a clear semantic structure where each element represents the purpose of its content.",
+        "hint": "Think about the meaning of each section before choosing an element. Use `<header>` and `<nav>` for the top of the page, `<main>` for the primary content, `<section>` for groups of related content, `<article>` for the detailed course content, `<aside>` for secondary information, and `<footer>` for the bottom of the page. Use `<details>` and `<summary>` to create expandable FAQ items.",
         "solution": ""
       }
     ]
   },
   {
-    "sectionId": 3,
-    "sectionTitle": "CSS Selectors & Box Model",
+    "sectionId": "03",
+    "sectionTitle": "HTML & CSS Fundamentals",
     "tasks": [
       {
-        "id": "css-03-01",
+        "id": "html-css-03-01",
         "number": 1,
-        "title": "Apply Styles Using Different Selectors",
+        "title": "Build a Complete HTML & CSS Website",
         "difficulty": "Easy",
-        "description": "Apply styles to elements using element selectors, class selectors, and ID selectors. Create at least one example of each.",
-        "hint": "Element selectors target HTML tags directly (e.g., `p`). Class selectors use a dot prefix (e.g., `.classname`). ID selectors use a hash prefix (e.g., `#idname`).",
+        "category": "ITI",
+        "description": "## Part 1 – HTML & CSS\n\nCreate a complete personal webpage that demonstrates the HTML elements and CSS properties covered in this section.\n\n### Document Structure\n- Create a valid HTML5 document using `<!DOCTYPE html>`.\n- Use `<html>`, `<head>`, `<title>`, and `<body>` correctly.\n- Set the page title to your name.\n- Use CSS to set a suitable page background color, font family, and text color.\n\n### Headings & Paragraphs\n- Create headings from `<h1>` to `<h6>`.\n- Add at least 3 paragraphs describing yourself, your education, and your hobbies.\n- Use CSS to style the headings with different font sizes, colors, and spacing.\n- Add suitable spacing between paragraphs.\n\n### Text Formatting\nUse the following text formatting elements at least once:\n- `<b>`\n- `<strong>`\n- `<i>`\n- `<em>`\n- `<u>`\n- `<mark>`\n- `<small>`\n- `<sub>` and `<sup>`\n\nUse CSS to change the font style and color of some formatted text and add suitable spacing where needed.\n\n### Links\n- Create links to Google and YouTube.\n- Create a link to at least one other website.\n- Make at least one link open in a new tab.\n- Create an email link using `mailto:`.\n- Use CSS to change the links' color and font size and add suitable spacing around them.\n\n### Images\n- Add at least 3 images to the page.\n- Give every image a meaningful `alt` attribute.\n- Control image width and height using HTML attributes.\n- Use CSS to add borders around the images.\n- Use margin and padding to create suitable spacing around the images.\n\n### Lists\n- Create an unordered list containing your favorite foods.\n- Create an ordered list containing your daily routine.\n- Create a nested list containing categories and sub-items.\n- Create a description list using `<dl>`, `<dt>`, and `<dd>`.\n- Use CSS to style list headings with suitable fonts and colors.\n- Add suitable spacing between lists and their items.\n\n### Student Grades Table\nCreate a student grades table that includes:\n- A `<caption>` describing the table.\n- A header row using `<th>` elements.\n- At least 5 students.\n- At least 4 subjects.\n- Proper use of `<table>`, `<tr>`, `<th>`, and `<td>`.\n\nUse CSS to:\n- Add borders to the table and its cells.\n- Change the background and text colors of the header row.\n- Add padding inside the table cells.\n\n### Registration Form\nCreate a registration form containing:\n- Text input.\n- Email input.\n- Password input.\n- Number input.\n- Date input.\n- Radio buttons.\n- Checkboxes.\n- Select menu.\n- Textarea.\n- Submit button.\n\nUse a corresponding `<label>` for every form control and use appropriate input types and `required` attributes where suitable.\n\nUse CSS to:\n- Add a background color, border, padding, and margin to the form.\n- Style the labels, inputs, and submit button using suitable colors and fonts.\n\n### Final Requirement\nThe completed webpage should be visually organized and demonstrate the HTML elements and CSS properties covered in this task, including `color`, `font`, `background`, `border`, `margin`, and `padding`.",
+        "hint": "Build the HTML structure first and then style each group of elements with CSS. Keep your CSS organized by element or section so you can easily see how each property affects the page. Focus on using the required HTML elements and CSS properties rather than trying to make the page overly complex.",
         "solution": ""
       },
       {
-        "id": "css-03-02",
+        "id": "html-css-03-02",
         "number": 2,
-        "title": "Create a Box Model Layout",
+        "title": "Build a Styled Semantic Academy Website",
         "difficulty": "Medium",
-        "description": "Create a layout that demonstrates proper use of margin, padding, and border using the CSS box model. Include elements with different box-sizing values.",
-        "hint": "Use `box-sizing: border-box` to include padding and border in the element's total width. Use `margin` for space outside the border and `padding` for space inside.",
-        "solution": ""
-      },
-      {
-        "id": "css-03-03",
-        "number": 3,
-        "title": "Position Elements Using Different Positioning Methods",
-        "difficulty": "Medium",
-        "description": "Position elements on a page using relative, absolute, and fixed positioning. Demonstrate how each positioning method affects document flow.",
-        "hint": "Relative positioning keeps the element in the document flow. Absolute positioning removes it from flow and positions relative to the nearest positioned ancestor. Fixed positioning is relative to the viewport.",
-        "solution": ""
-      },
-      {
-        "id": "css-03-04",
-        "number": 4,
-        "title": "Build a Layered Layout Using Z-Index",
-        "difficulty": "Hard",
-        "description": "Build a layered layout using `z-index` and positioning to stack multiple elements on top of each other with proper layering control.",
-        "hint": "`z-index` only works on positioned elements (position relative, absolute, fixed, or sticky). Higher z-index values appear on top of lower values.",
+        "category": "ITI",
+        "description": "## Part 2 – Semantic HTML & CSS\n\nBuild a complete and visually organized website for a fictional academy using semantic HTML elements instead of relying only on `<div>` elements. Apply CSS styling throughout the page using the properties learned in class.\n\n### Header\nCreate a `<header>` containing the academy name.\n\nUse CSS to give the header:\n- A suitable background color.\n- A suitable text color.\n- An appropriate font.\n- Padding and spacing.\n- A border.\n\nStyle the academy name with a large font size, suitable color, and spacing.\n\n### Navigation\nCreate a `<nav>` containing navigation links.\n\nUse CSS to style the navigation menu with:\n- A suitable background.\n- Text colors.\n- Borders.\n- Appropriate fonts and spacing.\n\n### Main Content\nCreate a `<main>` containing the primary academy content.\n\nUse CSS to add a suitable background color, margin, and padding to the main content.\n\n### Introduction\nAdd an introduction describing the fictional academy.\n\nUse CSS to style the introduction with:\n- A suitable background.\n- A border.\n- Padding and margin.\n- An appropriate font.\n- A suitable text color.\n\n### Course Sections\nCreate at least two `<section>` elements representing different academy courses.\n\nUse CSS to style each course section with:\n- A border.\n- A background color.\n- Padding and margin.\n- Suitable fonts and text colors.\n\n### Course Article\nCreate an `<article>` describing one of the academy courses in more detail.\n\nUse CSS to style the article with suitable:\n- Colors.\n- Fonts.\n- Borders.\n- Spacing.\n- Background.\n\n### Aside\nCreate an `<aside>` containing contact information or other useful academy information.\n\nUse CSS to:\n- Give the aside a different background color.\n- Add a border.\n- Use the `position` property to place the aside appropriately on the page.\n\n### Figure & Caption\nCreate a `<figure>` containing an academy-related image and a `<figcaption>` describing it.\n\nUse CSS to:\n- Add borders around the figure and image.\n- Add suitable spacing.\n- Style the caption with an appropriate font and color.\n\n### Frequently Asked Questions\nCreate an FAQ area using `<details>` and `<summary>`.\n\nUse CSS to add:\n- A border.\n- A background color.\n- Padding.\n- Suitable margins and spacing.\n\n### Footer\nCreate a `<footer>` containing copyright information.\n\nUse CSS to give the footer:\n- A different background color.\n- A suitable text color.\n- An appropriate font.\n- Padding and spacing.\n- A border.\n\n### Final Requirement\nThe final result should be a complete, attractive, and visually organized academy website. Use semantic HTML elements correctly and demonstrate the CSS properties learned in class, including `color`, `font`, `background`, `border`, `margin`, `padding`, and `position`.",
+        "hint": "Start by creating the semantic page structure with `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<figure>`, and `<footer>`. Then add the required academy content. Finally, style each semantic element with CSS. Use `position` specifically for the aside and keep the visual design consistent across the entire page.",
         "solution": ""
       }
     ]
   },
   {
-    "sectionId": 4,
-    "sectionTitle": "CSS Flexbox",
+    "sectionId": "05",
+    "sectionTitle": "HTML & CSS Landing Page",
     "tasks": [
       {
-        "id": "css-04-01",
+        "id": "html-css-05-01",
         "number": 1,
-        "title": "Center a Div Using Flexbox",
-        "difficulty": "Easy",
-        "description": "Center a div both horizontally and vertically on the page using CSS Flexbox properties.",
-        "hint": "Set `display: flex` on the parent container. Use `justify-content: center` for horizontal centering and `align-items: center` for vertical centering.",
-        "solution": ""
-      },
-      {
-        "id": "css-04-02",
-        "number": 2,
-        "title": "Create a Navigation Bar Using Flexbox",
+        "title": "Build a Modern Landing Page",
         "difficulty": "Medium",
-        "description": "Create a responsive navigation bar using Flexbox with `justify-content` and `align-items` properties to distribute and align navigation items.",
-        "hint": "Use `display: flex` on the nav container. `justify-content: space-between` or `space-around` can spread items evenly. `align-items: center` vertically centers them.",
-        "solution": ""
-      },
-      {
-        "id": "css-04-03",
-        "number": 3,
-        "title": "Build a Card Layout Using Flex-Wrap and Flex-Grow",
-        "difficulty": "Medium",
-        "description": "Build a card layout that uses `flex-wrap` to wrap cards to the next line and `flex-grow` to make cards expand to fill available space.",
-        "hint": "Use `flex-wrap: wrap` on the container. Set `flex-grow: 1` on cards to make them expand. Use `flex-basis` to set the initial size before growing.",
-        "solution": ""
-      },
-      {
-        "id": "css-04-04",
-        "number": 4,
-        "title": "Create a Responsive Grid Layout Using Flexbox",
-        "difficulty": "Hard",
-        "description": "Create a responsive grid layout using Flexbox properties that adapts to different screen sizes without using CSS Grid or media queries.",
-        "hint": "Combine `flex-wrap: wrap` with `flex-basis` and `flex-grow` to create a fluid grid. Use percentage-based widths or calc() for responsiveness.",
-        "solution": ""
-      }
-    ]
-  },
-  {
-    "sectionId": 5,
-    "sectionTitle": "CSS Animations & Advanced",
-    "tasks": [
-      {
-        "id": "css-05-01",
-        "number": 1,
-        "title": "Define and Use CSS Custom Properties",
-        "difficulty": "Easy",
-        "description": "Define CSS custom properties (variables) in the `:root` selector and use them throughout your stylesheet to maintain consistent theming.",
-        "hint": "Define variables with `--variable-name: value;` in `:root`. Access them with `var(--variable-name)`. You can provide fallback values with `var(--variable-name, fallback)`.",
-        "solution": ""
-      },
-      {
-        "id": "css-05-02",
-        "number": 2,
-        "title": "Create a Hover Transition Effect",
-        "difficulty": "Medium",
-        "description": "Create smooth hover transition effects using CSS pseudo-classes and the `transition` property. Include at least two different property transitions.",
-        "hint": "Use `:hover` pseudo-class to define the hover state. Use `transition` property to animate changes (e.g., `transition: all 0.3s ease`).",
-        "solution": ""
-      },
-      {
-        "id": "css-05-03",
-        "number": 3,
-        "title": "Build a Keyframe Animation for a Loading Spinner",
-        "difficulty": "Medium",
-        "description": "Build a loading spinner animation using CSS `@keyframes` and the `animation` property.",
-        "hint": "Define `@keyframes` with `from` and `to` (or percentage-based) steps. Use `animation` shorthand to apply it (e.g., `animation: spin 1s linear infinite`).",
-        "solution": ""
-      },
-      {
-        "id": "css-05-04",
-        "number": 4,
-        "title": "Create a Responsive Layout Using CSS Grid and Media Queries",
-        "difficulty": "Hard",
-        "description": "Create a responsive layout using CSS Grid combined with media queries that adapts the grid structure for mobile, tablet, and desktop screen sizes.",
-        "hint": "Use `display: grid` with `grid-template-columns`. Use `@media` queries to change the grid layout at different breakpoints (e.g., `@media (max-width: 768px)`).",
+        "category": "ITI",
+        "description": "Create a modern landing page using HTML and CSS. Choose any idea you like, such as a restaurant, gym, product, company, academy, portfolio, or another concept of your choice.\n\n### Navbar\n- Create a navigation bar containing a logo or name.\n- Add navigation links.\n\n### Hero Section\nCreate a hero section containing:\n- A main heading.\n- A short description.\n- A call-to-action button.\n- A suitable image or background.\n\n### Page Sections\n- Add at least 3 different sections to the page.\n- You may choose sections such as About, Services, Features, Portfolio, or Testimonials.\n\n### Services / Features\n- Create a Services or Features section.\n- Include at least 3 cards.\n\n### Contact\n- Add a Contact section.\n- Include a simple contact form.\n\n### Footer\n- Add a footer containing useful information or links.\n\n### Semantic HTML\n- Use semantic HTML elements where appropriate.\n\n### CSS Design\nUse CSS to create a clean and attractive design. Your design should include:\n- Colors.\n- Fonts.\n- Spacing.\n- Borders.\n- Shadows.\n- Hover effects.\n\n### Layout\n- Use Flexbox or CSS Grid to organize the page layout.\n\n### Bootstrap\n- You may use Bootstrap if you want.\n- If you use Bootstrap, you must also write your own CSS.\n\n### Code Quality\n- Keep the HTML and CSS clean, organized, and easy to understand.\n\n### Important\n- Choose your own idea and design.\n- Do not copy a complete template.\n- Try to build the page by yourself.\n- Focus on understanding what you write rather than just making the page work.\n- Be creative. There is no single correct design.",
+        "hint": "Choose a simple idea first and sketch the page structure before coding. Build the semantic HTML sections, then use Flexbox or Grid to arrange the content. After the layout works, add your colors, typography, spacing, shadows, borders, and hover effects. Keep the design simple enough that you understand every part of the code.",
         "solution": ""
       }
     ]

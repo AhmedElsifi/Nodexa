@@ -1,306 +1,2781 @@
 [
   {
-    "sectionId": 1,
+    "sectionId": "01",
     "sectionTitle": "HTML Basics",
     "questions": [
       {
         "id": "quiz-01-01",
-        "question": "What is the correct DOCTYPE declaration for HTML5?",
+        "question": "What does HTML stand for?",
         "options": [
-          "<!DOCTYPE html>",
-          "<!DOCTYPE HTML5>",
-          "<!DOCTYPE html5>",
-          "<!DOCTYPE>"
+          "HyperText Markup Language",
+          "HighText Machine Language",
+          "HyperText Machine Language",
+          "Home Tool Markup Language"
         ],
         "correctIndex": 0
       },
       {
         "id": "quiz-01-02",
-        "question": "Which HTML element is used to define the largest heading?",
+        "question": "What is HTML primarily used for?",
         "options": [
-          "<heading>",
-          "<h6>",
-          "<h1>",
-          "<head>"
+          "Programming server logic",
+          "Structuring and describing web content",
+          "Styling web pages",
+          "Managing databases"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-03",
+        "question": "Which statement about HTML is correct?",
+        "options": [
+          "HTML is a programming language",
+          "HTML is a database language",
+          "HTML is a markup language",
+          "HTML is a styling language"
         ],
         "correctIndex": 2
       },
       {
-        "id": "quiz-01-03",
-        "question": "Which tag is used to create an unordered list?",
-        "options": [
-          "<ol>",
-          "<li>",
-          "<list>",
-          "<ul>"
-        ],
-        "correctIndex": 3
-      },
-      {
         "id": "quiz-01-04",
-        "question": "What is the purpose of the <thead> element?",
+        "question": "Which technology is primarily responsible for the appearance and layout of a webpage?",
         "options": [
-          "To define the main content of a table",
-          "To group header content in a table",
-          "To define the footer of a table",
-          "To create a table caption"
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "SQL"
         ],
         "correctIndex": 1
       },
       {
         "id": "quiz-01-05",
-        "question": "Which attribute is required in the <html> tag for accessibility and SEO?",
+        "question": "Which technology is primarily responsible for behavior and interactivity on a webpage?",
         "options": [
-          "class",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "XML"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-06",
+        "question": "Which HTML declaration indicates that a document uses HTML5?",
+        "options": [
+          "<html5>",
+          "<!HTML5>",
+          "<!DOCTYPE html>",
+          "<doctype html5>"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-07",
+        "question": "Where should the <!doctype html> declaration normally appear?",
+        "options": [
+          "Inside the <head>",
+          "As the first line of the document",
+          "Inside the <body>",
+          "After the closing </html> tag"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-08",
+        "question": "What is the root element of an HTML document?",
+        "options": [
+          "<body>",
+          "<head>",
+          "<main>",
+          "<html>"
+        ],
+        "correctIndex": 3
+      },
+      {
+        "id": "quiz-01-09",
+        "question": "What is the main purpose of the <head> element?",
+        "options": [
+          "To contain all visible page content",
+          "To contain information about the webpage",
+          "To display the main heading",
+          "To contain navigation links only"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-10",
+        "question": "Which element defines the title displayed in the browser tab?",
+        "options": [
+          "<head>",
+          "<meta>",
+          "<title>",
+          "<caption>"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-11",
+        "question": "Which element is used to provide metadata about a webpage?",
+        "options": [
+          "<data>",
+          "<meta>",
+          "<info>",
+          "<metadata>"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-12",
+        "question": "What does the following element specify? <meta charset=\"UTF-8\">",
+        "options": [
+          "The page title",
+          "The page language",
+          "The document's character encoding",
+          "The page's screen size"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-13",
+        "question": "Why is UTF-8 commonly used in HTML documents?",
+        "options": [
+          "It automatically styles the page",
+          "It supports a very large range of characters",
+          "It makes images load faster",
+          "It enables JavaScript"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-14",
+        "question": "What is the purpose of the description meta tag?",
+        "options": [
+          "To describe the page",
+          "To define the page's CSS",
+          "To define the browser tab icon",
+          "To create a page heading"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-01-15",
+        "question": "What is true about the keywords meta tag in modern SEO?",
+        "options": [
+          "It is required for every webpage",
+          "Search engines generally do not use it for ranking",
+          "It controls the browser's zoom level",
+          "It defines the page title"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-16",
+        "question": "What does width=device-width in the viewport meta tag do?",
+        "options": [
+          "Makes the page width match the device's screen width",
+          "Makes the page exactly 1000 pixels wide",
+          "Sets the browser window height",
+          "Changes the document encoding"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-01-17",
+        "question": "What does initial-scale=1.0 generally set?",
+        "options": [
+          "The initial zoom level to 100%",
+          "The page width to 100 pixels",
+          "The font size to 1 pixel",
+          "The page height to 100%"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-01-18",
+        "question": "Why is the viewport meta tag important?",
+        "options": [
+          "It enables HTML5",
+          "It is important for responsive websites",
+          "It creates navigation links",
+          "It defines the document language"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-19",
+        "question": "Which element connects an HTML document to an external resource such as a CSS file?",
+        "options": [
+          "<connect>",
+          "<resource>",
+          "<link>",
+          "<external>"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-20",
+        "question": "Which attribute specifies the location of a resource in a <link> element?",
+        "options": [
+          "src",
+          "href",
+          "path",
+          "url"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-21",
+        "question": "What does rel=\"stylesheet\" indicate in a <link> element?",
+        "options": [
+          "The resource is a JavaScript file",
+          "The resource is a stylesheet",
+          "The resource is an image",
+          "The resource is a favicon"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-22",
+        "question": "What is a favicon?",
+        "options": [
+          "The main heading of a webpage",
+          "A small icon displayed in the browser tab",
+          "A CSS stylesheet",
+          "A type of metadata"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-23",
+        "question": "Where does the visible and interactive content of a webpage normally belong?",
+        "options": [
+          "<head>",
+          "<meta>",
+          "<body>",
+          "<title>"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-24",
+        "question": "What is the main purpose of semantic HTML elements?",
+        "options": [
+          "To make all elements look identical",
+          "To describe the meaning and purpose of content",
+          "To replace CSS",
+          "To make JavaScript unnecessary"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-25",
+        "question": "Which element represents a section containing navigation links?",
+        "options": [
+          "<navigate>",
+          "<links>",
+          "<nav>",
+          "<menu>"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-26",
+        "question": "Which element represents a standalone section of related content?",
+        "options": [
+          "<section>",
+          "<group>",
+          "<content>",
+          "<part>"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-01-27",
+        "question": "Which element is appropriate for a self-contained piece of content such as a blog post?",
+        "options": [
+          "<section>",
+          "<article>",
+          "<post>",
+          "<content>"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-28",
+        "question": "How many heading levels does HTML provide?",
+        "options": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "correctIndex": 3
+      },
+      {
+        "id": "quiz-01-29",
+        "question": "Which heading element represents the highest-level heading?",
+        "options": [
+          "<h6>",
+          "<h3>",
+          "<h1>",
+          "<heading>"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-30",
+        "question": "What should normally determine which heading level you use?",
+        "options": [
+          "How large you want the text to look",
+          "The content hierarchy",
+          "The amount of text",
+          "The browser being used"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-31",
+        "question": "Which element is used to define a paragraph?",
+        "options": [
+          "<text>",
+          "<paragraph>",
+          "<p>",
+          "<para>"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-32",
+        "question": "What is <span> primarily used for?",
+        "options": [
+          "Creating a new webpage",
+          "Creating a generic inline container",
+          "Creating a navigation menu",
+          "Creating a numbered list"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-33",
+        "question": "Which element creates a hyperlink?",
+        "options": [
+          "<link>",
+          "<href>",
+          "<a>",
+          "<url>"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-34",
+        "question": "What does the href attribute of an <a> element specify?",
+        "options": [
+          "Where the link should go",
+          "How the link should look",
+          "The link's font size",
+          "The link's accessibility level"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-01-35",
+        "question": "What is the effect of target=\"_blank\" on a link?",
+        "options": [
+          "It disables the link",
+          "It opens the link in a new browsing context, typically a new tab",
+          "It opens the link in the current tab",
+          "It downloads the linked page"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-36",
+        "question": "What does the <hr> element represent?",
+        "options": [
+          "A heading",
+          "A horizontal image",
+          "A thematic break between content",
+          "A page footer"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-37",
+        "question": "Which element creates an ordered list?",
+        "options": [
+          "<ul>",
+          "<ol>",
+          "<li>",
+          "<list>"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-38",
+        "question": "When should an ordered list (<ol>) be used?",
+        "options": [
+          "When the order of items matters",
+          "When the items are images",
+          "When the items are unrelated",
+          "When no order exists"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-01-39",
+        "question": "Which element represents an individual item inside an ordered or unordered list?",
+        "options": [
+          "<item>",
+          "<list-item>",
+          "<li>",
+          "<i>"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-40",
+        "question": "Which attribute can change the numbering style of an ordered list?",
+        "options": [
+          "number",
+          "style",
+          "type",
+          "format"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-41",
+        "question": "Which element creates an unordered list?",
+        "options": [
+          "<ol>",
+          "<ul>",
+          "<li>",
+          "<list>"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-42",
+        "question": "What is the purpose of the <select> element?",
+        "options": [
+          "To create a text paragraph",
+          "To create a dropdown selection menu",
+          "To create a hyperlink",
+          "To display an image"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-43",
+        "question": "Which element defines an individual option inside a <select>?",
+        "options": [
+          "<choice>",
+          "<select-option>",
+          "<option>",
+          "<item>"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-44",
+        "question": "What is the purpose of the value attribute on an <option>?",
+        "options": [
+          "It defines the value associated with the option when submitted",
+          "It defines the option's font size",
+          "It defines the dropdown's width",
+          "It determines whether the option is visible"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-01-45",
+        "question": "What is the main difference between <select> and <datalist>?",
+        "options": [
+          "<select> allows custom text while <datalist> does not",
+          "<datalist> generally allows the user to type their own value",
+          "<select> can only contain images",
+          "<datalist> is used only for navigation"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-46",
+        "question": "Which attribute connects an <input> to a <datalist>?",
+        "options": [
+          "data",
+          "options",
+          "list",
+          "datalist"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-47",
+        "question": "Which attribute connects a <label> to a form control?",
+        "options": [
           "id",
-          "lang",
-          "title"
+          "for",
+          "target",
+          "name"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-48",
+        "question": "Which pair of elements creates a native expandable and collapsible section?",
+        "options": [
+          "<expand> and <collapse>",
+          "<details> and <summary>",
+          "<section> and <header>",
+          "<toggle> and <content>"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-01-49",
+        "question": "Which element provides alternative text for an image through its alt attribute?",
+        "options": [
+          "<image>",
+          "<picture>",
+          "<img>",
+          "<media>"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-01-50",
+        "question": "Which statement about void elements in HTML5 is correct?",
+        "options": [
+          "They must always have closing tags",
+          "They can contain child elements",
+          "They do not contain content and do not require closing tags",
+          "They can only be used inside <body>"
         ],
         "correctIndex": 2
       }
     ]
   },
   {
-    "sectionId": 2,
-    "sectionTitle": "HTML Forms & CSS Basics",
+    "sectionId": "02",
+    "sectionTitle": "HTML Tables, Forms, CSS, and Multimedia",
     "questions": [
       {
         "id": "quiz-02-01",
-        "question": "Which element is used to create a form in HTML?",
+        "question": "Which type of element normally starts on a new line and takes up the available width of its parent?",
         "options": [
-          "<input>",
-          "<form>",
-          "<fieldset>",
-          "<label>"
+          "Inline element",
+          "Block element",
+          "Void element",
+          "Semantic-only element"
         ],
         "correctIndex": 1
       },
       {
         "id": "quiz-02-02",
-        "question": "How do you link an external CSS file to an HTML document?",
+        "question": "Which of the following is normally an inline element?",
         "options": [
-          "<style src=\"style.css\">",
-          "<css href=\"style.css\">",
-          "<link rel=\"stylesheet\" href=\"style.css\">",
-          "<script src=\"style.css\">"
+          "<div>",
+          "<form>",
+          "<p>",
+          "<a>"
+        ],
+        "correctIndex": 3
+      },
+      {
+        "id": "quiz-02-03",
+        "question": "Which statement correctly describes an inline element?",
+        "options": [
+          "It normally starts on a new line",
+          "It normally takes the full available width",
+          "It normally stays on the same line and takes only the width its content requires",
+          "It can only contain form controls"
         ],
         "correctIndex": 2
       },
       {
-        "id": "quiz-02-03",
-        "question": "What is the correct way to create a checkbox in HTML?",
-        "options": [
-          "<input type=\"check\">",
-          "<input type=\"checkbox\">",
-          "<checkbox>",
-          "<input type=\"option\">"
-        ],
-        "correctIndex": 1
-      },
-      {
         "id": "quiz-02-04",
-        "question": "Which input type allows users to select a color?",
+        "question": "What are HTML tables primarily used to represent?",
         "options": [
-          "type=\"colour\"",
-          "type=\"color\"",
-          "type=\"rgb\"",
-          "type=\"palette\""
+          "General page layouts",
+          "Tabular data organized into rows and columns",
+          "Navigation menus",
+          "CSS styles"
         ],
         "correctIndex": 1
       },
       {
         "id": "quiz-02-05",
-        "question": "What does the <label> element's 'for' attribute do?",
+        "question": "Which element defines an HTML table?",
         "options": [
-          "It styles the input field",
-          "It links the label to a specific form control",
-          "It creates a new form field",
-          "It submits the form"
+          "<tab>",
+          "<table>",
+          "<grid>",
+          "<data>"
         ],
         "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-06",
+        "question": "Which element provides a title or description for a table?",
+        "options": [
+          "<title>",
+          "<caption>",
+          "<label>",
+          "<summary>"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-07",
+        "question": "What is the purpose of the <thead> element?",
+        "options": [
+          "To contain the main data rows",
+          "To contain the header rows of a table",
+          "To contain the table footer",
+          "To define a table caption"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-08",
+        "question": "Which element defines a header cell in a table?",
+        "options": [
+          "<header>",
+          "<thead>",
+          "<th>",
+          "<td>"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-09",
+        "question": "Which element contains the main data rows of a table?",
+        "options": [
+          "<tbody>",
+          "<thead>",
+          "<mainbody>",
+          "<data>"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-02-10",
+        "question": "Which element defines a table row?",
+        "options": [
+          "<row>",
+          "<tr>",
+          "<td>",
+          "<th>"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-11",
+        "question": "Which element defines a normal data cell in a table?",
+        "options": [
+          "<cell>",
+          "<data>",
+          "<td>",
+          "<th>"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-12",
+        "question": "What is the purpose of the <tfoot> element?",
+        "options": [
+          "To contain table footer rows",
+          "To create the table title",
+          "To contain column headings",
+          "To create a new table"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-02-13",
+        "question": "Which attribute allows a table cell to span multiple columns?",
+        "options": [
+          "rowspan",
+          "span",
+          "colspan",
+          "columns"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-14",
+        "question": "What does colspan=\"3\" mean?",
+        "options": [
+          "The cell spans three rows",
+          "The cell occupies three columns",
+          "The table has three columns",
+          "The cell contains three values"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-15",
+        "question": "Why should tables generally not be used for general webpage layout?",
+        "options": [
+          "Tables cannot contain text",
+          "Tables cannot be styled with CSS",
+          "CSS should be used for page layout",
+          "Tables only work in HTML4"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-16",
+        "question": "What is the primary purpose of an HTML <form>?",
+        "options": [
+          "To style a webpage",
+          "To collect information from users",
+          "To display images",
+          "To create tables"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-17",
+        "question": "What does the action attribute of a form specify?",
+        "options": [
+          "The form's visual appearance",
+          "The name of the form",
+          "Where the form data should be sent",
+          "Which fields are required"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-18",
+        "question": "What is the purpose of the name attribute on a form?",
+        "options": [
+          "It provides a name for the form",
+          "It changes the form's color",
+          "It determines the form's action URL",
+          "It makes every field required"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-02-19",
+        "question": "What is the main purpose of the <label> element?",
+        "options": [
+          "To style an input",
+          "To provide a descriptive label for a form control",
+          "To submit a form",
+          "To validate a password"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-20",
+        "question": "How is a label connected to a form control?",
+        "options": [
+          "The label's for attribute matches the control's id",
+          "The label's id matches the control's name",
+          "The label's name matches the control's value",
+          "The label's href matches the control's id"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-02-21",
+        "question": "Which attribute determines the behavior of an <input> element?",
+        "options": [
+          "behavior",
+          "input-type",
+          "type",
+          "mode"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-22",
+        "question": "Which input type is intended for general text such as usernames and names?",
+        "options": [
+          "email",
+          "text",
+          "string",
+          "input"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-23",
+        "question": "What does the placeholder attribute provide?",
+        "options": [
+          "Permanent submitted data",
+          "Temporary hint text inside an input",
+          "A unique identifier",
+          "A validation rule"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-24",
+        "question": "What happens to placeholder text when the user starts entering a value?",
+        "options": [
+          "It normally disappears",
+          "It becomes the submitted value",
+          "It moves to the label",
+          "It becomes bold"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-02-25",
+        "question": "Why should a placeholder generally not replace a proper <label>?",
+        "options": [
+          "A placeholder cannot contain text",
+          "A label provides a proper descriptive and accessible association with the control",
+          "Placeholders only work with CSS",
+          "Labels are required to submit files"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-26",
+        "question": "What does the value attribute define for an input?",
+        "options": [
+          "The initial value of the input",
+          "The input's maximum length",
+          "The input's label",
+          "The input's CSS class"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-02-27",
+        "question": "What does the readonly attribute do to an input?",
+        "options": [
+          "It prevents the value from being submitted",
+          "It prevents the user from modifying the value",
+          "It hides the input completely",
+          "It makes the input required"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-28",
+        "question": "Why is the name attribute important on form controls?",
+        "options": [
+          "It determines their color",
+          "It identifies the control when form data is submitted",
+          "It determines their width",
+          "It creates a label automatically"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-29",
+        "question": "Which input type is intended for email addresses?",
+        "options": [
+          "mail",
+          "text-email",
+          "email",
+          "address"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-30",
+        "question": "Which input type is used for numerical values?",
+        "options": [
+          "numeric",
+          "number",
+          "integer",
+          "value"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-31",
+        "question": "What does the min attribute define for a number input?",
+        "options": [
+          "The maximum allowed value",
+          "The minimum allowed value",
+          "The number of characters",
+          "The initial value only"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-32",
+        "question": "Which input type hides the characters entered by the user?",
+        "options": [
+          "hidden-text",
+          "secret",
+          "password",
+          "secure"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-33",
+        "question": "Which element is used for multi-line text input?",
+        "options": [
+          "<input type=\"multiline\">",
+          "<textarea>",
+          "<text>",
+          "<multiline>"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-34",
+        "question": "What does the rows attribute of <textarea> specify?",
+        "options": [
+          "The initial number of visible text rows",
+          "The maximum number of rows allowed",
+          "The number of submitted values",
+          "The width of the textarea"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-02-35",
+        "question": "What does the cols attribute of <textarea> specify?",
+        "options": [
+          "The number of visible character columns initially",
+          "The number of submitted columns",
+          "The maximum number of characters",
+          "The number of rows"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-02-36",
+        "question": "Which input type allows the user to select a file from their device?",
+        "options": [
+          "upload",
+          "file",
+          "attachment",
+          "document"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-37",
+        "question": "What is the purpose of the accept attribute on a file input?",
+        "options": [
+          "It guarantees server-side validation",
+          "It guides the user toward appropriate file types",
+          "It automatically uploads the file",
+          "It encrypts the file"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-38",
+        "question": "Which input type allows users to enter a date and local time without a time-zone specification?",
+        "options": [
+          "datetime",
+          "datetime-local",
+          "date-time",
+          "localtime"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-39",
+        "question": "Which input type displays a color picker?",
+        "options": [
+          "palette",
+          "paint",
+          "color",
+          "picker"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-40",
+        "question": "What is the main purpose of radio buttons?",
+        "options": [
+          "To select multiple independent options",
+          "To select one option from a group",
+          "To enter long text",
+          "To upload files"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-41",
+        "question": "What must radio buttons generally share to belong to the same group?",
+        "options": [
+          "The same id",
+          "The same class",
+          "The same name",
+          "The same value"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-42",
+        "question": "What is the main difference between checkboxes and radio buttons?",
+        "options": [
+          "Checkboxes allow multiple independent selections",
+          "Checkboxes cannot have labels",
+          "Radio buttons allow unlimited selections",
+          "Radio buttons are only used for text"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-02-43",
+        "question": "Which input type creates a button that submits a form?",
+        "options": [
+          "button",
+          "send",
+          "submit",
+          "form"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-44",
+        "question": "What does <input type=\"reset\"> do?",
+        "options": [
+          "Submits the form",
+          "Deletes the form",
+          "Resets controls to their initial values",
+          "Reloads the webpage"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-45",
+        "question": "What does the required attribute do?",
+        "options": [
+          "Makes a field mandatory before normal form submission",
+          "Makes a field read-only",
+          "Hides the field",
+          "Sets a field's initial value"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-02-46",
+        "question": "Which attribute specifies the minimum number of characters allowed in a text input?",
+        "options": [
+          "min",
+          "minimum",
+          "minlength",
+          "length-min"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-47",
+        "question": "Which CSS method places styles directly inside an HTML element using the style attribute?",
+        "options": [
+          "External CSS",
+          "Internal CSS",
+          "Inline CSS",
+          "Embedded stylesheet"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-02-48",
+        "question": "Which CSS approach is generally preferred for larger websites because a stylesheet can be reused across multiple HTML pages?",
+        "options": [
+          "Inline CSS",
+          "External CSS",
+          "Internal CSS",
+          "Attribute CSS"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-49",
+        "question": "Which CSS selector targets an element with a specific ID?",
+        "options": [
+          ".header",
+          "#header",
+          "header",
+          "*header"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-02-50",
+        "question": "Which CSS selector targets <p> elements that are descendants of a <div>?",
+        "options": [
+          "div + p",
+          "div > p",
+          "div p",
+          "div.p"
+        ],
+        "correctIndex": 2
       }
     ]
   },
   {
-    "sectionId": 3,
-    "sectionTitle": "CSS Selectors & Box Model",
+    "sectionId": "03",
+    "sectionTitle": "CSS Styling, Box Model, and Positioning",
     "questions": [
       {
         "id": "quiz-03-01",
-        "question": "Which CSS selector targets elements with a specific class?",
+        "question": "What is the primary purpose of CSS?",
         "options": [
-          "#classname",
-          ".classname",
-          "classname",
-          "*classname"
+          "To structure HTML documents",
+          "To control the appearance and layout of HTML elements",
+          "To create databases",
+          "To handle server-side requests"
         ],
         "correctIndex": 1
       },
       {
         "id": "quiz-03-02",
-        "question": "What CSS property is used to add space inside an element's border?",
+        "question": "Which part of a CSS rule determines which HTML elements are affected?",
         "options": [
-          "margin",
-          "spacing",
-          "padding",
-          "indent"
+          "Property",
+          "Value",
+          "Selector",
+          "Declaration"
         ],
         "correctIndex": 2
       },
       {
         "id": "quiz-03-03",
-        "question": "What does 'box-sizing: border-box' do?",
+        "question": "What is the correct general structure of a CSS rule?",
         "options": [
-          "Removes the element's border",
-          "Includes padding and border in the element's total width",
-          "Makes the element invisible",
-          "Removes margin from the element"
+          "property { selector: value; }",
+          "selector { property: value; }",
+          "value { property: selector; }",
+          "selector (property = value)"
         ],
         "correctIndex": 1
       },
       {
         "id": "quiz-03-04",
-        "question": "Which positioning method removes an element from the document flow?",
+        "question": "What does the following CSS rule do? `p { color: red; }`",
         "options": [
-          "position: relative",
-          "position: static",
-          "position: absolute",
-          "position: sticky"
+          "Changes all paragraph text to red",
+          "Changes the page background to red",
+          "Creates a red paragraph",
+          "Changes all text to red only when selected"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-03-05",
+        "question": "Which semantic HTML element represents introductory content or the header of a page or section?",
+        "options": [
+          "<nav>",
+          "<header>",
+          "<aside>",
+          "<section>"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-06",
+        "question": "Which semantic element is intended for a section containing important navigation links?",
+        "options": [
+          "<navigation>",
+          "<links>",
+          "<nav>",
+          "<menu>"
         ],
         "correctIndex": 2
       },
       {
-        "id": "quiz-03-05",
-        "question": "What property controls the stacking order of positioned elements?",
+        "id": "quiz-03-07",
+        "question": "What is the main purpose of the `<aside>` element?",
         "options": [
-          "stack-order",
-          "layer",
-          "z-index",
-          "order"
+          "To contain the main page content",
+          "To represent content related to the main content but outside its main flow",
+          "To create navigation links only",
+          "To define the page footer"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-08",
+        "question": "When should the `<section>` element generally be used?",
+        "options": [
+          "For every individual paragraph",
+          "For a standalone section of related content",
+          "Only for navigation",
+          "Only for page headers"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-09",
+        "question": "What does an element selector target?",
+        "options": [
+          "Elements with a specific class",
+          "Elements with a specific ID",
+          "All elements of a particular HTML type",
+          "Only elements inside a form"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-10",
+        "question": "Which selector targets all `<h2>` elements?",
+        "options": [
+          ".h2",
+          "#h2",
+          "h2",
+          "*h2"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-11",
+        "question": "Which symbol is used to create a CSS class selector?",
+        "options": [
+          "#",
+          ".",
+          "@",
+          "*"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-12",
+        "question": "Which CSS selector targets elements with the class `custom`?",
+        "options": [
+          "#custom",
+          "custom",
+          ".custom",
+          "*custom"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-13",
+        "question": "What is a common use of CSS classes?",
+        "options": [
+          "Identifying one unique element only",
+          "Applying the same style to multiple elements",
+          "Creating HTML elements",
+          "Submitting forms"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-14",
+        "question": "Which symbol is used to create a CSS ID selector?",
+        "options": [
+          ".",
+          "#",
+          "@",
+          "&"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-15",
+        "question": "Which selector targets an element with `id=\"header\"`?",
+        "options": [
+          ".header",
+          "header",
+          "#header",
+          "*header"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-16",
+        "question": "How should an HTML `id` normally be used?",
+        "options": [
+          "For identifying a unique element on a page",
+          "For grouping unlimited elements",
+          "Only for text formatting",
+          "Only for images"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-03-17",
+        "question": "How can multiple CSS selectors share the same rule?",
+        "options": [
+          "Separate them with commas",
+          "Separate them with semicolons",
+          "Separate them with colons",
+          "Place them inside brackets"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-03-18",
+        "question": "What does `.one, .two, .three { width: 300px; }` do?",
+        "options": [
+          "Only `.one` receives the width",
+          "Only `.three` receives the width",
+          "All three classes receive the same width",
+          "It creates three new classes"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-19",
+        "question": "Which three colors make up the RGB color model?",
+        "options": [
+          "Red, Green, Blue",
+          "Red, Gray, Black",
+          "Rose, Green, Brown",
+          "Red, Gold, Blue"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-03-20",
+        "question": "What is the normal range for each RGB color component?",
+        "options": [
+          "0 to 10",
+          "0 to 100",
+          "0 to 255",
+          "1 to 256"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-21",
+        "question": "What additional feature does RGBA provide compared with RGB?",
+        "options": [
+          "A fourth color",
+          "Transparency through an alpha value",
+          "Automatic gradients",
+          "A brightness value"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-22",
+        "question": "What does an alpha value of `0` in RGBA represent?",
+        "options": [
+          "Fully opaque",
+          "Fully transparent",
+          "Pure red",
+          "Pure black"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-23",
+        "question": "What does an alpha value of `1` in RGBA represent?",
+        "options": [
+          "Fully transparent",
+          "Half transparent",
+          "Fully opaque",
+          "No color"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-24",
+        "question": "Which hexadecimal color represents pure red?",
+        "options": [
+          "#00ff00",
+          "#0000ff",
+          "#ffffff",
+          "#ff0000"
+        ],
+        "correctIndex": 3
+      },
+      {
+        "id": "quiz-03-25",
+        "question": "What does the `#RRGGBB` format represent?",
+        "options": [
+          "Three font sizes",
+          "Red, green, and blue hexadecimal values",
+          "Three transparency values",
+          "Three CSS selectors"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-26",
+        "question": "Which CSS property controls the size of text?",
+        "options": [
+          "text-size",
+          "font-size",
+          "font-scale",
+          "size"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-27",
+        "question": "Which unit is generally a fixed pixel-based unit?",
+        "options": [
+          "px",
+          "em",
+          "rem",
+          "%"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-03-28",
+        "question": "What does the `rem` unit relate to?",
+        "options": [
+          "The viewport width",
+          "The parent element's font size",
+          "The root element's font size",
+          "The element's border size"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-29",
+        "question": "Which CSS property controls whether text is normal, italic, or oblique?",
+        "options": [
+          "font-weight",
+          "font-family",
+          "font-style",
+          "text-style"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-30",
+        "question": "Which CSS property controls the thickness of text?",
+        "options": [
+          "font-style",
+          "font-weight",
+          "font-thickness",
+          "text-weight"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-31",
+        "question": "What is the purpose of `font-family`?",
+        "options": [
+          "To specify the font used for text",
+          "To change the text color",
+          "To control text spacing",
+          "To set the font's transparency"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-03-32",
+        "question": "Why can multiple fonts be specified in `font-family`?",
+        "options": [
+          "To make all fonts display simultaneously",
+          "To provide fallback fonts if earlier fonts are unavailable",
+          "To increase font size",
+          "To automatically make text bold"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-33",
+        "question": "Which CSS property sets the background color of an element?",
+        "options": [
+          "color",
+          "background",
+          "background-color",
+          "bg-color"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-34",
+        "question": "Which CSS property adds an image as an element's background?",
+        "options": [
+          "background-image",
+          "image-background",
+          "background-src",
+          "image"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-03-35",
+        "question": "What does `background-size: contain` do?",
+        "options": [
+          "Removes the background image",
+          "Makes the image fill the element even if it gets cropped",
+          "Scales the image so the entire image fits inside the element",
+          "Repeats the image horizontally"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-36",
+        "question": "Which property controls whether a background image repeats?",
+        "options": [
+          "background-loop",
+          "background-repeat",
+          "background-pattern",
+          "background-copy"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-37",
+        "question": "Which property controls the position of a background image?",
+        "options": [
+          "background-location",
+          "background-align",
+          "background-position",
+          "background-place"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-38",
+        "question": "What does `background-attachment: fixed` control?",
+        "options": [
+          "The background color",
+          "How the background behaves when the page is scrolled",
+          "The background image format",
+          "The background's file size"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-39",
+        "question": "Which CSS property adds a border around an element?",
+        "options": [
+          "outline-border",
+          "border",
+          "element-border",
+          "box-border"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-40",
+        "question": "Which three components can be combined in the `border` shorthand?",
+        "options": [
+          "Width, style, and color",
+          "Height, padding, and color",
+          "Margin, width, and height",
+          "Color, radius, and position"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-03-41",
+        "question": "What does `border-radius` do?",
+        "options": [
+          "Changes the border color",
+          "Rounds the corners of an element",
+          "Changes the border thickness only",
+          "Moves the border outside the element"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-42",
+        "question": "Which part of the CSS box model creates space between content and the border?",
+        "options": [
+          "Margin",
+          "Padding",
+          "Outline",
+          "Position"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-43",
+        "question": "Which part of the CSS box model creates space outside the element, separating it from other elements?",
+        "options": [
+          "Padding",
+          "Content",
+          "Margin",
+          "Border"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-44",
+        "question": "What is the order of the main parts of the CSS box model from inside to outside?",
+        "options": [
+          "Content → Border → Padding → Margin",
+          "Padding → Content → Border → Margin",
+          "Content → Padding → Border → Margin",
+          "Margin → Border → Padding → Content"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-45",
+        "question": "What does `box-sizing: border-box` include within the declared width and height?",
+        "options": [
+          "Content only",
+          "Content and margin",
+          "Content, padding, and border",
+          "Margin and border only"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-46",
+        "question": "What is the default value of the CSS `position` property?",
+        "options": [
+          "relative",
+          "absolute",
+          "static",
+          "fixed"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-47",
+        "question": "Which positioning value keeps an element in the normal flow while allowing it to be moved relative to its original position?",
+        "options": [
+          "absolute",
+          "relative",
+          "fixed",
+          "sticky"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-03-48",
+        "question": "Which positioning value removes an element from the normal document flow and positions it relative to its containing block?",
+        "options": [
+          "static",
+          "relative",
+          "absolute",
+          "sticky"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-49",
+        "question": "Which positioning value keeps an element positioned relative to the viewport while scrolling?",
+        "options": [
+          "relative",
+          "absolute",
+          "fixed",
+          "static"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-03-50",
+        "question": "What does `z-index` control when positioned elements overlap?",
+        "options": [
+          "Their width",
+          "Their font size",
+          "Their stacking order",
+          "Their position on the x-axis"
         ],
         "correctIndex": 2
       }
     ]
   },
   {
-    "sectionId": 4,
-    "sectionTitle": "CSS Flexbox",
+    "sectionId": "04",
+    "sectionTitle": "CSS Display, Transitions, Transforms & Flexbox",
     "questions": [
       {
         "id": "quiz-04-01",
-        "question": "Which CSS property enables Flexbox on a container?",
+        "question": "What does the CSS display property control?",
         "options": [
-          "display: block",
-          "display: flex",
-          "position: flex",
-          "flex: true"
+          "Text color",
+          "How an element participates in layout",
+          "Font size",
+          "Border thickness"
         ],
         "correctIndex": 1
       },
       {
         "id": "quiz-04-02",
-        "question": "What does 'justify-content: center' do in a flex container?",
+        "question": "What happens when an element has display: none?",
         "options": [
-          "Aligns items vertically",
-          "Centers items horizontally along the main axis",
-          "Wraps items to the next line",
-          "Distributes items evenly"
+          "It becomes transparent",
+          "It remains in layout",
+          "It is removed from layout completely",
+          "It is moved behind other elements"
         ],
-        "correctIndex": 1
+        "correctIndex": 2
       },
       {
         "id": "quiz-04-03",
-        "question": "Which property allows flex items to wrap onto multiple lines?",
+        "question": "Does an element with display: none occupy space in the layout?",
         "options": [
-          "flex-wrap",
-          "flex-flow",
-          "flex-lines",
-          "flex-break"
+          "Always",
+          "Only in Flexbox",
+          "Sometimes",
+          "No"
+        ],
+        "correctIndex": 3
+      },
+      {
+        "id": "quiz-04-04",
+        "question": "Which display value allows width and height while staying on the same line?",
+        "options": [
+          "inline-block",
+          "none",
+          "hidden",
+          "static"
         ],
         "correctIndex": 0
       },
       {
-        "id": "quiz-04-04",
-        "question": "What does the 'flex-grow' property do?",
+        "id": "quiz-04-05",
+        "question": "Which statement about inline-block is correct?",
         "options": [
-          "Shrinks the flex item",
-          "Defines how much the item should grow relative to others",
-          "Sets the initial size of the item",
-          "Aligns the item vertically"
+          "Cannot have width",
+          "Cannot have margins",
+          "Can appear alongside other elements",
+          "Always starts a new line"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-06",
+        "question": "What does visibility: hidden do?",
+        "options": [
+          "Removes the element completely",
+          "Makes it invisible while keeping its space",
+          "Deletes the element",
+          "Changes opacity to 50%"
         ],
         "correctIndex": 1
       },
       {
-        "id": "quiz-04-05",
-        "question": "Which property aligns items along the cross axis in a flex container?",
+        "id": "quiz-04-07",
+        "question": "Which property makes an element completely transparent?",
+        "options": [
+          "display: none",
+          "visibility: hidden",
+          "opacity: 0",
+          "overflow: hidden"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-08",
+        "question": "Which property hides an element but still keeps it in the layout?",
+        "options": [
+          "display: none",
+          "visibility: hidden",
+          "opacity: 0",
+          "Both visibility: hidden and opacity: 0"
+        ],
+        "correctIndex": 3
+      },
+      {
+        "id": "quiz-04-09",
+        "question": "What does opacity: 0.5 mean?",
+        "options": [
+          "The element is half transparent",
+          "The element is hidden",
+          "The element is removed",
+          "The element is fixed"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-04-10",
+        "question": "Which property controls what happens when content exceeds an element's size?",
+        "options": [
+          "position",
+          "overflow",
+          "display",
+          "transform"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-11",
+        "question": "Which overflow value adds scrollbars only when needed?",
+        "options": [
+          "hidden",
+          "scroll",
+          "auto",
+          "visible"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-12",
+        "question": "Which overflow value clips overflowing content?",
+        "options": [
+          "visible",
+          "hidden",
+          "auto",
+          "scroll"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-13",
+        "question": "What does overflow: visible do?",
+        "options": [
+          "Adds scrollbars",
+          "Clips content",
+          "Allows content to extend outside",
+          "Hides content"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-14",
+        "question": "What is the purpose of CSS transitions?",
+        "options": [
+          "Hide elements",
+          "Move elements",
+          "Smoothly animate property changes",
+          "Create layouts"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-15",
+        "question": "In transition: all 0.3s ease-in-out;, what does 0.3s represent?",
+        "options": [
+          "Delay",
+          "Opacity",
+          "Duration",
+          "Scale"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-16",
+        "question": "What does transition-delay do?",
+        "options": [
+          "Changes animation speed",
+          "Adds a delay before the transition starts",
+          "Stops transitions",
+          "Changes opacity"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-17",
+        "question": "Which CSS property is used to rotate an element?",
+        "options": [
+          "translate",
+          "rotate",
+          "transform",
+          "transition"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-18",
+        "question": "Which transform function rotates an element?",
+        "options": [
+          "rotate()",
+          "scale()",
+          "translateX()",
+          "skew()"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-04-19",
+        "question": "Which transform function changes an element's visual size?",
+        "options": [
+          "rotate()",
+          "skew()",
+          "translateX()",
+          "scale()"
+        ],
+        "correctIndex": 3
+      },
+      {
+        "id": "quiz-04-20",
+        "question": "What does transform: scale(0.5, 0.5) do?",
+        "options": [
+          "Doubles size",
+          "Moves right",
+          "Reduces width and height to half",
+          "Rotates 50 degrees"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-21",
+        "question": "Which transform function tilts an element?",
+        "options": [
+          "scale()",
+          "skew()",
+          "rotate()",
+          "translateX()"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-22",
+        "question": "Which transform function moves an element horizontally?",
+        "options": [
+          "translateX()",
+          "rotate()",
+          "scale()",
+          "skew()"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-04-23",
+        "question": "What happens with translateX(200px)?",
+        "options": [
+          "Moves up",
+          "Moves left",
+          "Moves right",
+          "Rotates"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-24",
+        "question": "What does transform-origin control?",
+        "options": [
+          "Animation duration",
+          "Element visibility",
+          "The point around which transformations occur",
+          "Background position"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-25",
+        "question": "Which pseudo-class applies styles when the mouse pointer is over an element?",
+        "options": [
+          ":focus",
+          ":hover",
+          ":active",
+          ":visited"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-26",
+        "question": "Hover effects are commonly combined with which feature for smooth animations?",
+        "options": [
+          "Margins",
+          "Borders",
+          "Transitions",
+          "Overflow"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-27",
+        "question": "Which CSS value creates a flex container?",
+        "options": [
+          "display: block",
+          "display: inline",
+          "display: flex",
+          "display: none"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-28",
+        "question": "What are the direct children of a flex container called?",
+        "options": [
+          "Flex rows",
+          "Flex items",
+          "Flex groups",
+          "Flex blocks"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-29",
+        "question": "What is the default behavior of flex items regarding wrapping?",
+        "options": [
+          "Always wrap",
+          "Stay on one line if possible",
+          "Stack vertically",
+          "Disappear"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-30",
+        "question": "Which property allows flex items to move onto additional lines?",
+        "options": [
+          "flex-grow",
+          "justify-content",
+          "align-items",
+          "flex-wrap"
+        ],
+        "correctIndex": 3
+      },
+      {
+        "id": "quiz-04-31",
+        "question": "What does justify-content control?",
+        "options": [
+          "Cross-axis alignment",
+          "Main-axis alignment",
+          "Visibility",
+          "Positioning"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-32",
+        "question": "With the default row direction, what is the main axis?",
+        "options": [
+          "Vertical",
+          "Diagonal",
+          "Horizontal",
+          "Circular"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-33",
+        "question": "Which justify-content value centers flex items?",
+        "options": [
+          "center",
+          "flex-start",
+          "space-between",
+          "flex-end"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-04-34",
+        "question": "Which property aligns items along the cross axis?",
         "options": [
           "justify-content",
           "align-items",
-          "flex-align",
-          "cross-align"
+          "flex-wrap",
+          "flex-grow"
         ],
         "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-35",
+        "question": "With default row direction, what is the cross axis?",
+        "options": [
+          "Horizontal",
+          "Vertical",
+          "Diagonal",
+          "None"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-36",
+        "question": "Which align-items value places items at the end of the cross axis?",
+        "options": [
+          "center",
+          "stretch",
+          "flex-end",
+          "flex-start"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-37",
+        "question": "What does align-content control?",
+        "options": [
+          "Single item alignment",
+          "Multiple flex-line alignment",
+          "Text alignment",
+          "Border alignment"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-38",
+        "question": "When is align-content most useful?",
+        "options": [
+          "With wrapping enabled",
+          "For tables",
+          "For images",
+          "For opacity"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-04-39",
+        "question": "Which property controls how much a flex item grows?",
+        "options": [
+          "order",
+          "align-items",
+          "flex-grow",
+          "overflow"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-40",
+        "question": "If one item has flex-grow: 3 and another has flex-grow: 1, how much more growing space does the first receive?",
+        "options": [
+          "The same amount",
+          "Twice as much",
+          "Three times as much",
+          "Four times as much"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-41",
+        "question": "Which property changes the visual order of flex items?",
+        "options": [
+          "flex-grow",
+          "order",
+          "position",
+          "z-index"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-42",
+        "question": "What is the default value of the order property?",
+        "options": [
+          "0",
+          "1",
+          "-1",
+          "10"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-04-43",
+        "question": "Which order value appears first visually?",
+        "options": [
+          "Largest value",
+          "Smallest value",
+          "Middle value",
+          "Negative values are ignored"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-44",
+        "question": "Which Flexbox property is commonly used to center content horizontally?",
+        "options": [
+          "align-content",
+          "justify-content: center",
+          "overflow",
+          "order"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-45",
+        "question": "Which Flexbox property is commonly used to center content vertically?",
+        "options": [
+          "align-items: center",
+          "flex-wrap",
+          "overflow",
+          "display: none"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-04-46",
+        "question": "Which combination centers content both horizontally and vertically?",
+        "options": [
+          "display: none + opacity: 0",
+          "justify-content: center + align-items: center",
+          "overflow: auto + flex-wrap",
+          "order + flex-grow"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-04-47",
+        "question": "Which of the following is a Flexbox container property?",
+        "options": [
+          "order",
+          "flex-grow",
+          "justify-content",
+          "opacity"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-48",
+        "question": "Which of the following is a Flexbox item property?",
+        "options": [
+          "align-items",
+          "justify-content",
+          "flex-grow",
+          "align-content"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-49",
+        "question": "Which property is applied to individual flex items to change their visual sequence?",
+        "options": [
+          "align-content",
+          "flex-wrap",
+          "order",
+          "justify-content"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-04-50",
+        "question": "Which CSS layout system was introduced in this lesson for arranging elements efficiently in rows or columns?",
+        "options": [
+          "Grid",
+          "Tables",
+          "Float",
+          "Flexbox"
+        ],
+        "correctIndex": 3
       }
     ]
   },
   {
-    "sectionId": 5,
-    "sectionTitle": "CSS Animations & Advanced",
+    "sectionId": "05",
+    "sectionTitle": "Advanced CSS & Bootstrap",
     "questions": [
       {
         "id": "quiz-05-01",
-        "question": "Where should CSS custom properties (variables) typically be defined?",
+        "question": "What is the main purpose of CSS variables?",
         "options": [
-          "In the body element",
-          "In the :root selector",
-          "In a <style> tag anywhere",
-          "In an external file only"
+          "To execute JavaScript code",
+          "To store reusable CSS values",
+          "To create HTML elements",
+          "To replace media queries"
         ],
         "correctIndex": 1
       },
       {
         "id": "quiz-05-02",
-        "question": "Which pseudo-class is used to define styles when a user hovers over an element?",
+        "question": "What prefix must a CSS custom property name use?",
         "options": [
-          ":active",
-          ":focus",
-          ":hover",
-          ":visited"
+          "$",
+          "@",
+          "--",
+          "##"
         ],
         "correctIndex": 2
       },
       {
         "id": "quiz-05-03",
-        "question": "What CSS rule is used to define animation keyframes?",
+        "question": "Which selector is commonly used to define global CSS variables?",
         "options": [
-          "@animation",
-          "@keyframes",
-          "@frames",
-          "@animate"
+          ":global",
+          ":root",
+          "::root",
+          "html.root"
         ],
         "correctIndex": 1
       },
       {
         "id": "quiz-05-04",
-        "question": "How do you create a media query for screens smaller than 768px?",
+        "question": "Which function is used to retrieve the value of a CSS variable?",
         "options": [
-          "@media screen > 768px",
-          "@media (max-width: 768px)",
-          "@media (min-width: 768px)",
-          "@media size < 768px"
+          "get()",
+          "value()",
+          "var()",
+          "css()"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-05-05",
+        "question": "What does var(--base-space) do?",
+        "options": [
+          "Creates a new variable",
+          "Retrieves the value stored in --base-space",
+          "Deletes the variable",
+          "Changes the variable name"
         ],
         "correctIndex": 1
       },
       {
-        "id": "quiz-05-05",
-        "question": "Which CSS property creates a grid layout?",
+        "id": "quiz-05-06",
+        "question": "Which of the following is a valid CSS variable declaration?",
         "options": [
-          "display: grid",
-          "layout: grid",
-          "grid: true",
-          "position: grid"
+          "--primary-color: blue;",
+          "$primary-color: blue;",
+          "primary-color: blue;",
+          "@primary-color: blue;"
         ],
         "correctIndex": 0
+      },
+      {
+        "id": "quiz-05-07",
+        "question": "What does the :hover pseudo-class represent?",
+        "options": [
+          "An element after it is clicked",
+          "An element when the pointer is placed over it",
+          "The first element on the page",
+          "An element when it is removed"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-08",
+        "question": "Which syntax is used for CSS pseudo-elements?",
+        "options": [
+          "Single colon only",
+          "Double colon",
+          "Parentheses",
+          "Square brackets"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-09",
+        "question": "Which pseudo-element targets the first letter of an element's text?",
+        "options": [
+          "::first-line",
+          "::first-letter",
+          ":first-letter",
+          "::letter"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-10",
+        "question": "What does the ::before pseudo-element do?",
+        "options": [
+          "Removes content before an element",
+          "Inserts generated content before an element's actual content",
+          "Selects the previous HTML element",
+          "Moves an element backward"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-11",
+        "question": "Which property is required when creating generated content with ::before or ::after?",
+        "options": [
+          "display",
+          "position",
+          "content",
+          "visibility"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-05-12",
+        "question": "Which pseudo-element inserts generated content after an element's content?",
+        "options": [
+          "::before",
+          "::after",
+          "::next",
+          "::last"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-13",
+        "question": "Which of the following is a common use for ::before and ::after?",
+        "options": [
+          "Creating database tables",
+          "Adding decorative shapes and visual effects",
+          "Executing JavaScript",
+          "Changing the HTML document type"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-14",
+        "question": "Which CSS property connects an animation to an element?",
+        "options": [
+          "animation",
+          "animate",
+          "keyframe",
+          "motion"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-05-15",
+        "question": "In `animation: move 4s;`, what does `move` represent?",
+        "options": [
+          "The animation duration",
+          "The animation name",
+          "The animation delay",
+          "The animation direction"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-16",
+        "question": "In `animation: move 4s;`, what does `4s` represent?",
+        "options": [
+          "The animation name",
+          "The number of repetitions",
+          "The animation duration",
+          "The animation delay"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-05-17",
+        "question": "What is the purpose of @keyframes?",
+        "options": [
+          "To define the different stages of an animation",
+          "To define CSS variables",
+          "To create media queries",
+          "To import Bootstrap"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-05-18",
+        "question": "In a CSS animation, what does 0% usually represent?",
+        "options": [
+          "The middle of the animation",
+          "The beginning of the animation",
+          "The end of the animation",
+          "A paused state"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-19",
+        "question": "In a CSS animation, what does 100% represent?",
+        "options": [
+          "The beginning",
+          "The middle",
+          "The end",
+          "The delay"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-05-20",
+        "question": "What does `animation-iteration-count: infinite;` do?",
+        "options": [
+          "Makes the animation run once",
+          "Pauses the animation",
+          "Makes the animation repeat forever",
+          "Makes the animation run faster"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-05-21",
+        "question": "What does `animation-play-state: paused;` do?",
+        "options": [
+          "Stops the animation permanently",
+          "Pauses the animation",
+          "Deletes the animation",
+          "Restarts the animation"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-22",
+        "question": "What effect does the shake animation in the section create?",
+        "options": [
+          "A vertical scrolling effect",
+          "A left-and-right vibration effect",
+          "A fading effect",
+          "A color-only effect"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-23",
+        "question": "Which transform function is used in the shake animation?",
+        "options": [
+          "translateY()",
+          "scale()",
+          "translateX()",
+          "rotateX()"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-05-24",
+        "question": "Can a CSS animation modify multiple CSS properties at the same time?",
+        "options": [
+          "No, only one property can be animated",
+          "Yes",
+          "Only color properties",
+          "Only transform properties"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-25",
+        "question": "What does the CSS calc() function allow you to do?",
+        "options": [
+          "Execute JavaScript calculations",
+          "Perform mathematical calculations inside CSS values",
+          "Calculate HTML elements",
+          "Create CSS animations"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-26",
+        "question": "What does `left: calc(100% - 100px);` calculate?",
+        "options": [
+          "100px plus 100%",
+          "100% multiplied by 100px",
+          "100% minus 100px",
+          "100px divided by 100%"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-05-27",
+        "question": "Why is calc() especially useful in responsive layouts?",
+        "options": [
+          "It allows different units to be combined in calculations",
+          "It removes the need for HTML",
+          "It automatically creates media queries",
+          "It only works with pixels"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-05-28",
+        "question": "What does `max-width: 100%` on an image help prevent?",
+        "options": [
+          "The image from being displayed",
+          "The image from becoming wider than its containing element",
+          "The image from having a height",
+          "The image from being responsive"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-29",
+        "question": "Why is `position: relative` used on the `.image` element in the overlay example?",
+        "options": [
+          "To make the image disappear",
+          "To provide a positioning context for the absolutely positioned pseudo-element",
+          "To create an animation automatically",
+          "To make the image fixed to the viewport"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-30",
+        "question": "What happens to the image overlay when `.image:hover::after` changes width from 0% to 100%?",
+        "options": [
+          "The overlay expands to cover the image",
+          "The image becomes smaller",
+          "The overlay disappears",
+          "The image moves left"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-05-31",
+        "question": "What property makes the image overlay expansion smooth?",
+        "options": [
+          "animation",
+          "transition",
+          "transform",
+          "smooth"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-32",
+        "question": "What does the `>` CSS selector target?",
+        "options": [
+          "Any descendant",
+          "The immediate children of an element",
+          "The next sibling",
+          "All previous siblings"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-33",
+        "question": "Given `.test > p`, which paragraph is targeted?",
+        "options": [
+          "Every paragraph anywhere inside .test",
+          "Only paragraphs that are direct children of .test",
+          "Only paragraphs before .test",
+          "Only the first paragraph on the page"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-34",
+        "question": "What does the `+` CSS selector target?",
+        "options": [
+          "All descendants",
+          "The immediately following sibling",
+          "All following siblings",
+          "The direct parent"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-35",
+        "question": "What does the `~` CSS selector target?",
+        "options": [
+          "The parent element",
+          "Only the previous sibling",
+          "Matching siblings that appear after an element",
+          "Only direct children"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-05-36",
+        "question": "Which selector targets all matching p siblings that appear after `.test`?",
+        "options": [
+          ".test > p",
+          ".test + p",
+          ".test ~ p",
+          ".test p"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-05-37",
+        "question": "What does `linear-gradient(red, blue)` create?",
+        "options": [
+          "A radial shadow",
+          "A smooth color transition along a straight line",
+          "An animation",
+          "A CSS variable"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-38",
+        "question": "Which CSS property is used to add a shadow around an element?",
+        "options": [
+          "text-shadow",
+          "element-shadow",
+          "box-shadow",
+          "shadow-box"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-05-39",
+        "question": "Which of the following is a common use for box-shadow?",
+        "options": [
+          "Creating depth and separation",
+          "Creating HTML elements",
+          "Loading Bootstrap",
+          "Defining animations"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-05-40",
+        "question": "What is the main purpose of a CSS media query?",
+        "options": [
+          "To play audio",
+          "To change CSS based on device or viewport characteristics",
+          "To define CSS variables",
+          "To create HTML forms"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-41",
+        "question": "What does `@media (max-width: 768px)` generally target?",
+        "options": [
+          "Viewports 768px wide or smaller",
+          "Viewports larger than 768px",
+          "Only exactly 768px",
+          "Only desktop screens"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-05-42",
+        "question": "What is Bootstrap?",
+        "options": [
+          "A JavaScript programming language",
+          "A CSS framework with ready-made styles, components, and a responsive grid system",
+          "A database system",
+          "An HTML editor"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-43",
+        "question": "What does the Bootstrap `active` class identify in the carousel example?",
+        "options": [
+          "The last slide",
+          "The initial visible slide",
+          "A hidden slide",
+          "The carousel container"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-44",
+        "question": "What is a Bootstrap carousel used for?",
+        "options": [
+          "Displaying multiple items as a slideshow",
+          "Creating database tables",
+          "Creating CSS variables",
+          "Defining media queries"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-05-45",
+        "question": "What does the Bootstrap `.container` class provide?",
+        "options": [
+          "A responsive container for page content",
+          "An animation",
+          "A carousel slide",
+          "A CSS variable"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-05-46",
+        "question": "What does the Bootstrap `.row` class create?",
+        "options": [
+          "A CSS animation",
+          "A row for grid columns",
+          "A responsive image",
+          "A carousel control"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-47",
+        "question": "In Bootstrap's 12-column grid, how many columns does `.col-3` occupy?",
+        "options": [
+          "2",
+          "3",
+          "6",
+          "12"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-48",
+        "question": "What does the Bootstrap `g-3` class control?",
+        "options": [
+          "Font size",
+          "Grid spacing between columns and rows",
+          "Column width",
+          "Animation duration"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-49",
+        "question": "What does the Bootstrap `d-block w-100` combination do to an image?",
+        "options": [
+          "Makes it hidden and 50% wide",
+          "Makes it display as block and 100% wide",
+          "Makes it absolutely positioned",
+          "Adds a shadow and animation"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-05-50",
+        "question": "When two CSS rules have the same specificity, which rule takes precedence?",
+        "options": [
+          "The first declaration",
+          "The declaration with more properties",
+          "The later declaration in source order",
+          "The declaration with the shorter selector"
+        ],
+        "correctIndex": 2
       }
     ]
   }

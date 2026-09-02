@@ -2,12 +2,25 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import MarkdownComponents from "../ui/markdownComponents";
 import DifficultyBadge from "./DifficultyBadge";
+import CategoryBadge from "./CategoryBadge";
 import HintPanel from "./HintPanel";
 import SolutionPanel from "./SolutionPanel";
 import TaskCompletionButton from "./TaskCompletionButton";
 import TaskActions from "./TaskActions";
 
-export default function MediumTaskCard({
+const hoverBorder = {
+  Easy: "hover:border-primary",
+  Medium: "hover:border-tertiary",
+  Hard: "hover:border-error",
+};
+
+const hoverGradient = {
+  Easy: "from-primary/5",
+  Medium: "from-tertiary/5",
+  Hard: "from-error/5",
+};
+
+export default function TaskCard({
   task,
   isCompleted,
   isHintVisible,
@@ -16,10 +29,17 @@ export default function MediumTaskCard({
   onToggleHint,
   onToggleSolution,
 }) {
+  const border = hoverBorder[task.difficulty] || hoverBorder.Easy;
+  const gradient = hoverGradient[task.difficulty] || hoverGradient.Easy;
+
   return (
-    <article className="col-span-1 md:col-span-2 lg:col-span-12 bg-surface-container-high rounded-xl border border-outline-variant hover:border-tertiary transition-colors duration-300 relative overflow-hidden group p-md flex flex-col">
-      <div className="absolute inset-0 bg-linear-to-br from-tertiary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-      <div className="flex justify-between items-start mb-sm relative z-10">
+    <article
+      className={`col-span-1 lg:col-span-12 bg-surface-container-high rounded-xl border border-outline-variant ${border} transition-colors duration-300 relative overflow-hidden group p-md flex flex-col`}
+    >
+      <div
+        className={`absolute inset-0 bg-linear-to-br ${gradient} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`}
+      />
+      <div className="flex justify-between items-start gap-sm mb-sm relative z-10">
         <div>
           <span className="font-code text-label-sm leading-[16px] tracking-wider text-on-surface-variant uppercase mb-base block">
             {task.number}
@@ -28,10 +48,16 @@ export default function MediumTaskCard({
             {task.title}
           </h2>
         </div>
-        <DifficultyBadge difficulty={task.difficulty} />
+        <div className="flex items-center gap-xs shrink-0">
+          <DifficultyBadge difficulty={task.difficulty} />
+          <CategoryBadge category={task.category} />
+        </div>
       </div>
       <div className="mb-md grow relative z-10">
-        <ReactMarkdown components={MarkdownComponents.components} remarkPlugins={[remarkGfm]}>
+        <ReactMarkdown
+          components={MarkdownComponents.components}
+          remarkPlugins={[remarkGfm]}
+        >
           {task.description}
         </ReactMarkdown>
       </div>

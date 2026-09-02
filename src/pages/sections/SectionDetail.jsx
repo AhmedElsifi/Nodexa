@@ -77,7 +77,7 @@ export default function SectionDetail() {
         <p className="font-sans text-body-lg leading-7 text-on-surface-variant max-w-fit">
           {section.fullDescription}
         </p>
-        <div className="mt-lg max-w-fit">
+        <div className="mt-lg max-w-120 mx-auto">
           <div className="flex justify-between items-end mb-2 font-code text-label-sm leading-[16px] tracking-wider">
             <span className="text-on-surface">Section Progress</span>
             <span className="text-primary">{enriched.progress}% Completed</span>

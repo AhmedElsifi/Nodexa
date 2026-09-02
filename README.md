@@ -1,18 +1,18 @@
-# NodeXa
+# EduNode
 
 A community-built learning portal for ITI students to learn, revise, and practice Node.js and backend development.
 
-> **Disclaimer:** NodeXa is an independent project and is **not** officially affiliated with, endorsed by, or operated by ITI (Information Technology Institute). The creator is not an ITI employee. This platform was built independently to help fellow students.
+> **Disclaimer:** EduNode is an independent project and is **not** officially affiliated with, endorsed by, or operated by ITI (Information Technology Institute). The creator is not an ITI employee. This platform was built independently to help fellow students.
 
 ---
 
 ## Overview
 
-NodeXa is a single-page learning platform designed around a structured study flow: read summaries, complete hands-on tasks, take quizzes, and track your progress over time. It covers six core sections of Node.js backend development, from fundamentals to deployment.
+EduNode is a single-page learning platform designed around a structured study flow: read summaries, complete hands-on tasks, take quizzes, and track your progress over time. It covers six core sections of Node.js backend development, from fundamentals to deployment.
 
-## Why NodeXa
+## Why EduNode
 
-During the ITI Summer Code Camp, there was no centralized platform for reviewing material, practicing tasks, or tracking learning progress in one place. NodeXa fills that gap as a lightweight, self-contained tool built by a student, for students.
+During the ITI Summer Code Camp, there was no centralized platform for reviewing material, practicing tasks, or tracking learning progress in one place. EduNode fills that gap as a lightweight, self-contained tool built by a student, for students.
 
 ## Features
 
@@ -82,8 +82,8 @@ src/
 ### Installation
 
 ```bash
-git clone https://github.com/AhmedElsifi/Nodexa.git
-cd Nodexa
+git clone https://github.com/AhmedElsifi/EduNode.git
+cd EduNode
 npm install
 ```
 
@@ -115,7 +115,7 @@ npm run lint
 
 ## How Progress Works
 
-All user progress is stored in the browser's localStorage under the key `nodexa_user_data`. This includes:
+All user progress is stored in the browser's localStorage under the key `edunode_user_data`. This includes:
 
 - User name
 - Last visited section
