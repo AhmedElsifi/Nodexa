@@ -78,5 +78,37 @@
     "tasksCompleted": 0,
     "quizzesCompleted": 0,
     "summaryCompleted": false
+  },
+  {
+    "id": "06",
+    "title": "JavaScript Fundamentals",
+    "description": "JavaScript basics, DOM manipulation, data types, conditions, operators, functions, and loops.",
+    "fullDescription": "Learning the fundamentals of JavaScript, including variables, primitive data types, type conversion, DOM element selection, conditions, comparison and logical operators, switch statements, functions, and different types of loops.",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "icon": "javascript",
+    "duration": "3h 30m",
+    "progress": 0,
+    "taskCount": 4,
+    "quizCount": 5,
+    "tasksCompleted": 0,
+    "quizzesCompleted": 0,
+    "summaryCompleted": false
+  },
+  {
+    "id": "07",
+    "title": "JavaScript Functions, Objects, Arrays & DOM",
+    "description": "JavaScript functions, objects, arrays, BOM, DOM manipulation, and events.",
+    "fullDescription": "Learning how to create reusable functions, work with objects and arrays, interact with the browser using the BOM, manipulate HTML and CSS through the DOM, change attributes and classes, and handle user events.",
+    "category": "JavaScript",
+    "difficulty": "Medium",
+    "icon": "javascript",
+    "duration": "4h 00m",
+    "progress": 0,
+    "taskCount": 4,
+    "quizCount": 5,
+    "tasksCompleted": 0,
+    "quizzesCompleted": 0,
+    "summaryCompleted": false
   }
 ]

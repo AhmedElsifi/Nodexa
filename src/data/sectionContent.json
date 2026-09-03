@@ -434,5 +434,189 @@
         "id": "summary"
       }
     ]
+  },
+  {
+    "sectionId": "06",
+    "title": "JavaScript Fundamentals",
+    "readTime": "30 min read",
+    "file": "../content/sections/06-javascript-fundamentals.md",
+    "tableOfContents": [
+      {
+        "label": "Introduction",
+        "id": "introduction"
+      },
+      {
+        "label": "JavaScript Comments",
+        "id": "javascript-comments"
+      },
+      {
+        "label": "Accessing HTML Elements",
+        "id": "accessing-html-elements"
+      },
+      {
+        "label": "getElementById()",
+        "id": "getelementbyid"
+      },
+      {
+        "label": "getElementsByClassName()",
+        "id": "getelementsbyclassname"
+      },
+      {
+        "label": "getElementsByName()",
+        "id": "getelementsbyname"
+      },
+      {
+        "label": "getElementsByTagName()",
+        "id": "getelementsbytagname"
+      },
+      {
+        "label": "Browser and Page Interaction",
+        "id": "browser-and-page-interaction"
+      },
+      {
+        "label": "Variables",
+        "id": "variables"
+      },
+      {
+        "label": "Primitive Data Types",
+        "id": "primitive-data-types"
+      },
+      {
+        "label": "null vs undefined",
+        "id": "null-vs-undefined"
+      },
+      {
+        "label": "Type Conversion",
+        "id": "type-conversion"
+      },
+      {
+        "label": "Conditional Statements",
+        "id": "conditional-statements"
+      },
+      {
+        "label": "Comparison Operators",
+        "id": "comparison-operators"
+      },
+      {
+        "label": "Logical Operators",
+        "id": "logical-operators"
+      },
+      {
+        "label": "switch Statement",
+        "id": "switch-statement"
+      },
+      {
+        "label": "Loops",
+        "id": "loops"
+      },
+      {
+        "label": "for Loop",
+        "id": "for-loop"
+      },
+      {
+        "label": "while Loop",
+        "id": "while-loop"
+      },
+      {
+        "label": "do...while Loop",
+        "id": "do...while-loop"
+      },
+      {
+        "label": "Infinite Loops",
+        "id": "infinite-loops"
+      },
+      {
+        "label": "Generating HTML with a Loop",
+        "id": "generating-html-with-a-loop"
+      },
+      {
+        "label": "JavaScript Functions",
+        "id": "javascript-functions"
+      },
+      {
+        "label": "JavaScript Files",
+        "id": "javascript-files"
+      },
+      {
+        "label": "Summary",
+        "id": "summary"
+      }
+    ]
+  },
+  {
+    "sectionId": "07",
+    "title": "JavaScript Functions, Objects, Arrays, and DOM",
+    "readTime": "35 min read",
+    "file": "../content/sections/07-javascript-functions-objects-arrays-dom.md",
+    "tableOfContents": [
+      {
+        "label": "Introduction",
+        "id": "introduction"
+      },
+      {
+        "label": "JavaScript Functions",
+        "id": "javascript-functions"
+      },
+      {
+        "label": "Types of Functions",
+        "id": "types-of-functions"
+      },
+      {
+        "label": "Objects",
+        "id": "objects"
+      },
+      {
+        "label": "Browser Object Model (BOM)",
+        "id": "browser-object-model-(bom)"
+      },
+      {
+        "label": "Arrays",
+        "id": "arrays"
+      },
+      {
+        "label": "Array Methods",
+        "id": "array-methods"
+      },
+      {
+        "label": "Arrays of Objects",
+        "id": "arrays-of-objects"
+      },
+      {
+        "label": "DOM",
+        "id": "dom"
+      },
+      {
+        "label": "Changing HTML Content",
+        "id": "changing-html-content"
+      },
+      {
+        "label": "Changing CSS with JavaScript",
+        "id": "changing-css-with-javascript"
+      },
+      {
+        "label": "classList",
+        "id": "classlist"
+      },
+      {
+        "label": "Changing HTML Attributes",
+        "id": "changing-html-attributes"
+      },
+      {
+        "label": "Events",
+        "id": "events"
+      },
+      {
+        "label": "Event Object",
+        "id": "event-object"
+      },
+      {
+        "label": "Inline Event Handlers",
+        "id": "inline-event-handlers"
+      },
+      {
+        "label": "Summary",
+        "id": "summary"
+      }
+    ]
   }
 ]

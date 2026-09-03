@@ -2778,5 +2778,1117 @@
         "correctIndex": 2
       }
     ]
+  },
+  {
+    "sectionId": "06",
+    "sectionTitle": "JavaScript Fundamentals",
+    "questions": [
+      {
+        "id": "quiz-06-01",
+        "question": "What is the primary purpose of JavaScript in a web page?",
+        "options": [
+          "To define the structure of the page",
+          "To control the visual styling of the page",
+          "To add behavior and interactivity",
+          "To store data permanently"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-02",
+        "question": "Which type of JavaScript comment is created using //?",
+        "options": [
+          "Single-line comment",
+          "Multi-line comment",
+          "Block statement",
+          "HTML comment"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-06-03",
+        "question": "Which syntax is used to create a multi-line JavaScript comment?",
+        "options": [
+          "// comment //",
+          "/* comment */",
+          "<!-- comment -->",
+          "# comment #"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-04",
+        "question": "What happens to JavaScript comments when the code is executed?",
+        "options": [
+          "They are displayed on the page",
+          "They are converted into HTML",
+          "They are ignored",
+          "They are stored as variables"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-05",
+        "question": "What does DOM stand for?",
+        "options": [
+          "Document Object Model",
+          "Data Object Management",
+          "Document Oriented Module",
+          "Dynamic Object Model"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-06-06",
+        "question": "Which method selects an HTML element using its id?",
+        "options": [
+          "document.getElementsByClassName()",
+          "document.getElementById()",
+          "document.getElementsByName()",
+          "document.getElementsByTagName()"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-07",
+        "question": "What does document.getElementById(\"mybtn\") select?",
+        "options": [
+          "All elements with the class mybtn",
+          "All elements named mybtn",
+          "The element with the id mybtn",
+          "All button elements"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-08",
+        "question": "Which property can be used to change the HTML content inside an element?",
+        "options": [
+          "textContentHTML",
+          "innerHTML",
+          "htmlContent",
+          "contentHTML"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-09",
+        "question": "Which method selects elements that have a specific class?",
+        "options": [
+          "getElementById()",
+          "getElementsByClassName()",
+          "getElementsByName()",
+          "getElementsByTagName()"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-10",
+        "question": "What does getElementsByClassName() return when multiple elements have the same class?",
+        "options": [
+          "Only the first element",
+          "A collection of elements",
+          "A single string",
+          "A boolean value"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-11",
+        "question": "Which method selects elements using their name attribute?",
+        "options": [
+          "getElementsByName()",
+          "getElementByName()",
+          "getByName()",
+          "selectByName()"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-06-12",
+        "question": "Which method selects elements based on their HTML tag name?",
+        "options": [
+          "getElementsByTagName()",
+          "getElementByTag()",
+          "getTags()",
+          "getByTagName()"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-06-13",
+        "question": "What does document.getElementsByTagName(\"div\") retrieve?",
+        "options": [
+          "The element with id div",
+          "Elements with class div",
+          "Elements with the div tag",
+          "Elements with name div"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-14",
+        "question": "What does window.alert() do?",
+        "options": [
+          "Creates a new browser window",
+          "Displays an alert dialog",
+          "Changes the page title",
+          "Selects an HTML element"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-15",
+        "question": "What does the window object generally represent?",
+        "options": [
+          "An HTML element",
+          "The browser window",
+          "A JavaScript variable",
+          "The document body only"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-16",
+        "question": "What is the purpose of a variable?",
+        "options": [
+          "To style HTML elements",
+          "To store values that can be used and changed",
+          "To create HTML comments",
+          "To stop program execution"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-17",
+        "question": "Which keyword is used in the examples to declare a variable?",
+        "options": [
+          "let",
+          "const",
+          "var",
+          "variable"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-18",
+        "question": "What is the value of x after executing var x;?",
+        "options": [
+          "null",
+          "0",
+          "undefined",
+          "false"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-19",
+        "question": "Which of the following is a primitive data type mentioned in the section?",
+        "options": [
+          "Array",
+          "String",
+          "Object",
+          "Function"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-20",
+        "question": "What type of value is \"26\"?",
+        "options": [
+          "Number",
+          "Boolean",
+          "String",
+          "Undefined"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-21",
+        "question": "Why is \"26\" considered a string rather than a number?",
+        "options": [
+          "Because it contains two digits",
+          "Because it is surrounded by quotation marks",
+          "Because JavaScript cannot store numbers",
+          "Because strings always contain letters"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-22",
+        "question": "Which primitive data type represents numeric values?",
+        "options": [
+          "String",
+          "Number",
+          "Boolean",
+          "Null"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-23",
+        "question": "Which primitive data type can have the values true or false?",
+        "options": [
+          "String",
+          "Number",
+          "Boolean",
+          "Undefined"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-24",
+        "question": "What does null represent?",
+        "options": [
+          "A variable that was never declared",
+          "An intentionally empty value",
+          "A number equal to zero",
+          "A false condition"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-25",
+        "question": "What does undefined usually mean for a variable?",
+        "options": [
+          "It has been intentionally assigned null",
+          "It contains the number zero",
+          "It has been declared but has not been assigned a value",
+          "It contains false"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-26",
+        "question": "Which operator can be used to determine the type of a value?",
+        "options": [
+          "typeOf",
+          "typeof",
+          "getType",
+          "checkType"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-27",
+        "question": "What does Number() do?",
+        "options": [
+          "Converts a value into a number when possible",
+          "Converts every value into a string",
+          "Checks whether a value is null",
+          "Creates a new variable"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-06-28",
+        "question": "Why might Number() be useful when receiving input from prompt()?",
+        "options": [
+          "prompt() always returns a number",
+          "prompt() returns input as text",
+          "prompt() only accepts numbers",
+          "Number() displays the input"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-29",
+        "question": "What is the purpose of an if statement?",
+        "options": [
+          "To repeat code forever",
+          "To execute code when a condition is true",
+          "To declare a variable",
+          "To select an HTML tag"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-30",
+        "question": "When is an else if condition checked?",
+        "options": [
+          "Before the first if condition",
+          "Only when the previous condition was false",
+          "Only when the previous condition was true",
+          "After every loop"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-31",
+        "question": "When does the else block execute?",
+        "options": [
+          "When the first condition is true",
+          "When all previous conditions are false",
+          "Before the if statement",
+          "Only inside loops"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-32",
+        "question": "What does the == operator perform?",
+        "options": [
+          "Assignment",
+          "Strict equality comparison",
+          "Loose equality comparison that allows type conversion",
+          "Logical AND"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-33",
+        "question": "What does the === operator check?",
+        "options": [
+          "Only the value",
+          "Only the data type",
+          "Both the value and data type",
+          "Whether a variable exists"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-34",
+        "question": "What is the result of 5 === \"5\"?",
+        "options": [
+          "true",
+          "false",
+          "5",
+          "undefined"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-35",
+        "question": "Why is 5 === \"5\" false?",
+        "options": [
+          "The values are different",
+          "The number 5 is invalid",
+          "One value is a number and the other is a string",
+          "=== only works with variables"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-36",
+        "question": "What is the purpose of the = operator?",
+        "options": [
+          "To compare two values",
+          "To assign a value to a variable",
+          "To check data types",
+          "To perform logical OR"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-37",
+        "question": "What does the || logical operator represent?",
+        "options": [
+          "AND",
+          "NOT",
+          "OR",
+          "Assignment"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-38",
+        "question": "When does the OR (||) operator return true?",
+        "options": [
+          "Only when both conditions are false",
+          "When at least one condition is true",
+          "Only when both conditions are true",
+          "Only when neither condition exists"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-39",
+        "question": "What does the && operator require?",
+        "options": [
+          "At least one condition to be true",
+          "Both conditions to be true",
+          "Both conditions to be false",
+          "Only one condition to exist"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-40",
+        "question": "What does the ! operator do?",
+        "options": [
+          "Assigns a value",
+          "Combines two conditions",
+          "Reverses a boolean value",
+          "Compares two strings"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-41",
+        "question": "What is the result of !false?",
+        "options": [
+          "false",
+          "true",
+          "null",
+          "undefined"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-42",
+        "question": "What is the purpose of a switch statement?",
+        "options": [
+          "To handle multiple possible values",
+          "To declare multiple variables",
+          "To create an infinite loop",
+          "To select HTML elements"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-06-43",
+        "question": "What does a case in a switch statement define?",
+        "options": [
+          "A loop condition",
+          "A possible value to match",
+          "A variable type",
+          "A function parameter"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-44",
+        "question": "What is the purpose of break inside a switch statement?",
+        "options": [
+          "To restart the switch",
+          "To stop the switch from continuing into the next case",
+          "To create a new case",
+          "To skip the condition"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-45",
+        "question": "When does the default block in a switch statement execute?",
+        "options": [
+          "When the first case matches",
+          "When all cases match",
+          "When none of the cases match",
+          "Before the cases are checked"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-06-46",
+        "question": "Which three parts commonly appear in a for loop?",
+        "options": [
+          "Variable, function, return",
+          "Initialization, condition, update",
+          "Start, stop, output",
+          "Declaration, comparison, alert"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-47",
+        "question": "What does i++ do?",
+        "options": [
+          "Decreases i by one",
+          "Increases i by one",
+          "Sets i to zero",
+          "Multiplies i by two"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-48",
+        "question": "Which loop creates an infinite loop because it has no initialization, condition, or update?",
+        "options": [
+          "for (;;) { }",
+          "while (false) { }",
+          "do { } while (false)",
+          "for (i = 0; i < 10; i++) { }"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-06-49",
+        "question": "What is the key difference between while and do...while loops?",
+        "options": [
+          "while always runs once, but do...while may not run",
+          "do...while executes its body at least once",
+          "while cannot use conditions",
+          "do...while cannot use variables"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-06-50",
+        "question": "What is one major benefit of JavaScript functions?",
+        "options": [
+          "They make HTML elements invisible",
+          "They allow code to be reused and help avoid repetition",
+          "They automatically create CSS styles",
+          "They prevent variables from changing"
+        ],
+        "correctIndex": 1
+      }
+    ]
+  },
+  {
+    "sectionId": "07",
+    "sectionTitle": "JavaScript Functions, Objects, Arrays, and DOM",
+    "questions": [
+      {
+        "id": "quiz-07-01",
+        "question": "What is a JavaScript function?",
+        "options": [
+          "A reusable block of code designed to perform a specific task",
+          "A type of HTML element",
+          "A CSS property",
+          "A browser window"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-02",
+        "question": "What are parameters in a function?",
+        "options": [
+          "The values returned by the function",
+          "The variables defined in the function declaration",
+          "The functions stored inside objects",
+          "The HTML elements passed to the browser"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-03",
+        "question": "What are arguments in a function call?",
+        "options": [
+          "The variables defined in the function declaration",
+          "The function's return value",
+          "The actual values passed to the function",
+          "The names of the function's parameters"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-07-04",
+        "question": "What does the return statement do?",
+        "options": [
+          "Stops the browser",
+          "Sends a value back from a function",
+          "Creates a new function",
+          "Declares a parameter"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-05",
+        "question": "What is the result of the following code? function sum(x, y) { return x + y; } var result = sum(10, 20);",
+        "options": [
+          "10",
+          "20",
+          "30",
+          "undefined"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-07-06",
+        "question": "Which syntax represents a function declaration?",
+        "options": [
+          "var funName = function() {};",
+          "function funName() {}",
+          "function = funName() {};",
+          "var function funName() {};"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-07",
+        "question": "What is a function expression?",
+        "options": [
+          "A function assigned to a variable",
+          "A function that can never be called",
+          "A function inside an HTML tag",
+          "A function that always returns a string"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-08",
+        "question": "What is a self-invoking function?",
+        "options": [
+          "A function that is executed immediately after it is created",
+          "A function that can only be called once",
+          "A function that has no parameters",
+          "A function that returns itself"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-09",
+        "question": "What is another name for a self-invoking function?",
+        "options": [
+          "DOM Function",
+          "Callback Function",
+          "Immediately Invoked Function Expression (IIFE)",
+          "Function Declaration"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-07-10",
+        "question": "What do JavaScript objects use to group related data and functionality?",
+        "options": [
+          "Indexes",
+          "Key-value pairs",
+          "CSS selectors",
+          "Loops"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-11",
+        "question": "Which syntax correctly accesses the name property of person?",
+        "options": [
+          "person[name]",
+          "person.name",
+          "person->name",
+          "person::name"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-12",
+        "question": "What is a nested object?",
+        "options": [
+          "An object containing another object as a property",
+          "An object containing only arrays",
+          "An object with no properties",
+          "An object created inside a loop"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-13",
+        "question": "What is a function stored inside an object called?",
+        "options": [
+          "A parameter",
+          "A method",
+          "A property",
+          "An argument"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-14",
+        "question": "In an object method, what does the this keyword refer to?",
+        "options": [
+          "The browser window",
+          "The function's parameter",
+          "The object that the method belongs to",
+          "The document object"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-07-15",
+        "question": "What does the Browser Object Model (BOM) provide?",
+        "options": [
+          "Objects for interacting with the browser",
+          "Methods for creating CSS files",
+          "A replacement for HTML",
+          "A database for JavaScript"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-16",
+        "question": "Which of the following is a browser-related object mentioned in the section?",
+        "options": [
+          "window",
+          "Array",
+          "String",
+          "Boolean"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-17",
+        "question": "What does window.confirm() display?",
+        "options": [
+          "An alert containing HTML",
+          "A dialog asking the user to confirm an action",
+          "The current page URL",
+          "A list of browser windows"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-18",
+        "question": "What type of value does window.confirm() return?",
+        "options": [
+          "A string",
+          "A number",
+          "A boolean",
+          "An object"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-07-19",
+        "question": "What does setTimeout() do?",
+        "options": [
+          "Repeatedly executes a function",
+          "Executes a function after a specified delay",
+          "Stops a function permanently",
+          "Changes the page URL"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-20",
+        "question": "In setTimeout(function() {}, 3000), what does 3000 represent?",
+        "options": [
+          "3000 seconds",
+          "3000 milliseconds",
+          "3000 function calls",
+          "3000 minutes"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-21",
+        "question": "What does setInterval() do?",
+        "options": [
+          "Executes a function once immediately",
+          "Repeatedly executes a function at a specified interval",
+          "Changes an element's CSS",
+          "Returns the current URL"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-22",
+        "question": "What does window.location.href contain?",
+        "options": [
+          "The current page URL",
+          "The page's HTML content",
+          "The browser's screen size",
+          "The current JavaScript function"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-23",
+        "question": "What is an array used for?",
+        "options": [
+          "Storing multiple values in a single variable",
+          "Creating browser windows",
+          "Defining CSS selectors",
+          "Declaring functions only"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-24",
+        "question": "What does zero-based indexing mean for arrays?",
+        "options": [
+          "The first element has index 1",
+          "The first element has index 0",
+          "Arrays cannot contain zero",
+          "The last element always has index 0"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-25",
+        "question": "What is the index of the first element in an array?",
+        "options": [
+          "0",
+          "1",
+          "-1",
+          "The array length"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-26",
+        "question": "What does the length property of an array return?",
+        "options": [
+          "The index of the first element",
+          "The number of elements in the array",
+          "The value of the last element",
+          "The size of each element"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-27",
+        "question": "If friends = [\"ahmed\", 15, \"yousef\"], what does friends[2] return?",
+        "options": [
+          "\"ahmed\"",
+          "15",
+          "\"yousef\"",
+          "undefined"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-07-28",
+        "question": "Which loop can be used to access every element of an array?",
+        "options": [
+          "for",
+          "switch",
+          "if",
+          "confirm"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-29",
+        "question": "What does indexOf() return?",
+        "options": [
+          "The index of the first occurrence of a value",
+          "The index of the last occurrence of a value",
+          "The number of elements",
+          "A boolean value only"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-30",
+        "question": "What does lastIndexOf() return?",
+        "options": [
+          "The first index in the array",
+          "The last occurrence index of a value",
+          "The array length",
+          "The value at index zero"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-31",
+        "question": "What does includes() check?",
+        "options": [
+          "Whether an array contains a specific value",
+          "Whether an object has a method",
+          "Whether an element has a CSS class",
+          "Whether a function has parameters"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-32",
+        "question": "What type of value does includes() return?",
+        "options": [
+          "A string",
+          "A number",
+          "A boolean",
+          "An array"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-07-33",
+        "question": "Where does push() add an element?",
+        "options": [
+          "To the beginning of an array",
+          "To the middle of an array",
+          "To the end of an array",
+          "It does not add elements"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-07-34",
+        "question": "Where does unshift() add an element?",
+        "options": [
+          "To the beginning of an array",
+          "To the end of an array",
+          "To the middle of an array",
+          "To a different array"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-35",
+        "question": "What does pop() do to an array?",
+        "options": [
+          "Adds an element to the beginning",
+          "Removes the last element",
+          "Removes the first element",
+          "Reverses the array"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-36",
+        "question": "What does shift() do to an array?",
+        "options": [
+          "Removes the first element",
+          "Removes the last element",
+          "Adds an element to the beginning",
+          "Combines two arrays"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-37",
+        "question": "What can splice() be used to do?",
+        "options": [
+          "Only search for elements",
+          "Remove, replace, or add elements at a specific position",
+          "Only combine arrays",
+          "Only return the array length"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-38",
+        "question": "In friends.splice(3, 1, \"mahmoud\"), what does the second argument 1 specify?",
+        "options": [
+          "The starting index",
+          "The number of elements to remove",
+          "The number of elements to add",
+          "The array length"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-39",
+        "question": "What does concat() do?",
+        "options": [
+          "Removes the first element",
+          "Combines arrays and returns a new array",
+          "Searches for an element",
+          "Changes an object's property"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-40",
+        "question": "What can an array contain?",
+        "options": [
+          "Only strings",
+          "Only numbers",
+          "Only objects",
+          "Values such as strings, numbers, and objects"
+        ],
+        "correctIndex": 3
+      },
+      {
+        "id": "quiz-07-41",
+        "question": "Why are arrays of objects useful?",
+        "options": [
+          "They represent collections of related data",
+          "They prevent objects from having properties",
+          "They can only store one value",
+          "They replace all JavaScript functions"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-42",
+        "question": "What does querySelector() return?",
+        "options": [
+          "All matching elements",
+          "The first element matching a CSS selector",
+          "Only elements with an id",
+          "The current page URL"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-43",
+        "question": "Which selector can be passed to querySelector()?",
+        "options": [
+          "#title",
+          "Only HTML tag names",
+          "Only class names",
+          "Only JavaScript variable names"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-44",
+        "question": "What does querySelectorAll() return?",
+        "options": [
+          "The first matching element",
+          "All elements matching a CSS selector",
+          "Only the element with an id",
+          "A single string"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-45",
+        "question": "Which property can be used to replace the HTML content inside an element?",
+        "options": [
+          "innerHTML",
+          "classList",
+          "cssText",
+          "href"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "id": "quiz-07-46",
+        "question": "How is the CSS property background-color written when accessed through JavaScript's style property?",
+        "options": [
+          "element.style.background-color",
+          "element.style.background_color",
+          "element.style.backgroundColor",
+          "element.style.backgroundcolor"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-07-47",
+        "question": "What does classList.add() do?",
+        "options": [
+          "Removes a CSS class",
+          "Adds a CSS class",
+          "Checks for a CSS class",
+          "Replaces all inline styles"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-48",
+        "question": "What does classList.toggle() do?",
+        "options": [
+          "Always adds a class",
+          "Always removes a class",
+          "Adds the class if it does not exist or removes it if it does",
+          "Checks whether an element has an id"
+        ],
+        "correctIndex": 2
+      },
+      {
+        "id": "quiz-07-49",
+        "question": "What does e.target represent inside an event listener?",
+        "options": [
+          "The function that handled the event",
+          "The element that triggered the event",
+          "The browser window",
+          "The current page URL"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "id": "quiz-07-50",
+        "question": "What is the purpose of addEventListener()?",
+        "options": [
+          "To attach an event listener to an element",
+          "To create an array",
+          "To declare a function",
+          "To change the page URL"
+        ],
+        "correctIndex": 0
+      }
+    ]
   }
 ]

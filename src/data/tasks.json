@@ -66,5 +66,21 @@
         "solution": ""
       }
     ]
+  },
+  {
+    "sectionId": "07",
+    "sectionTitle": "JavaScript Mini E-Commerce Website",
+    "tasks": [
+      {
+        "id": "js-07-01",
+        "number": 1,
+        "title": "Build a Mini E-Commerce Website",
+        "difficulty": "Hard",
+        "category": "ITI",
+        "description": "## JavaScript Project – Mini E-Commerce Website\n\n### Project Overview\n\nCreate a complete Mini E-Commerce Website using JavaScript.\n\nThe project should contain 4 pages and have a modern and attractive design.\n\nYou may use:\n- Bootstrap\n- Bootstrap Carousel\n- Bootstrap Icons\n- Font Awesome\n- Google Fonts\n\n## Required Pages\n\n### 1. Landing Page (Home)\n\nThe home page should contain:\n- Header and navigation bar.\n- Hero section with title and description.\n- Carousel / Slider for offers or featured products.\n- Featured products section.\n- Categories section.\n- Footer.\n\n#### JavaScript Ideas:\n- Auto slider or Bootstrap Carousel.\n- Buttons to navigate to products.\n- Dynamic rendering of featured products.\n\n### 2. Products Page\n\nThis page contains all products.\n\nEach product card should display:\n- Product image.\n- Product name.\n- Description.\n- Price.\n- Category.\n- Add to Cart button.\n\n#### JavaScript Requirements:\n- Display products dynamically using JavaScript.\n- Store products inside an Array of Objects.\n\nExample:\n\n```js\n{\n  id: 1,\n  title: \"Laptop\",\n  price: 25000,\n  image: \"image.jpg\",\n  category: \"Electronics\"\n}\n```\n\n- Allow searching for products.\n- Allow filtering by category.\n- Allow sorting by price or name.\n\n### 3. About Us Page\n\nThis page should contain:\n- Company information.\n- Vision and mission.\n- Contact information.\n\nUse good design, images, colors, spacing, and suitable fonts.\n\n### 4. Dashboard Page (Admin Panel)\n\nCreate a dashboard for the Admin.\n\nThe admin should be able to perform:\n\n#### Product Management\n- Add Product.\n- Edit Product.\n- Delete Product.\n- Search Product.\n\n#### User Management\n- Add User.\n- Edit User.\n- Delete User.\n- Search User.\n\nThe dashboard should display:\n- Total Products.\n- Total Users.\n- Total Orders (Optional).\n\n## Authentication System\n\nCreate two forms:\n\n### Register\n\nUser enters:\n- Name.\n- Email.\n- Password.\n\nSave users in Local Storage.\n\n### Login\n\nUser enters:\n- Email.\n- Password.\n\nCheck if the user exists.\n\nIf login is successful:\n- Save current user.\n- Redirect to home page.\n\n## Cart System (Required Logic)\n\nThe cart is one of the most important parts of the project.\n\nDo not build it randomly. Follow the logic below:\n\n### Step 1\n\nCreate an array called:\n\n```js\nlet cart = [];\n```\n\n### Step 2\n\nWhen the user clicks **\"Add to Cart\"**:\n- Check if the product already exists in the cart.\n\nIf the product does not exist:\n\n```text\nquantity = 1\n```\n\nIf it already exists:\n\n```text\nquantity++\n```\n\n### Step 3\n\nSave cart data in:\n\n```text\nlocalStorage\n```\n\n### Step 4\n\nDisplay cart items dynamically.\n\nEach item should contain:\n- Image.\n- Name.\n- Price.\n- Quantity.\n- Total price.\n\n### Step 5\n\nUser can:\n- Increase quantity (+).\n- Decrease quantity (-).\n- Remove product.\n\n### Step 6\n\nCalculate:\n- Subtotal.\n- Tax (Optional).\n- Shipping (Optional).\n- Final Total.\n\n## Admin Dashboard Logic\n\n### Products\n\n```text\nAdd Product → Save → Display Products → Edit Product → Update → Delete Product → Refresh UI\n```\n\n### Users\n\n```text\nAdd User → Save → Display Users → Edit User → Update → Delete User → Refresh UI\n```",
+        "hint": "Follow the required logic carefully, especially for the cart, authentication, and admin dashboard. Store products and users in arrays of objects, use localStorage for persistent data, and dynamically update the UI whenever data changes.",
+        "solution": ""
+      }
+    ]
   }
 ]
